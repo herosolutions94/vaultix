@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import LayoutDashboard from "@/components/layoutDashbaord";
 import Sidebar from "@/components/Sidebar";
+import LoggedHeader from "@/components/header-logged";
 
 export default function Dashboard({ result }) {
    
@@ -9,6 +10,7 @@ export default function Dashboard({ result }) {
         <>
           <div className='dashboard-layout'>
             <Sidebar />
+            <LoggedHeader />
             <div className='dashboard-main'>
               
             </div>

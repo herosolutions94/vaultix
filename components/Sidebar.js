@@ -37,7 +37,7 @@ const IconSettings = () => (
 );
 
 const IconChevron = ({ open }) => (
-  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.25s ease" }}>
+  <svg width="18" height="18" viewBox="0 0 14 14" fill="none" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.25s ease" }}>
     <path d="M3 5l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
@@ -51,9 +51,8 @@ const NAV_ITEMS = [
     href: "/dashboard/vault",
     icon: <IconVault />,
     children: [
-      { label: "Documents", href: "/dashboard/vault/documents" },
-      { label: "Passwords", href: "/dashboard/vault/passwords" },
-      { label: "Accounts", href: "/dashboard/vault/accounts" },
+      { label: "All Assets", href: "/dashboard/vault/assets" },
+      { label: "Categories", href: "/dashboard/vault/categories" },
     ],
   },
   { label: "Beneficiaries", href: "/dashboard/beneficiaries", icon: <IconBeneficiaries /> },
@@ -80,13 +79,12 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
   {/* Logo */}
-      <div className="logo">
+      <Link href="" className="side_logo">
         <VaultixLogo />
-        <span className="logo-text">VAULTIX</span>
-      </div>
+      </Link>
 
       {/* Main nav */}
-      <nav className="nav">
+      <div className="side_nav">
         {NAV_ITEMS.map((item) => (
           <div key={item.href}>
             {item.children ? (
@@ -132,7 +130,7 @@ export default function Sidebar() {
             )}
           </div>
         ))}
-      </nav>
+      </div>
 
       {/* Bottom nav */}
       <div className="bottom-nav">
@@ -147,9 +145,9 @@ export default function Sidebar() {
           </Link>
         ))}
 
-        <button className="lock-btn">
-          LOCK VAULT
-        </button>
+        <div className="lock-btn">
+          <button>LOCK VAULT</button>
+        </div>
       </div>
     </aside>
   );
