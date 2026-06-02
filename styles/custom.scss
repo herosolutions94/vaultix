@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   background-color: #F4F4F4;
   color: $black;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Regular";
   margin: 0;
   padding: 0;
@@ -298,7 +298,7 @@ _btn {
       -webkit-column-gap: 1rem;
       -moz-column-gap: 1rem;
       column-gap: 1rem;
-      height: 4.8rem;
+      height: 4rem;
       background: $primary-color;
       color: $white;
       font-family: "Regular";
@@ -406,9 +406,9 @@ _btn {
         border-color: inherit;
       }
       &.color {
-        background-color: $color2;
-        color: #fff;
-        border-color: $color2;
+        background-color: $gold;
+        color: $primary-color;
+        border-color: $gold;
         &:hover {
           background-color: $color;
           color: #fff;
@@ -4202,6 +4202,7 @@ a.close.disabled {
         border:1px solid #444748;
         height: 4rem;
         padding-left: 3rem;
+        color: $grey;
         &::placeholder{
           color: $grey;
           font-size: 1.3rem;
