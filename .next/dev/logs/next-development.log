@@ -8135,3 +8135,104 @@ styles/custom.scss 5826:9  root stylesheet
 %s
  {} The above error occurred in the <VaultCategories> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
 [07:12:22.372] Server  LOG     ✓ Compiled in 69ms
+[07:17:13.309] Server  LOG     ✓ Compiled in 33ms
+[07:17:42.612] Server  LOG     ✓ Compiled in 15ms
+[07:22:15.548] Server  LOG     ✓ Compiled in 31ms
+[07:34:55.643] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[07:34:55.643] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[07:34:55.643] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[07:34:55.644] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[07:34:55.644] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[07:43:26.297] Server  LOG     ✓ Compiled in 47ms
+[07:45:31.622] Server  LOG     ✓ Compiled in 38ms
+[07:45:38.026] Server  LOG     ✓ Compiled in 32ms
+[07:45:38.685] Server  LOG     ✓ Compiled in 20ms
+[07:47:37.139] Server  LOG     ✓ Compiled in 64ms
+[07:48:10.214] Server  LOG     ✓ Compiled in 18ms
+[07:48:43.682] Server  LOG     ✓ Compiled in 22ms
+[07:49:17.200] Server  LOG     ✓ Compiled in 22ms
+[07:49:57.014] Server  LOG     ✓ Compiled in 1260ms
+[07:50:15.142] Server  LOG     ✓ Compiled in 674ms
+[07:50:23.635] Server  LOG     ✓ Compiled in 549ms
+[07:51:02.924] Server  LOG     ✓ Compiled in 27ms
+[07:51:14.155] Server  LOG     ✓ Compiled in 19ms
+[07:51:33.308] Server  LOG     ✓ Compiled in 28ms
+[07:51:59.633] Server  LOG     ✓ Compiled in 476ms
+[07:52:23.551] Server  LOG     ✓ Compiled in 765ms
+[07:52:39.725] Server  LOG     ✓ Compiled in 493ms
+[07:52:53.999] Server  LOG     ✓ Compiled in 719ms
+[07:53:09.817] Server  LOG     ✓ Compiled in 542ms
+[07:53:24.984] Server  LOG     ✓ Compiled in 445ms
+[07:54:38.850] Server  LOG     ✓ Compiled in 715ms
+[07:54:50.068] Server  LOG     ✓ Compiled in 600ms
+[07:54:56.048] Server  LOG     ✓ Compiled in 693ms
+[07:55:05.271] Server  LOG     ✓ Compiled in 509ms
+[07:55:39.991] Server  LOG     ✓ Compiled in 585ms
+[07:57:06.770] Server  LOG     ✓ Compiled in 579ms
+[07:57:11.028] Server  LOG     ✓ Compiled in 40ms
+[07:58:49.561] Server  LOG     ✓ Compiled in 555ms

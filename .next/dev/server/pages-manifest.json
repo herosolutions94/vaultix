@@ -3,6 +3,7 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/dashboard": "pages/dashboard.js",
+  "/dashboard/activity": "pages/dashboard/activity.js",
   "/dashboard/vault": "pages/dashboard/vault.js",
   "/dashboard/vault/assets": "pages/dashboard/vault/assets.js",
   "/dashboard/vault/assets/[id]": "pages/dashboard/vault/assets/[id].js",

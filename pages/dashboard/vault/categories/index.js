@@ -88,7 +88,7 @@ export default function VaultCategories() {
         <div className="dash_header">
           <div className="left_col">
             <h2>Vault Categories</h2>
-            <p>Organise your encrypted assets into structured categories for efficient inheritance management.</p>
+            <p>Organize and manage your digital legacy by asset classification through our institutional-grade secure folders.</p>
           </div>
           <div className="right_col">
             <div className="tag_enc">
@@ -115,9 +115,6 @@ export default function VaultCategories() {
                     <img src={cat.icon} alt={cat.name}/>
                   </div>
                 </div>
-
-                
-
                 <div className="cat_count_row">
                   <h4 className="cat_name">{cat.name}</h4>
                   <span className="cat_count_label">{cat.count} Assets</span>

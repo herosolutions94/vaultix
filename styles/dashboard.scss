@@ -2500,3 +2500,42 @@
   color: #5c6069;
   font-size: 1.3rem;
 }
+// =====activity_list===
+.activity_list{
+  color: $grey;
+  *{color: $grey;}
+  
+  .inner_activity{
+    background-color: #15181C;
+    padding: 2rem;
+    border: 1px solid #1A1A1A;
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+    .head_list{
+      h3{
+        font-size: 2rem;
+        font-family: 'Medium';
+        color: $grey;
+        > span{
+          margin-left: 1rem;
+          padding: .7rem 1.5rem;
+          font-size: 1.2rem;
+          border: 1px solid transparent;
+          @include radius(2px);
+         position: relative;
+         padding-left: 2rem;
+         &:before{
+          @include pos();
+         }
+          &.no_response{
+            background-color: #69000530;
+            border-color: #690005;
+            color: #cb050f;
+            
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,9 @@ self.__BUILD_MANIFEST = {
   "/dashboard": [
     "static/chunks/pages/dashboard.js"
   ],
+  "/dashboard/activity": [
+    "static/chunks/pages/dashboard/activity.js"
+  ],
   "/dashboard/vault": [
     "static/chunks/pages/dashboard/vault.js"
   ],
@@ -36,6 +39,7 @@ self.__BUILD_MANIFEST = {
     "/_error",
     "/api/hello",
     "/dashboard",
+    "/dashboard/activity",
     "/dashboard/vault",
     "/dashboard/vault/assets",
     "/dashboard/vault/assets/add-asset",

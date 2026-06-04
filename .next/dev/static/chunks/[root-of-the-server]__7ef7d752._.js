@@ -1311,7 +1311,7 @@ function VaultCategories() {
                                                 columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "Organise your encrypted assets into structured categories for efficient inheritance management."
+                                                children: "Organize and manage your digital legacy by asset classification through our institutional-grade secure folders."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/index.js",
                                                 lineNumber: 91,
@@ -1433,7 +1433,7 @@ function VaultCategories() {
                                                         children: cat.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                        lineNumber: 122,
+                                                        lineNumber: 119,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1444,13 +1444,13 @@ function VaultCategories() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                        lineNumber: 123,
+                                                        lineNumber: 120,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                lineNumber: 121,
+                                                lineNumber: 118,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1461,12 +1461,12 @@ function VaultCategories() {
                                                     children: "VIEW CATEGORY"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                    lineNumber: 127,
+                                                    lineNumber: 124,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                lineNumber: 126,
+                                                lineNumber: 123,
                                                 columnNumber: 17
                                             }, this)
                                         ]
@@ -1508,7 +1508,7 @@ function VaultCategories() {
                                     onClick: ()=>setAddCategoryPop(false)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                    lineNumber: 145,
+                                    lineNumber: 142,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1518,20 +1518,20 @@ function VaultCategories() {
                                             children: "Add New Category"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                            lineNumber: 147,
+                                            lineNumber: 144,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "Organize your vault assets into structured sections."
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                            lineNumber: 148,
+                                            lineNumber: 145,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                    lineNumber: 146,
+                                    lineNumber: 143,
                                     columnNumber: 18
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1546,7 +1546,7 @@ function VaultCategories() {
                                                         children: "Category Name (Required)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                        lineNumber: 155,
+                                                        lineNumber: 152,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1557,18 +1557,18 @@ function VaultCategories() {
                                                         onChange: (e)=>setName(e.target.value)
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                        lineNumber: 156,
+                                                        lineNumber: 153,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                lineNumber: 154,
+                                                lineNumber: 151,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                            lineNumber: 153,
+                                            lineNumber: 150,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1578,7 +1578,7 @@ function VaultCategories() {
                                                     children: "SELECT ICON"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                    lineNumber: 168,
+                                                    lineNumber: 165,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1597,36 +1597,36 @@ function VaultCategories() {
                                                                         alt: opt.label
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                                        lineNumber: 178,
+                                                                        lineNumber: 175,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                                    lineNumber: 177,
+                                                                    lineNumber: 174,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: opt.label
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                                    lineNumber: 180,
+                                                                    lineNumber: 177,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, opt.key, true, {
                                                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                            lineNumber: 171,
+                                                            lineNumber: 168,
                                                             columnNumber: 25
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                    lineNumber: 169,
+                                                    lineNumber: 166,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                            lineNumber: 167,
+                                            lineNumber: 164,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1638,7 +1638,7 @@ function VaultCategories() {
                                                         children: "Category Description"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                        lineNumber: 188,
+                                                        lineNumber: 185,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1646,18 +1646,18 @@ function VaultCategories() {
                                                         placeholder: "Briefly describe what this category includes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                        lineNumber: 189,
+                                                        lineNumber: 186,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                lineNumber: 187,
+                                                lineNumber: 184,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                            lineNumber: 186,
+                                            lineNumber: 183,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1671,7 +1671,7 @@ function VaultCategories() {
                                                     children: "Cancel"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                    lineNumber: 195,
+                                                    lineNumber: 192,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1681,45 +1681,45 @@ function VaultCategories() {
                                                         children: "CREATE CATEGORY"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                        lineNumber: 197,
+                                                        lineNumber: 194,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                                    lineNumber: 196,
+                                                    lineNumber: 193,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                            lineNumber: 194,
+                                            lineNumber: 191,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                                    lineNumber: 150,
+                                    lineNumber: 147,
                                     columnNumber: 18
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                            lineNumber: 144,
+                            lineNumber: 141,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                        lineNumber: 143,
+                        lineNumber: 140,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                    lineNumber: 142,
+                    lineNumber: 139,
                     columnNumber: 7
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/dashboard/vault/categories/index.js",
-                lineNumber: 141,
+                lineNumber: 138,
                 columnNumber: 5
             }, this)
         ]
@@ -1732,7 +1732,7 @@ VaultCategories.getLayout = function(page) {
         children: page
     }, void 0, false, {
         fileName: "[project]/pages/dashboard/vault/categories/index.js",
-        lineNumber: 212,
+        lineNumber: 209,
         columnNumber: 10
     }, this);
 };

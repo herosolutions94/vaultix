@@ -9361,4 +9361,46 @@ table .table_name_flex span {
   font-size: 1.3rem;
 }
 
+.activity_list, .activity_list * {
+  color: #efefef;
+}
+
+.activity_list .inner_activity {
+  background-color: #15181c;
+  border: 1px solid #1a1a1a;
+  padding: 2rem;
+}
+
+.activity_list .inner_activity:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.activity_list .inner_activity .head_list h3 {
+  color: #efefef;
+  font-family: Medium;
+  font-size: 2rem;
+}
+
+.activity_list .inner_activity .head_list h3 > span {
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border: 1px solid #0000;
+  border-radius: 2px;
+  margin-left: 1rem;
+  padding: .7rem 1.5rem .7rem 2rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.activity_list .inner_activity .head_list h3 > span:before {
+  position: absolute;
+  inset: 0;
+}
+
+.activity_list .inner_activity .head_list h3 > span.no_response {
+  color: #cb050f;
+  background-color: #69000530;
+  border-color: #690005;
+}
+
 /*# sourceMappingURL=styles_custom_scss_css_65f1660e._.single.css.map*/
