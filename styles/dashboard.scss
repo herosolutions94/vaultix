@@ -5,6 +5,8 @@
   position:absolute;
   .contain{
     padding: 0 3rem;
+    max-width: 130rem;
+    margin: 0;
   }
 }
 // ─── Sidebar Shell ────────────────────────────────────────
@@ -98,6 +100,9 @@
         @include trans;
         color: $gold;
       }
+      &.sub-active{
+        color: $gold;
+      }
     }
   }
   .bottom-nav{
@@ -165,7 +170,7 @@
 .dashboard-layout {
   display: flex;
   min-height: 100vh;
-  // background: $main-dark;
+  background: $main-dark;
 }
 
 .dashboard-main {
@@ -176,6 +181,7 @@
   overflow: hidden;
   padding: 9rem 3rem 3rem;
   background-color: $main-dark;
+  max-width: 130rem;
 }
 
 
@@ -1482,7 +1488,8 @@
         color: $grey;
         background-color: #353534;
         border-color: #353534;
-        font-size: 2rem;
+        font-size: 5rem;
+        text-align: center;
       }
     }
     .btn_blk{
@@ -1509,6 +1516,353 @@
         }
       }
       
+    }
+  }
+}
+
+
+// =====assets details=====
+.asset_dt_fx{
+  .colL{
+    width: 30%;
+    padding-right: 1rem;
+    ul{
+      @include list;
+      li{
+        @include flex($justify:space-between);
+        gap: 1rem;
+        color: $grey;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #dddddd18;
+      }
+    }
+    .info_bx{
+      @include flex;
+      gap: 1rem;
+      background-color: #1C1B1B;
+      @include radius(5px);
+      padding: 2.5rem;
+      color: $grey;
+      border: 1px solid rgba($gold, 0.06);
+      img{
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+      }
+      span{
+        flex: 1;
+      }
+    }
+  }
+  .colR{
+    width: 70%;
+    padding-left: 1rem;
+    .tile_dt{
+        background-color: #1C1B1B;
+        @include radius(5px);
+        padding: 2.5rem;
+        color: $grey;
+        border: 1px solid rgba($gold, 0.06);
+        &:not(:last-child){
+          margin-bottom: 2rem;
+        }
+      .inner_fx{
+        flex: 1;
+        gap: 1rem;
+        .img_icon{
+          width: 4rem;
+          height: 4rem;
+          @include radius(50px);
+          overflow: hidden;
+          img{
+            @include object(cover);
+          }
+        }
+        .info_ben{
+          flex: 1;
+          align-self: center;
+          .name{
+            font-size: 1.7rem;
+          }
+        }
+      }
+      .right_fx{
+        width: 40%;
+        align-self: center;
+      }
+    }
+  }
+  .inner{
+    background-color: #15181c;
+    border: 1px solid #272727;
+    border-radius: 10px;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+}
+
+.progressWrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 10px;
+  background: #353534;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: $gold;
+  transition: width 0.4s ease;
+  border-radius: 999px;
+}
+
+.progressText {
+  display: block;
+  margin-bottom:1rem;
+  font-size: 2rem;
+  color: $gold;
+}
+
+
+// =======add_asset_form====
+.add_asset_form{
+  color: $grey;
+  .cmn_frm_blk{
+    background-color: #15181c;
+    border: 1px solid #272727;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .frm_heading{
+    color: $grey;
+    font-family: 'SemiBold';
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+  .field_text{
+    label{
+      text-transform: uppercase;
+      color: $grey;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .input{
+      background-color: #1A1A1A;
+      border: 1px solid #42475238;
+      color: $grey;
+      height: 5rem;
+      @include radius(3px);
+      &::placeholder{
+        color: #5c6069;
+      }
+    }
+    &.m_b_2{
+      margin-bottom: 2rem;
+    }
+  }
+  .dbl_field{
+    @include flex;
+    gap: 2rem;
+    color: $grey;
+    .field_text{
+      flex: 1;
+      .pin_flx{
+        @include flex;
+        gap: 1rem;
+        .input{
+          flex: 1;
+          text-align: center;
+        }
+      }
+      small{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        opacity: 0.7;
+        display: block;
+      }
+
+    }
+    .tabs_flx{
+      @include flex;
+      gap: 1rem;
+      height: 5rem;
+      background-color: #1A1A1A;
+      border: 1px solid #42475238;
+      @include radius(3px);
+      padding: .5rem;
+      button{
+        @include flex(center,center);
+        text-align: center;
+        flex: 1;
+        color: $grey;
+        @include trans;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        @include radius(1px);
+        &:hover, &.active{
+           @include trans;
+          background-color: $gold;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  .asset_head_flex{
+    @include flex($justify:space-between);
+    .frm_heading{
+      margin-bottom: 0;
+    }
+    margin-bottom: 2rem;
+  }
+  .ben_devide_asset_flex{
+    @include flex($flow:wrap);
+    margin: -1rem;
+    .col_ben{
+      padding: 1rem;
+      width: calc(100% / 3);
+      .inner_ben{
+        background-color: #1C1B1B;
+        padding: 2rem;
+        @include radius(3px);
+        @include flex;
+        border: 1px solid #4c4e5477;
+        cursor: pointer;
+        @include trans;
+        &:hover{
+          border-color: $gold;
+          @include trans;
+        }
+        .name{
+          opacity: 0.4;
+          flex: 1;
+        }
+        input{
+          align-self: center;
+        }
+        
+      }
+      &.active{
+        .inner_ben{
+          border-color: $gold;
+          .name{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .attachment_blk_assets{
+    .inner_upload{
+      border: 1px dashed $gold;
+      padding: 3rem;
+      @include radius(3px);
+      text-align: center;
+      color: $grey;
+      h3{
+        color: $grey;
+        font-family: 'Medium';
+      }
+      .icon_upload{
+        width: 5rem;
+        height: 5rem;
+        overflow: hidden;
+        margin: 0 auto 1rem;
+        img{
+          @include object(contain);
+        }
+      }
+      small{
+        display: block;
+      }
+      .upload_btn{
+        margin-top: 2rem;
+        border:1px solid $gold;
+        color: $grey;
+        background-color: transparent;
+        padding: 1rem 3rem;
+       letter-spacing: .4px;
+       @include trans;
+       @include radius(3px);
+       &:hover{
+        color: $gold;
+        @include trans;
+       }
+      }
+    }
+    .uploaded_state{
+      @include flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      .uploaded_frm{
+        position: relative;
+        padding: 1rem;
+        @include radius(3px);
+        background-color: #191A1B;
+        border: 1px solid #42475241;
+        @include flex;
+        gap: .7rem;
+        > img{
+          width: 1.8rem;
+          height: 1.8rem;
+          object-fit: contain;
+        }
+        .info_file{
+          flex: 1;
+          padding-right: 2rem;
+          .name{
+            font-size: 1.4rem;
+          }
+          small{
+            opacity: 0.7;
+            font-size: 1.2rem;
+          }
+        }
+        button{
+          width: 2.5rem;
+          height: 2.5rem;
+          @include radius(50px);
+          overflow: hidden;
+          @include pos($b:null , $l:null, $r:-5px, $t:-5px);
+          background-color: $gold;
+          padding:7px;
+          border: none;
+          @include flex(center, center);
+          img{
+            @include object(contain);
+          }
+        }
+      }
+    }
+  }
+  .btn_blk{
+    button{
+      border: none;
+      &.site_lbl{
+        background: transparent;
+        align-self: center;
+        color: $grey;
+      }
+      &.site_btn{
+        background-color: $gold;
+        color: $primary-color;
+        
+      }
+      &:hover{
+        opacity: 0.7;
+      }
     }
   }
 }

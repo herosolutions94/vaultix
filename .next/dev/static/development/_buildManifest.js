@@ -11,6 +11,12 @@ self.__BUILD_MANIFEST = {
   "/dashboard/vault/assets": [
     "static/chunks/pages/dashboard/vault/assets.js"
   ],
+  "/dashboard/vault/assets/[id]": [
+    "static/chunks/pages/dashboard/vault/assets/[id].js"
+  ],
+  "/dashboard/vault/assets/add-asset": [
+    "static/chunks/pages/dashboard/vault/assets/add-asset.js"
+  ],
   "__rewrites": {
     "afterFiles": [],
     "beforeFiles": [],
@@ -22,6 +28,8 @@ self.__BUILD_MANIFEST = {
     "/api/hello",
     "/dashboard",
     "/dashboard/vault",
-    "/dashboard/vault/assets"
+    "/dashboard/vault/assets",
+    "/dashboard/vault/assets/add-asset",
+    "/dashboard/vault/assets/[id]"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

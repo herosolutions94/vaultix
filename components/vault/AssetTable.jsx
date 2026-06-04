@@ -49,7 +49,7 @@ const allAssets = [
 
 const categories = ['All', 'FINANCE', 'LEGAL', 'DIGITAL', 'PHYSICAL'];
 
-export default function AssetTable({toggleAccessPopup}) {
+export default function AssetTable({toggleAccessPopup , setSelectedAsset,}) {
   const categoryRef = useRef(null);
   const menuRef = useRef(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -245,7 +245,10 @@ export default function AssetTable({toggleAccessPopup}) {
 
                     {openMenuId === asset.id && (
                       <div className="contextMenu">
-                        <button className="contextItem" type='button' onClick={toggleAccessPopup}>
+                        <button className="contextItem" type='button' onClick={() => {
+                          setSelectedAsset(asset.id);
+                          toggleAccessPopup();
+                        }}>
                           View
                         </button>
                         <button className="contextItem">

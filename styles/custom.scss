@@ -1443,8 +1443,8 @@ label {
   }
   @at-root {
     select#{&} {
-      @include chevron;
-      // background-image: url(../assets/images/drop_arrow.svg)!important;
+      // @include chevron;
+      background-image: url(/images/dashboard/drop_arrow.svg)!important;
       background-position: right 1.5rem center !important;
       background-repeat: no-repeat !important;
       padding-right: 3rem !important;
@@ -1483,9 +1483,9 @@ input {
     // -o-border-radius:4px;
     @include radius(50px);
     &:checked {
-      background: $primary-color;
+      background: $gold;
       background-clip: content-box;
-      border-color: $primary-color;
+      border-color: $gold;
     }
   }
   &[type="checkbox"] {

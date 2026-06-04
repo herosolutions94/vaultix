@@ -756,7 +756,6 @@ __turbopack_context__.s([
     ()=>Sidebar
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [client] (ecmascript)");
 ;
@@ -764,14 +763,14 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-;
+// ─── Icons ─────────────────────────────
 const VaultixLogo = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
         src: "/images/logo.png",
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 8,
-        columnNumber: 3
+        lineNumber: 7,
+        columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 _c = VaultixLogo;
 const IconDashboard = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -779,8 +778,8 @@ const IconDashboard = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$p
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 12,
-        columnNumber: 3
+        lineNumber: 9,
+        columnNumber: 29
     }, ("TURBOPACK compile-time value", void 0));
 _c1 = IconDashboard;
 const IconVault = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -788,8 +787,8 @@ const IconVault = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 16,
-        columnNumber: 4
+        lineNumber: 10,
+        columnNumber: 25
     }, ("TURBOPACK compile-time value", void 0));
 _c2 = IconVault;
 const IconBeneficiaries = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -797,8 +796,8 @@ const IconBeneficiaries = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 20,
-        columnNumber: 4
+        lineNumber: 11,
+        columnNumber: 33
     }, ("TURBOPACK compile-time value", void 0));
 _c3 = IconBeneficiaries;
 const IconTrigger = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -806,8 +805,8 @@ const IconTrigger = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 24,
-        columnNumber: 4
+        lineNumber: 12,
+        columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 _c4 = IconTrigger;
 const IconActivity = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -815,8 +814,8 @@ const IconActivity = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pr
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 28,
-        columnNumber: 4
+        lineNumber: 13,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 _c5 = IconActivity;
 const IconSubscription = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -824,8 +823,8 @@ const IconSubscription = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 32,
-        columnNumber: 4
+        lineNumber: 14,
+        columnNumber: 32
     }, ("TURBOPACK compile-time value", void 0));
 _c6 = IconSubscription;
 const IconSettings = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -833,8 +832,8 @@ const IconSettings = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pr
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 36,
-        columnNumber: 4
+        lineNumber: 15,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 _c7 = IconSettings;
 const IconChevron = ({ open })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -854,23 +853,23 @@ const IconChevron = ({ open })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module_
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 41,
+            lineNumber: 28,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 40,
+        lineNumber: 18,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 _c8 = IconChevron;
-// ─── Nav config ───────────────────────────────────────────
+// ─── Nav Data ─────────────────────────
 const NAV_ITEMS = [
     {
         label: "Dashboard",
         href: "/dashboard",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconDashboard, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 48,
+            lineNumber: 40,
             columnNumber: 51
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -879,7 +878,7 @@ const NAV_ITEMS = [
         href: "/dashboard/vault",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconVault, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 52,
+            lineNumber: 45,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: [
@@ -898,7 +897,7 @@ const NAV_ITEMS = [
         href: "/dashboard/beneficiaries",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconBeneficiaries, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 58,
+            lineNumber: 52,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -907,7 +906,7 @@ const NAV_ITEMS = [
         href: "/dashboard/triggers",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconTrigger, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 59,
+            lineNumber: 53,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -916,7 +915,7 @@ const NAV_ITEMS = [
         href: "/dashboard/activity",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconActivity, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 60,
+            lineNumber: 54,
             columnNumber: 64
         }, ("TURBOPACK compile-time value", void 0))
     }
@@ -927,7 +926,7 @@ const BOTTOM_NAV = [
         href: "/dashboard/subscription",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconSubscription, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 64,
+            lineNumber: 58,
             columnNumber: 67
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -936,27 +935,29 @@ const BOTTOM_NAV = [
         href: "/dashboard/settings",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconSettings, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 65,
+            lineNumber: 59,
             columnNumber: 59
         }, ("TURBOPACK compile-time value", void 0))
     }
 ];
 function Sidebar() {
     _s();
-    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["usePathname"])();
-    const [openMenus, setOpenMenus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])({
-        "/dashboard/vault": false
-    });
-    const toggle = (href)=>setOpenMenus((prev)=>({
-                ...prev,
-                [href]: !prev[href]
-            }));
-    const isActive = (href)=>pathname === href || href !== "/dashboard" && pathname.startsWith(href);
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["usePathname"])() || "";
+    // ✅ Vault submenu auto open based on route
+    const isVaultOpen = pathname.startsWith("/dashboard/vault");
+    // ✅ Active helper
+    const isActive = (href)=>{
+        if (!pathname) return false;
+        return pathname === href;
+    };
+    const isParentActive = (href)=>{
+        return pathname.startsWith(href);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
         className: "sidebar",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                href: "",
+                href: "/dashboard",
                 className: "side_logo",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(VaultixLogo, {}, void 0, false, {
                     fileName: "[project]/components/Sidebar.js",
@@ -973,10 +974,9 @@ function Sidebar() {
                 children: NAV_ITEMS.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: item.children ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: `nav-item ${isActive(item.href) ? "active" : ""}`,
-                                    onClick: ()=>toggle(item.href),
-                                    "aria-expanded": openMenus[item.href],
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: item.href,
+                                    className: `nav-item ${isParentActive(item.href) ? "active" : ""}`,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "nav-icon",
@@ -997,7 +997,7 @@ function Sidebar() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "chevron",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconChevron, {
-                                                open: openMenus[item.href]
+                                                open: isVaultOpen
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Sidebar.js",
                                                 lineNumber: 100,
@@ -1011,13 +1011,15 @@ function Sidebar() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 92,
+                                    lineNumber: 93,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "sub-menu",
                                     style: {
-                                        maxHeight: openMenus[item.href] ? "200px" : "0"
+                                        maxHeight: isVaultOpen ? "200px" : "0px",
+                                        overflow: "hidden",
+                                        transition: "max-height 0.3s ease"
                                     },
                                     children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: child.href,
@@ -1027,19 +1029,19 @@ function Sidebar() {
                                                     className: "sub-dot"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Sidebar.js",
-                                                    lineNumber: 116,
+                                                    lineNumber: 121,
                                                     columnNumber: 23
                                                 }, this),
                                                 child.label
                                             ]
                                         }, child.href, true, {
                                             fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 109,
+                                            lineNumber: 114,
                                             columnNumber: 21
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 104,
+                                    lineNumber: 105,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -1052,7 +1054,7 @@ function Sidebar() {
                                     children: item.icon
                                 }, void 0, false, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 127,
+                                    lineNumber: 132,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1060,13 +1062,13 @@ function Sidebar() {
                                     children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 128,
+                                    lineNumber: 133,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 123,
+                            lineNumber: 128,
                             columnNumber: 15
                         }, this)
                     }, item.href, false, {
@@ -1091,7 +1093,7 @@ function Sidebar() {
                                     children: item.icon
                                 }, void 0, false, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 143,
+                                    lineNumber: 148,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1099,13 +1101,13 @@ function Sidebar() {
                                     children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 144,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, item.href, true, {
                             fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 138,
+                            lineNumber: 143,
                             columnNumber: 11
                         }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1114,18 +1116,18 @@ function Sidebar() {
                             children: "LOCK VAULT"
                         }, void 0, false, {
                             fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 149,
+                            lineNumber: 154,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Sidebar.js",
-                        lineNumber: 148,
+                        lineNumber: 153,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Sidebar.js",
-                lineNumber: 136,
+                lineNumber: 141,
                 columnNumber: 7
             }, this)
         ]
@@ -1135,7 +1137,7 @@ function Sidebar() {
         columnNumber: 5
     }, this);
 }
-_s(Sidebar, "YfZFlztyCAz9qCB4aB7/MsxfKcs=", false, function() {
+_s(Sidebar, "wVXOWZKWdId76kQQO0KX6Oz3JDA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];

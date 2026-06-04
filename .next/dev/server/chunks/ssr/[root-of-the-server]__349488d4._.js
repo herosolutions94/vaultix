@@ -678,7 +678,7 @@ const categories = [
     'DIGITAL',
     'PHYSICAL'
 ];
-function AssetTable({ toggleAccessPopup }) {
+function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
     const categoryRef = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])(null);
     const menuRef = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])(null);
     const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])('');
@@ -1052,7 +1052,10 @@ function AssetTable({ toggleAccessPopup }) {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                                                 className: "contextItem",
                                                                 type: "button",
-                                                                onClick: toggleAccessPopup,
+                                                                onClick: ()=>{
+                                                                    setSelectedAsset(asset.id);
+                                                                    toggleAccessPopup();
+                                                                },
                                                                 children: "View"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/vault/AssetTable.jsx",
@@ -1064,7 +1067,7 @@ function AssetTable({ toggleAccessPopup }) {
                                                                 children: "Edit"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/vault/AssetTable.jsx",
-                                                                lineNumber: 251,
+                                                                lineNumber: 254,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -1072,7 +1075,7 @@ function AssetTable({ toggleAccessPopup }) {
                                                                 children: "Delete"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/vault/AssetTable.jsx",
-                                                                lineNumber: 254,
+                                                                lineNumber: 257,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
@@ -1128,7 +1131,7 @@ function AssetTable({ toggleAccessPopup }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vault/AssetTable.jsx",
-                        lineNumber: 269,
+                        lineNumber: 272,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1149,17 +1152,17 @@ function AssetTable({ toggleAccessPopup }) {
                                         points: "15 18 9 12 15 6"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.jsx",
-                                        lineNumber: 289,
+                                        lineNumber: 292,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/vault/AssetTable.jsx",
-                                    lineNumber: 281,
+                                    lineNumber: 284,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/AssetTable.jsx",
-                                lineNumber: 274,
+                                lineNumber: 277,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -1170,7 +1173,7 @@ function AssetTable({ toggleAccessPopup }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/vault/AssetTable.jsx",
-                                lineNumber: 293,
+                                lineNumber: 296,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -1187,29 +1190,29 @@ function AssetTable({ toggleAccessPopup }) {
                                         points: "9 18 15 12 9 6"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.jsx",
-                                        lineNumber: 309,
+                                        lineNumber: 312,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/vault/AssetTable.jsx",
-                                    lineNumber: 301,
+                                    lineNumber: 304,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/AssetTable.jsx",
-                                lineNumber: 297,
+                                lineNumber: 300,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vault/AssetTable.jsx",
-                        lineNumber: 273,
+                        lineNumber: 276,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/vault/AssetTable.jsx",
-                lineNumber: 268,
+                lineNumber: 271,
                 columnNumber: 7
             }, this)
         ]
@@ -1234,6 +1237,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layoutDashbaor
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Sidebar$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Sidebar.js [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2d$logged$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/header-logged.js [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$vault$2f$AssetTable$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/vault/AssetTable.jsx [ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/router.js [ssr] (ecmascript)");
+;
 ;
 ;
 ;
@@ -1243,8 +1248,41 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$vault$2f$Asset
 ;
 function Assets() {
     const [popupAccess, setPopupAccess] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
+    const [selectedAsset, setSelectedAsset] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
     const toggleAccessPopup = ()=>{
         setPopupAccess(!popupAccess);
+    };
+    const [pin, setPin] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])([
+        "",
+        "",
+        "",
+        ""
+    ]);
+    const inputRefs = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])([]);
+    const handleChange = (e, index)=>{
+        const value = e.target.value;
+        if (!/^\d*$/.test(value)) return;
+        const newPin = [
+            ...pin
+        ];
+        newPin[index] = value.slice(-1);
+        setPin(newPin);
+        if (value && index < 3) {
+            inputRefs.current[index + 1]?.focus();
+        }
+    };
+    const handleKeyDown = (e, index)=>{
+        if (e.key === "Backspace" && !pin[index] && index > 0) {
+            inputRefs.current[index - 1]?.focus();
+        }
+    };
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        const enteredPin = pin.join("");
+        if (enteredPin.length === 4) {
+            router.push(`/dashboard/vault/assets/${selectedAsset}`);
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
         children: [
@@ -1253,12 +1291,12 @@ function Assets() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Sidebar$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                        lineNumber: 18,
+                        lineNumber: 52,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2d$logged$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                        lineNumber: 19,
+                        lineNumber: 53,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1274,20 +1312,20 @@ function Assets() {
                                                 children: "All Assets"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                lineNumber: 23,
+                                                lineNumber: 57,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                                 children: "Manage and track your entire digital and physical estate with institutional-grade security and zero-knowledge encryption."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                lineNumber: 24,
+                                                lineNumber: 58,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                                        lineNumber: 22,
+                                        lineNumber: 56,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1301,20 +1339,20 @@ function Assets() {
                                                         alt: ""
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                        lineNumber: 28,
+                                                        lineNumber: 62,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                                         children: "END-TO-END ENCRYPTED SESSION"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                        lineNumber: 29,
+                                                        lineNumber: 63,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                lineNumber: 27,
+                                                lineNumber: 61,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1328,56 +1366,57 @@ function Assets() {
                                                             alt: "add assets"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                            lineNumber: 32,
+                                                            lineNumber: 66,
                                                             columnNumber: 64
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                                             children: "Add Asset"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                            lineNumber: 32,
+                                                            lineNumber: 66,
                                                             columnNumber: 120
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                    lineNumber: 32,
+                                                    lineNumber: 66,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                lineNumber: 31,
+                                                lineNumber: 65,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                                        lineNumber: 26,
+                                        lineNumber: 60,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                                lineNumber: 21,
+                                lineNumber: 55,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$vault$2f$AssetTable$2e$jsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                toggleAccessPopup: toggleAccessPopup
+                                toggleAccessPopup: toggleAccessPopup,
+                                setSelectedAsset: setSelectedAsset
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                                lineNumber: 36,
+                                lineNumber: 70,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                        lineNumber: 20,
+                        lineNumber: 54,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                lineNumber: 17,
+                lineNumber: 51,
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1397,20 +1436,20 @@ function Assets() {
                                             alt: ""
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                            lineNumber: 45,
+                                            lineNumber: 79,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                             children: "END-TO-END ENCRYPTED SESSION"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                            lineNumber: 46,
+                                            lineNumber: 80,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                                    lineNumber: 44,
+                                    lineNumber: 78,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1420,64 +1459,44 @@ function Assets() {
                                             children: "Asset Access Required"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                            lineNumber: 49,
+                                            lineNumber: 83,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                             children: "Enter your 4-digit security PIN to decrypt and view this asset."
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                            lineNumber: 50,
+                                            lineNumber: 84,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                                    lineNumber: 48,
+                                    lineNumber: 82,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("form", {
-                                    action: "",
+                                    onSubmit: handleSubmit,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                             className: "input_fields",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
+                                            children: pin.map((digit, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
+                                                    ref: (el)=>inputRefs.current[index] = el,
                                                     type: "text",
-                                                    className: "input"
-                                                }, void 0, false, {
+                                                    inputMode: "numeric",
+                                                    maxLength: 1,
+                                                    className: "input",
+                                                    value: digit,
+                                                    onChange: (e)=>handleChange(e, index),
+                                                    onKeyDown: (e)=>handleKeyDown(e, index)
+                                                }, index, false, {
                                                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                    lineNumber: 54,
-                                                    columnNumber: 29
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
-                                                    type: "text",
-                                                    className: "input"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                    lineNumber: 55,
-                                                    columnNumber: 29
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
-                                                    type: "text",
-                                                    className: "input"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                    lineNumber: 56,
-                                                    columnNumber: 29
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
-                                                    type: "text",
-                                                    className: "input"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                    lineNumber: 57,
-                                                    columnNumber: 29
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                                    lineNumber: 89,
+                                                    columnNumber: 31
+                                                }, this))
+                                        }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                            lineNumber: 53,
+                                            lineNumber: 87,
                                             columnNumber: 25
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1488,7 +1507,7 @@ function Assets() {
                                                     children: "UNLOCK ASSET"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                    lineNumber: 60,
+                                                    lineNumber: 103,
                                                     columnNumber: 29
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -1497,40 +1516,40 @@ function Assets() {
                                                     children: "FORGOT PIN?"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                                                    lineNumber: 61,
+                                                    lineNumber: 104,
                                                     columnNumber: 29
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                                            lineNumber: 59,
+                                            lineNumber: 102,
                                             columnNumber: 25
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                                    lineNumber: 52,
+                                    lineNumber: 86,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/dashboard/vault/assets.js",
-                            lineNumber: 43,
+                            lineNumber: 77,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/dashboard/vault/assets.js",
-                        lineNumber: 42,
+                        lineNumber: 76,
                         columnNumber: 17
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/pages/dashboard/vault/assets.js",
-                    lineNumber: 41,
+                    lineNumber: 75,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/dashboard/vault/assets.js",
-                lineNumber: 40,
+                lineNumber: 74,
                 columnNumber: 11
             }, this)
         ]
@@ -1541,7 +1560,7 @@ Assets.getLayout = function(page) {
         children: page
     }, void 0, false, {
         fileName: "[project]/pages/dashboard/vault/assets.js",
-        lineNumber: 72,
+        lineNumber: 115,
         columnNumber: 12
     }, this);
 };
