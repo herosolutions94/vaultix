@@ -6,5 +6,8 @@
   "/dashboard/vault": "pages/dashboard/vault.js",
   "/dashboard/vault/assets": "pages/dashboard/vault/assets.js",
   "/dashboard/vault/assets/[id]": "pages/dashboard/vault/assets/[id].js",
-  "/dashboard/vault/assets/add-asset": "pages/dashboard/vault/assets/add-asset.js"
+  "/dashboard/vault/assets/add-asset": "pages/dashboard/vault/assets/add-asset.js",
+  "/dashboard/vault/categories": "pages/dashboard/vault/categories.js",
+  "/dashboard/vault/categories/[id]": "pages/dashboard/vault/categories/[id].js",
+  "/dashboard/vault/categories/add-category": "pages/dashboard/vault/categories/add-category.js"
 }

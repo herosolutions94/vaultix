@@ -17,6 +17,15 @@ self.__BUILD_MANIFEST = {
   "/dashboard/vault/assets/add-asset": [
     "static/chunks/pages/dashboard/vault/assets/add-asset.js"
   ],
+  "/dashboard/vault/categories": [
+    "static/chunks/pages/dashboard/vault/categories.js"
+  ],
+  "/dashboard/vault/categories/[id]": [
+    "static/chunks/pages/dashboard/vault/categories/[id].js"
+  ],
+  "/dashboard/vault/categories/add-category": [
+    "static/chunks/pages/dashboard/vault/categories/add-category.js"
+  ],
   "__rewrites": {
     "afterFiles": [],
     "beforeFiles": [],
@@ -30,6 +39,8 @@ self.__BUILD_MANIFEST = {
     "/dashboard/vault",
     "/dashboard/vault/assets",
     "/dashboard/vault/assets/add-asset",
-    "/dashboard/vault/assets/[id]"
+    "/dashboard/vault/assets/[id]",
+    "/dashboard/vault/categories",
+    "/dashboard/vault/categories/[id]"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

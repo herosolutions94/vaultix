@@ -1,20 +1,14 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
+import DatePicker from "@/components/DatePicker";
+import FileAttachment from "@/components/vault/FileAttachment";
+
 export default function Document() {
     const [selected, setSelected] = useState("");
+    const [executionDate, setExecutionDate] = useState("");
+    const [notarized, setNotarized] = useState(false);
 
-    const handleSelect = (value) => {
-        setSelected(value);
-    };
-    const fileInputRef = useRef(null);
+    const handleSelect = (value) => setSelected(value);
 
-    const handleButtonClick = () => {
-        fileInputRef.current.click();
-    };
-
-    const handleFileChange = (e) => {
-        const files = e.target.files;
-        console.log("Selected files:", files);
-    };
   return (
   <>
     <div className="cmn_frm_blk">
@@ -25,7 +19,7 @@ export default function Document() {
                 <span>END-TO-END ENCRYPTED SESSION</span>
             </div>
         </div>
-        <div className="dbl_field">
+        <div className="dbl_field m_b_2">
             <div className="field_text">
                 <label>DOCUMENT TYPE</label>
                 <select className="input">
@@ -36,104 +30,65 @@ export default function Document() {
             </div>
             <div className="field_text">
                 <label>EXECUTION DATE</label>
-                <input type="date" className="input" placeholder="mm/dd/yy"/>
+                <DatePicker value={executionDate} onChange={setExecutionDate} />
             </div>
-            
+            <div className="field_text">
+                <div className="toggle_field">
+                    <div className="toggle_info">
+                        <span className="toggle_label">Notarized</span>
+                        <span className="toggle_sub">OFFICIAL CERTIFICATION INCLUDED</span>
+                    </div>
+                    <label className="toggle_switch">
+                        <input
+                            type="checkbox"
+                            checked={notarized}
+                            onChange={() => setNotarized((v) => !v)}
+                        />
+                        <span className="toggle_track" />
+                    </label>
+                </div>
+            </div>
+            <div className="field_text">
+                <label>PHYSICAL LOCATION OF ORIGINAL</label>
+                <input type="text" className="input" placeholder="e.g. Zurich Main Branch, Box #402"/>
+            </div>
         </div>
-        
-       
     </div>
+
     <div className="cmn_frm_blk">
         <div className="frm_heading">ASSIGNMENT</div>
-            <div className="ben_devide_asset_flex">
-            {/* Spouse */}
+        <div className="ben_devide_asset_flex">
             <div
                 className={`col_ben ${selected === "spouse" ? "active" : ""}`}
                 onClick={() => handleSelect("spouse")}
             >
                 <div className="inner_ben">
-                <div className="name">Spouse (Sarah Jenkins)</div>
-
-                <input
-                    type="radio"
-                    name="assign_asset"
-                    checked={selected === "spouse"}
-                    onChange={() => handleSelect("spouse")}
-                />
+                    <div className="name">Spouse (Sarah Jenkins)</div>
+                    <input type="radio" name="assign_asset" checked={selected === "spouse"} onChange={() => handleSelect("spouse")} />
                 </div>
             </div>
-
-            {/* Son */}
             <div
                 className={`col_ben ${selected === "son" ? "active" : ""}`}
                 onClick={() => handleSelect("son")}
             >
                 <div className="inner_ben">
-                <div className="name">Son (Michael Vance)</div>
-
-                <input
-                    type="radio"
-                    name="assign_asset"
-                    checked={selected === "son"}
-                    onChange={() => handleSelect("son")}
-                />
+                    <div className="name">Son (Michael Vance)</div>
+                    <input type="radio" name="assign_asset" checked={selected === "son"} onChange={() => handleSelect("son")} />
                 </div>
             </div>
-
-            {/* Family Trust */}
             <div
                 className={`col_ben ${selected === "trust" ? "active" : ""}`}
                 onClick={() => handleSelect("trust")}
             >
                 <div className="inner_ben">
-                <div className="name">Family Trust</div>
-
-                <input
-                    type="radio"
-                    name="assign_asset"
-                    checked={selected === "trust"}
-                    onChange={() => handleSelect("trust")}
-                />
+                    <div className="name">Family Trust</div>
+                    <input type="radio" name="assign_asset" checked={selected === "trust"} onChange={() => handleSelect("trust")} />
                 </div>
             </div>
         </div>
     </div>
-    <div className="cmn_frm_blk attachment_blk_assets">
-        <div className="frm_heading">FILE ATTACHMENT</div>
-        <div className="inner_upload">
-            <div className="icon_upload">
-                <img src="/images/dashboard/upload.svg" alt="upload file" />
-            </div>
-            <h3>Drag and drop assets here</h3>
-            <small>Upload proof of ownership or backup instructions (PDF, PNG)</small>
-            <input
-            type="file"
-            ref={fileInputRef}
-            onChange={handleFileChange}
-            style={{ display: "none" }}
-            multiple
-            />
 
-            {/* Button triggers file input */}
-            <button
-            type="button"
-            className="upload_btn"
-            onClick={handleButtonClick}
-            >
-            SELECT FILES
-            </button>
-        </div>
-        <div className="uploaded_state">
-            <div className="uploaded_frm">
-                <button type="button"><img src="/images/dashboard/cross.svg" alt="file" /></button>
-                <img src="/images/dashboard/file.svg" alt="file" />
-                <div className="info_file">
-                    <div className="name">Trust_Deed_Final.pdf</div>
-                    <small>2.1 MB</small>
-                </div>
-            </div>
-        </div>
-    </div>
+    <FileAttachment />
   </>
   );
 }

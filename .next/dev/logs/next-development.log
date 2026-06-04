@@ -6521,3 +6521,1617 @@ styles/custom.scss 5826:9  root stylesheet
 [04:40:04.500] Server  LOG     ✓ Compiled in 967ms
 [04:40:14.972] Server  LOG     ✓ Compiled in 814ms
 [04:52:15.472] Server  LOG     ✓ Compiled in 84ms
+[04:56:26.986] Server  LOG     ✓ Compiled in 30ms
+[04:58:06.838] Server  LOG     ✓ Compiled in 1027ms
+[04:58:26.684] Server  LOG     ✓ Compiled in 766ms
+[04:58:35.585] Server  LOG     ✓ Compiled in 59ms
+[05:00:04.476] Server  LOG     ✓ Compiled in 34ms
+[05:00:48.426] Server  LOG     ✓ Compiled in 900ms
+[05:01:03.332] Server  LOG     ✓ Compiled in 27ms
+[05:01:18.766] Server  LOG     ✓ Compiled in 606ms
+[05:01:55.242] Server  LOG     ✓ Compiled in 887ms
+[05:03:22.488] Server  LOG     ✓ Compiled in 75ms
+[05:03:33.937] Server  LOG     ✓ Compiled in 27ms
+[05:03:51.234] Server  LOG     ✓ Compiled in 1201ms
+[05:04:19.640] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[05:04:19.640] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[05:04:19.640] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[05:04:19.640] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[05:04:19.640] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[05:04:20.830] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[05:04:20.830] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[05:04:20.830] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[05:04:20.831] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[05:04:20.832] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[05:05:38.421] Server  LOG     ✓ Compiled in 48ms
+[05:05:56.595] Server  LOG     ✓ Compiled in 1060ms
+[05:06:09.372] Server  LOG     ✓ Compiled in 1080ms
+[05:06:16.081] Server  LOG     ✓ Compiled in 489ms
+[05:06:36.704] Server  LOG     ✓ Compiled in 572ms
+[05:08:52.565] Server  LOG     ✓ Compiled in 341ms
+[05:10:38.993] Server  LOG     ✓ Compiled in 58ms
+[05:10:46.263] Server  LOG     ✓ Compiled in 30ms
+[05:10:52.371] Server  LOG     ✓ Compiled in 18ms
+[05:10:54.665] Server  LOG     ✓ Compiled in 20ms
+[05:11:24.169] Server  LOG     ✓ Compiled in 17ms
+[05:12:33.730] Server  LOG     ✓ Compiled in 41ms
+[05:14:00.776] Server  LOG     ✓ Compiled in 50ms
+[05:14:12.009] Server  LOG     ✓ Compiled in 29ms
+[05:14:35.069] Server  LOG     ✓ Compiled in 927ms
+[05:15:59.313] Server  LOG     ✓ Compiled in 45ms
+[05:16:03.376] Server  LOG     ✓ Compiled in 15ms
+[05:16:36.147] Server  LOG     ✓ Compiled in 916ms
+[05:17:03.657] Server  LOG     ✓ Compiled in 657ms
+[05:17:11.526] Server  LOG     ✓ Compiled in 552ms
+[05:17:32.643] Server  LOG     ✓ Compiled in 526ms
+[05:18:50.974] Server  LOG     ✓ Compiled in 1050ms
+[05:21:44.341] Server  LOG     ✓ Compiled in 798ms
+[05:22:21.130] Server  LOG     ✓ Compiled in 1176ms
+[05:22:22.163] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <Other> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[05:22:26.601] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:22:47.105] Server  LOG     ✓ Compiled in 36ms
+[05:23:14.981] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <Other> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[05:23:36.583] Server  LOG     ✓ Compiled in 70ms
+[05:23:39.797] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <Other> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[05:23:53.770] Server  LOG     ✓ Compiled in 29ms
+[05:23:56.222] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <Other> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[05:24:11.802] Server  LOG     ✓ Compiled in 38ms
+[05:26:03.201] Server  LOG     ✓ Compiled in 348ms
+[05:26:17.236] Server  LOG     ✓ Compiled in 154ms
+[05:26:29.215] Server  LOG     ✓ Compiled in 59ms
+[05:26:42.309] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[05:26:42.309] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[05:26:42.316] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[05:26:42.316] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[05:26:42.316] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[05:26:42.933] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[05:26:42.933] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[05:26:42.933] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[05:26:42.934] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[05:26:42.934] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[05:33:14.687] Server  LOG     ✓ Compiled in 1142ms
+[05:33:43.085] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:36:26.225] Server  LOG     ✓ Compiled in 845ms
+[05:36:48.768] Server  LOG     ✓ Compiled in 47ms
+[05:36:54.188] Server  LOG     ✓ Compiled in 632ms
+[05:37:08.317] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[05:37:08.318] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[05:37:08.319] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[05:37:08.319] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[05:37:08.319] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[05:37:08.688] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[05:37:08.688] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[05:37:08.688] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[05:37:08.688] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[05:37:08.689] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[05:38:07.810] Server  LOG     ✓ Compiled in 28ms
+[05:38:13.901] Server  LOG     ✓ Compiled in 18ms
+[05:38:33.524] Server  LOG     ✓ Compiled in 561ms
+[05:38:37.063] Server  LOG     ✓ Compiled in 532ms
+[05:38:44.036] Server  LOG     ✓ Compiled in 581ms
+[05:39:43.360] Server  LOG     ✓ Compiled in 27ms
+[05:39:57.021] Server  LOG     ✓ Compiled in 17ms
+[05:40:26.541] Server  LOG     ✓ Compiled in 18ms
+[05:40:48.991] Server  LOG     ✓ Compiled in 218ms
+[05:41:07.536] Server  LOG     ✓ Compiled in 22ms
+[05:41:29.456] Server  LOG     ✓ Compiled in 583ms
+[05:42:37.718] Server  LOG     ✓ Compiled in 16ms
+[05:42:44.844] Server  LOG     ✓ Compiled in 689ms
+[05:43:12.305] Server  LOG     ✓ Compiled in 500ms
+[05:43:23.894] Server  LOG     ✓ Compiled in 576ms
+[05:48:04.374] Server  LOG     ✓ Compiled in 72ms
+[05:48:11.072] Server  LOG     ✓ Compiled in 818ms
+[05:48:23.686] Server  LOG     ✓ Compiled in 58ms
+[05:48:41.435] Server  LOG     ✓ Compiled in 38ms
+[05:48:48.444] Server  LOG     ✓ Compiled in 626ms
+[05:49:03.940] Server  LOG     ✓ Compiled in 39ms
+[05:57:25.417] Server  LOG     ✓ Compiled in 255ms
+[05:57:53.307] Server  LOG     ✓ Compiled in 803ms
+[06:00:17.236] Server  LOG     ✓ Compiled in 33ms
+[06:00:25.288] Server  LOG     ✓ Compiled in 368ms
+[06:00:25.364] Browser LOG     Refreshing page data due to server-side change
+[06:01:46.609] Server  LOG     ✓ Compiled in 38ms
+[06:02:08.274] Server  LOG     ✓ Compiled in 43ms
+[06:03:43.148] Server  LOG     ✓ Compiled in 23ms
+[06:04:11.807] Server  LOG     ✓ Compiled in 52ms
+[06:05:42.126] Server  LOG     ✓ Compiled in 64ms
+[06:06:41.195] Server  LOG     ✓ Compiled in 874ms
+[06:07:04.779] Server  LOG     ✓ Compiled in 757ms
+[06:10:04.666] Server  LOG     ✓ Compiled in 35ms
+[06:10:22.718] Server  LOG     ✓ Compiled in 16ms
+[06:11:04.493] Server  LOG     ✓ Compiled in 1012ms
+[06:11:17.037] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:11:17.037] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:11:17.037] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:11:17.037] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[06:11:17.037] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:11:17.594] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:11:17.594] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:11:17.594] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:11:17.594] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[06:11:17.594] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:11:58.376] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:11:58.376] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:11:58.376] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:11:58.376] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[06:11:58.376] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:11:59.062] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:11:59.063] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:11:59.063] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:11:59.063] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[06:11:59.063] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:13:20.455] Server  LOG     ✓ Compiled in 134ms
+[06:14:13.744] Server  LOG     ✓ Compiled in 21ms
+[06:15:13.072] Server  LOG     ✓ Compiled in 28ms
+[06:15:30.247] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:15:30.247] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:15:30.247] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:15:30.247] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[06:15:30.247] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:15:30.813] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:15:30.813] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:15:30.813] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:15:30.813] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[06:15:30.814] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:15:38.341] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[06:16:14.267] Server  LOG     ✓ Compiled in 20ms
+[06:17:54.230] Server  LOG     ✓ Compiled in 74ms
+[06:18:41.550] Server  LOG     ✓ Compiled in 31ms
+[06:18:44.266] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <VaultCategories> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[06:21:37.120] Server  LOG     ✓ Compiled in 63ms
+[06:23:27.426] Server  LOG     ✓ Compiled in 47ms
+[06:23:27.490] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <VaultCategories> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[06:23:35.620] Server  LOG     ✓ Compiled in 31ms
+[06:23:43.856] Server  LOG     ✓ Compiled in 23ms
+[06:24:51.200] Server  LOG     ✓ Compiled in 2.1s
+[06:24:53.065] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:24:53.065] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:24:53.066] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:24:53.073] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "style";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:24:53.074] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5826, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5826:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5826 | @import "dashboard";
+
+
+styles/custom.scss 5827:9  root stylesheet
+
+
+
+[06:24:53.611] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:24:53.612] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:24:53.613] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:24:53.614] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "style";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:24:53.614] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5826, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5826:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5826 | @import "dashboard";
+
+
+styles/custom.scss 5827:9  root stylesheet
+
+
+
+[06:25:51.388] Browser LOG     Refreshing page data due to server-side change
+[06:25:51.428] Server  LOG     ✓ Compiled in 138ms
+[06:25:51.671] Browser ERROR   ./pages/dashboard/vault/categories/index.js:85:127
+Parsing ecmascript source code failed
+  83 |             </div>
+  84 |             <div className="btn_blk">
+> 85 |               <button type="button" href="/dashboard/vault/categories/add-category" className="site_btn color" onClick={() => }>
+     |                                                                                                                               ^
+  86 |                 <img src="/images/dashboard/add.svg" alt="" />
+  87 |                 <span>Add Category</span>
+  88 |               </button>
+
+Expected '</', got '}'
+[06:25:58.554] Browser ERROR   ./pages/dashboard/vault/categories/index.js:86:127
+Parsing ecmascript source code failed
+  84 |             </div>
+  85 |             <div className="btn_blk">
+> 86 |               <button type="button" href="/dashboard/vault/categories/add-category" className="site_btn color" onClick={() => }>
+     |                                                                                                                               ^
+  87 |                 <img src="/images/dashboard/add.svg" alt="" />
+  88 |                 <span>Add Category</span>
+  89 |               </button>
+
+Expected '</', got '}'
+[06:26:24.899] Server  LOG     ✓ Compiled in 21ms
+[06:26:24.972] Browser LOG     Refreshing page data due to server-side change
+[06:27:45.068] Server  LOG     ✓ Compiled in 1011ms
+[06:27:55.661] Server  LOG     ✓ Compiled in 588ms
+[06:28:07.205] Server  LOG     ✓ Compiled in 612ms
+[06:28:19.876] Server  LOG     ✓ Compiled in 542ms
+[06:28:42.952] Server  LOG     ✓ Compiled in 550ms
+[06:28:57.804] Server  LOG     ✓ Compiled in 462ms
+[06:29:04.183] Server  LOG     ✓ Compiled in 445ms
+[06:29:20.517] Server  LOG     ✓ Compiled in 450ms
+[06:29:26.643] Server  LOG     ✓ Compiled in 494ms
+[06:29:47.315] Server  LOG     ✓ Compiled in 446ms
+[06:30:55.087] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:30:55.087] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:30:55.087] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:30:55.087] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "style";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[06:30:55.087] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5826, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5826:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5826 | @import "dashboard";
+
+
+styles/custom.scss 5827:9  root stylesheet
+
+
+
+[06:43:09.140] Server  LOG     ✓ Compiled in 39ms
+[06:44:44.955] Server  LOG     ✓ Compiled in 30ms
+[06:45:28.913] Server  LOG     ✓ Compiled in 2.2s
+[06:45:44.340] Server  LOG     ✓ Compiled in 1444ms
+[06:46:06.862] Server  LOG     ✓ Compiled in 1152ms
+[06:46:23.839] Server  LOG     ✓ Compiled in 1162ms
+[06:46:51.243] Server  LOG     ✓ Compiled in 1033ms
+[06:47:23.167] Server  LOG     ✓ Compiled in 1099ms
+[06:47:49.939] Server  LOG     ✓ Compiled in 25ms
+[06:48:01.286] Server  LOG     ✓ Compiled in 588ms
+[06:48:43.878] Server  LOG     ✓ Compiled in 1185ms
+[06:48:50.693] Server  LOG     ✓ Compiled in 1037ms
+[06:48:59.667] Server  LOG     ✓ Compiled in 995ms
+[06:56:40.982] Server  LOG     ✓ Compiled in 2.2s
+[06:56:51.451] Server  LOG     ✓ Compiled in 928ms
+[06:56:57.435] Server  LOG     ✓ Compiled in 720ms
+[06:57:17.998] Server  LOG     ✓ Compiled in 474ms
+[06:59:05.054] Server  LOG     ✓ Compiled in 53ms
+[06:59:11.721] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:59:11.722] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:59:11.722] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:59:11.722] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5826, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5826:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5826 | @import "style";
+
+
+styles/custom.scss 5827:9  root stylesheet
+
+
+
+[06:59:11.722] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5827, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5827:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5827 | @import "dashboard";
+
+
+styles/custom.scss 5828:9  root stylesheet
+
+
+
+[06:59:12.364] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[06:59:12.364] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[06:59:12.365] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[06:59:12.366] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5826, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5826:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5826 | @import "style";
+
+
+styles/custom.scss 5827:9  root stylesheet
+
+
+
+[06:59:12.366] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5827, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5827:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5827 | @import "dashboard";
+
+
+styles/custom.scss 5828:9  root stylesheet
+
+
+
+[06:59:14.037] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[06:59:43.042] Server  LOG     ✓ Compiled in 2.9s
+[07:00:11.999] Server  LOG     ✓ Compiled in 34ms
+[07:00:23.950] Server  LOG     ✓ Compiled in 29ms
+[07:00:41.133] Server  LOG     ✓ Compiled in 637ms
+[07:00:46.423] Server  LOG     ✓ Compiled in 736ms
+[07:00:56.250] Server  LOG     ✓ Compiled in 546ms
+[07:02:06.842] Server  LOG     ✓ Compiled in 494ms
+[07:02:06.953] Browser ERROR   ./styles/custom.scss
+Error evaluating Node.js code
+Error: expected ";".
+     ╷
+2293 │     text-align: center
+     │                       ^
+     ╵
+  styles/dashboard.scss 2293:23  @import
+  styles/custom.scss 5828:9      root stylesheet
+Caused by: Error: expected ";".
+     ╷
+2293 │     text-align: center
+     │                       ^
+     ╵
+  styles/dashboard.scss 2293:23  @import
+  styles/custom.scss 5828:9      root stylesheet
+    [at Object.wrapException (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:2337:47)]
+    [at SpanScanner.error$3$length$position (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87469:15)]
+    [at SpanScanner._fail$1 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87608:12)]
+    [at SpanScanner.expectChar$2$name (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87550:12)]
+    [at SpanScanner.expectChar$1 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87553:19)]
+    [at ScssParser0.expectStatementSeparator$1 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:119639:10)]
+    [at ScssParser0.expectStatementSeparator$0 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:119642:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:124406:17)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:124311:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:124227:162)]
+[07:02:07.598] Browser ERROR   ./styles/custom.scss
+Error evaluating Node.js code
+Error: expected ";".
+     ╷
+2293 │     text-align: center
+     │                       ^
+     ╵
+  styles/dashboard.scss 2293:23  @import
+  styles/custom.scss 5828:9      root stylesheet
+Caused by: Error: expected ";".
+     ╷
+2293 │     text-align: center
+     │                       ^
+     ╵
+  styles/dashboard.scss 2293:23  @import
+  styles/custom.scss 5828:9      root stylesheet
+    [at Object.wrapException (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:2337:47)]
+    [at SpanScanner.error$3$length$position (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87469:15)]
+    [at SpanScanner._fail$1 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87608:12)]
+    [at SpanScanner.expectChar$2$name (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87550:12)]
+    [at SpanScanner.expectChar$1 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:87553:19)]
+    [at ScssParser0.expectStatementSeparator$1 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:119639:10)]
+    [at ScssParser0.expectStatementSeparator$0 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:119642:19)]
+    [at ScssParser0._stylesheet0$_declarationOrBuffer$0 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:124406:17)]
+    [at ScssParser0._stylesheet0$_declarationOrStyleRule$0 (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:124311:35)]
+    [at ScssParser0._stylesheet0$_statement$1$root (/Users/imac/Desktop/next-projects/vaultix/node_modules/sass/sass.dart.js:124227:162)]
+[07:02:09.193] Server  LOG     ✓ Compiled in 1756ms
+[07:02:17.540] Server  LOG     ✓ Compiled in 811ms
+[07:03:00.821] Server  LOG     ✓ Compiled in 621ms
+[07:03:07.908] Server  LOG     ✓ Compiled in 496ms
+[07:03:39.731] Server  LOG     ✓ Compiled in 516ms
+[07:03:45.736] Server  LOG     ✓ Compiled in 462ms
+[07:04:02.937] Server  LOG     ✓ Compiled in 32ms
+[07:04:39.655] Server  LOG     ✓ Compiled in 22ms
+[07:05:07.449] Server  LOG     ✓ Compiled in 36ms
+[07:05:15.704] Server  LOG     ✓ Compiled in 85ms
+[07:05:35.786] Server  LOG     ✓ Compiled in 25ms
+[07:05:46.066] Server  LOG     ✓ Compiled in 19ms
+[07:05:50.144] Server  LOG     ✓ Compiled in 17ms
+[07:05:57.303] Server  LOG     ✓ Compiled in 11ms
+[07:06:03.059] Server  LOG     ✓ Compiled in 19ms
+[07:06:59.562] Server  LOG     ✓ Compiled in 2.2s
+[07:08:05.161] Server  LOG     ✓ Compiled in 23ms
+[07:08:54.609] Server  LOG     ✓ Compiled in 1068ms
+[07:09:14.121] Server  LOG     ✓ Compiled in 669ms
+[07:09:23.317] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[07:09:23.317] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[07:09:23.317] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[07:09:23.317] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[07:09:23.317] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[07:09:23.920] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:0:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+0 | @import "fonts";
+
+
+styles/custom.scss 1:9  root stylesheet
+
+
+
+[07:09:23.920] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:1:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+1 | @import "colors";
+
+
+styles/custom.scss 2:9  root stylesheet
+
+
+
+[07:09:23.923] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:2:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+2 | @import "mixins";
+
+
+styles/custom.scss 3:9  root stylesheet
+
+
+
+[07:09:23.924] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5824, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5824:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5824 | @import "style";
+
+
+styles/custom.scss 5825:9  root stylesheet
+
+
+
+[07:09:23.924] Server  WARN    ⚠ ./styles/custom.scss
+Issue while running loader
+SassWarning: Deprecation Warning on line 5825, column 8 of file:///Users/imac/Desktop/next-projects/vaultix/styles/custom.scss:5825:8:
+Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+5825 | @import "dashboard";
+
+
+styles/custom.scss 5826:9  root stylesheet
+
+
+
+[07:09:29.165] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[07:10:01.221] Server  LOG     ✓ Compiled in 22ms
+[07:10:28.472] Server  LOG     ✓ Compiled in 27ms
+[07:10:28.548] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <VaultCategories> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[07:10:55.577] Server  LOG     ✓ Compiled in 102ms
+[07:12:06.622] Server  LOG     ✓ Compiled in 29ms
+[07:12:06.694] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <VaultCategories> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[07:12:22.372] Server  LOG     ✓ Compiled in 69ms

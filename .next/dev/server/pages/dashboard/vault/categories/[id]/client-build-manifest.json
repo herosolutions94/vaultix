@@ -1,0 +1,5 @@
+{
+  "/dashboard/vault/categories/[id]": [
+    "static/chunks/pages/dashboard/vault/categories/[id].js"
+  ]
+}

@@ -1,20 +1,11 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
+import FileAttachment from "@/components/vault/FileAttachment";
+
 export default function Account() {
     const [selected, setSelected] = useState("");
 
-    const handleSelect = (value) => {
-        setSelected(value);
-    };
-    const fileInputRef = useRef(null);
+    const handleSelect = (value) => setSelected(value);
 
-    const handleButtonClick = () => {
-        fileInputRef.current.click();
-    };
-
-    const handleFileChange = (e) => {
-        const files = e.target.files;
-        console.log("Selected files:", files);
-    };
   return (
   <>
     <div className="cmn_frm_blk">
@@ -38,97 +29,41 @@ export default function Account() {
             <input type="text" className="input" placeholder="e.g., Bitcoin Cold Wallet, Ethereum Ledger, Coinbase Account"/>
         </div>
     </div>
+
     <div className="cmn_frm_blk">
         <div className="frm_heading">ASSIGNMENT</div>
-            <div className="ben_devide_asset_flex">
-            {/* Spouse */}
+        <div className="ben_devide_asset_flex">
             <div
                 className={`col_ben ${selected === "spouse" ? "active" : ""}`}
                 onClick={() => handleSelect("spouse")}
             >
                 <div className="inner_ben">
-                <div className="name">Spouse (Sarah Jenkins)</div>
-
-                <input
-                    type="radio"
-                    name="assign_asset"
-                    checked={selected === "spouse"}
-                    onChange={() => handleSelect("spouse")}
-                />
+                    <div className="name">Spouse (Sarah Jenkins)</div>
+                    <input type="radio" name="assign_asset" checked={selected === "spouse"} onChange={() => handleSelect("spouse")} />
                 </div>
             </div>
-
-            {/* Son */}
             <div
                 className={`col_ben ${selected === "son" ? "active" : ""}`}
                 onClick={() => handleSelect("son")}
             >
                 <div className="inner_ben">
-                <div className="name">Son (Michael Vance)</div>
-
-                <input
-                    type="radio"
-                    name="assign_asset"
-                    checked={selected === "son"}
-                    onChange={() => handleSelect("son")}
-                />
+                    <div className="name">Son (Michael Vance)</div>
+                    <input type="radio" name="assign_asset" checked={selected === "son"} onChange={() => handleSelect("son")} />
                 </div>
             </div>
-
-            {/* Family Trust */}
             <div
                 className={`col_ben ${selected === "trust" ? "active" : ""}`}
                 onClick={() => handleSelect("trust")}
             >
                 <div className="inner_ben">
-                <div className="name">Family Trust</div>
-
-                <input
-                    type="radio"
-                    name="assign_asset"
-                    checked={selected === "trust"}
-                    onChange={() => handleSelect("trust")}
-                />
+                    <div className="name">Family Trust</div>
+                    <input type="radio" name="assign_asset" checked={selected === "trust"} onChange={() => handleSelect("trust")} />
                 </div>
             </div>
         </div>
     </div>
-    <div className="cmn_frm_blk attachment_blk_assets">
-        <div className="frm_heading">FILE ATTACHMENT</div>
-        <div className="inner_upload">
-            <div className="icon_upload">
-                <img src="/images/dashboard/upload.svg" alt="upload file" />
-            </div>
-            <h3>Drag and drop assets here</h3>
-            <small>Upload proof of ownership or backup instructions (PDF, PNG)</small>
-            <input
-            type="file"
-            ref={fileInputRef}
-            onChange={handleFileChange}
-            style={{ display: "none" }}
-            multiple
-            />
 
-            {/* Button triggers file input */}
-            <button
-            type="button"
-            className="upload_btn"
-            onClick={handleButtonClick}
-            >
-            SELECT FILES
-            </button>
-        </div>
-        <div className="uploaded_state">
-            <div className="uploaded_frm">
-                <button type="button"><img src="/images/dashboard/cross.svg" alt="file" /></button>
-                <img src="/images/dashboard/file.svg" alt="file" />
-                <div className="info_file">
-                    <div className="name">Trust_Deed_Final.pdf</div>
-                    <small>2.1 MB</small>
-                </div>
-            </div>
-        </div>
-    </div>
+    <FileAttachment />
   </>
   );
 }

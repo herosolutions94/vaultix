@@ -1748,6 +1748,147 @@ function Document() {
                         fileName: "[project]/components/vault/document.js",
                         lineNumber: 28,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "cmn_frm_blk attachment_blk_assets",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "frm_heading",
+                                children: "FILE ATTACHMENT"
+                            }, void 0, false, {
+                                fileName: "[project]/components/vault/document.js",
+                                lineNumber: 45,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "inner_upload",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "icon_upload",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/images/dashboard/upload.svg",
+                                            alt: "upload file"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/vault/document.js",
+                                            lineNumber: 48,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/vault/document.js",
+                                        lineNumber: 47,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        children: "Drag and drop assets here"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/vault/document.js",
+                                        lineNumber: 50,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
+                                        children: "Upload proof of ownership or backup instructions (PDF, PNG)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/vault/document.js",
+                                        lineNumber: 51,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "file",
+                                        ref: fileInputRef,
+                                        onChange: handleFileChange,
+                                        style: {
+                                            display: "none"
+                                        },
+                                        multiple: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/vault/document.js",
+                                        lineNumber: 52,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        className: "upload_btn",
+                                        onClick: handleButtonClick,
+                                        children: "SELECT FILES"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/vault/document.js",
+                                        lineNumber: 61,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/vault/document.js",
+                                lineNumber: 46,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "uploaded_state",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "uploaded_frm",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/images/dashboard/cross.svg",
+                                                alt: "file"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/vault/document.js",
+                                                lineNumber: 71,
+                                                columnNumber: 43
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/vault/document.js",
+                                            lineNumber: 71,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/images/dashboard/file.svg",
+                                            alt: "file"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/vault/document.js",
+                                            lineNumber: 72,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "info_file",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "name",
+                                                    children: "Trust_Deed_Final.pdf"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/vault/document.js",
+                                                    lineNumber: 74,
+                                                    columnNumber: 25
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
+                                                    children: "2.1 MB"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/vault/document.js",
+                                                    lineNumber: 75,
+                                                    columnNumber: 25
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/vault/document.js",
+                                            lineNumber: 73,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/vault/document.js",
+                                    lineNumber: 70,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/vault/document.js",
+                                lineNumber: 69,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/vault/document.js",
+                        lineNumber: 44,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
@@ -1763,7 +1904,7 @@ function Document() {
                         children: "ASSIGNMENT"
                     }, void 0, false, {
                         fileName: "[project]/components/vault/document.js",
-                        lineNumber: 47,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1780,7 +1921,7 @@ function Document() {
                                             children: "Spouse (Sarah Jenkins)"
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 55,
+                                            lineNumber: 92,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1790,18 +1931,18 @@ function Document() {
                                             onChange: ()=>handleSelect("spouse")
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 57,
+                                            lineNumber: 94,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/vault/document.js",
-                                    lineNumber: 54,
+                                    lineNumber: 91,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/document.js",
-                                lineNumber: 50,
+                                lineNumber: 87,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1815,7 +1956,7 @@ function Document() {
                                             children: "Son (Michael Vance)"
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 72,
+                                            lineNumber: 109,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1825,18 +1966,18 @@ function Document() {
                                             onChange: ()=>handleSelect("son")
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 74,
+                                            lineNumber: 111,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/vault/document.js",
-                                    lineNumber: 71,
+                                    lineNumber: 108,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/document.js",
-                                lineNumber: 67,
+                                lineNumber: 104,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1850,7 +1991,7 @@ function Document() {
                                             children: "Family Trust"
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 89,
+                                            lineNumber: 126,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1860,171 +2001,30 @@ function Document() {
                                             onChange: ()=>handleSelect("trust")
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 91,
+                                            lineNumber: 128,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/vault/document.js",
-                                    lineNumber: 88,
+                                    lineNumber: 125,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/document.js",
-                                lineNumber: 84,
+                                lineNumber: 121,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vault/document.js",
-                        lineNumber: 48,
+                        lineNumber: 85,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/vault/document.js",
-                lineNumber: 46,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "cmn_frm_blk attachment_blk_assets",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "frm_heading",
-                        children: "FILE ATTACHMENT"
-                    }, void 0, false, {
-                        fileName: "[project]/components/vault/document.js",
-                        lineNumber: 102,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "inner_upload",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "icon_upload",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/images/dashboard/upload.svg",
-                                    alt: "upload file"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/vault/document.js",
-                                    lineNumber: 105,
-                                    columnNumber: 17
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/vault/document.js",
-                                lineNumber: 104,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                children: "Drag and drop assets here"
-                            }, void 0, false, {
-                                fileName: "[project]/components/vault/document.js",
-                                lineNumber: 107,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
-                                children: "Upload proof of ownership or backup instructions (PDF, PNG)"
-                            }, void 0, false, {
-                                fileName: "[project]/components/vault/document.js",
-                                lineNumber: 108,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "file",
-                                ref: fileInputRef,
-                                onChange: handleFileChange,
-                                style: {
-                                    display: "none"
-                                },
-                                multiple: true
-                            }, void 0, false, {
-                                fileName: "[project]/components/vault/document.js",
-                                lineNumber: 109,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                className: "upload_btn",
-                                onClick: handleButtonClick,
-                                children: "SELECT FILES"
-                            }, void 0, false, {
-                                fileName: "[project]/components/vault/document.js",
-                                lineNumber: 118,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/vault/document.js",
-                        lineNumber: 103,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "uploaded_state",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "uploaded_frm",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "button",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                        src: "/images/dashboard/cross.svg",
-                                        alt: "file"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/vault/document.js",
-                                        lineNumber: 128,
-                                        columnNumber: 39
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/vault/document.js",
-                                    lineNumber: 128,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/images/dashboard/file.svg",
-                                    alt: "file"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/vault/document.js",
-                                    lineNumber: 129,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "info_file",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "name",
-                                            children: "Trust_Deed_Final.pdf"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 131,
-                                            columnNumber: 21
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
-                                            children: "2.1 MB"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/vault/document.js",
-                                            lineNumber: 132,
-                                            columnNumber: 21
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/vault/document.js",
-                                    lineNumber: 130,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/vault/document.js",
-                            lineNumber: 127,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/vault/document.js",
-                        lineNumber: 126,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/vault/document.js",
-                lineNumber: 101,
+                lineNumber: 83,
                 columnNumber: 5
             }, this)
         ]

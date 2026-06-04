@@ -5,6 +5,8 @@ import Sidebar from "@/components/Sidebar";
 import LoggedHeader from "@/components/header-logged";
 import Account from "@/components/vault/account";
 import Document from "@/components/vault/document";
+import Password from "@/components/vault/password";
+import Other from "@/components/vault/other";
 
 
 export default function AddAsset() {
@@ -150,6 +152,16 @@ export default function AddAsset() {
                   {
                     tab == 2 && (
                     <Account />
+                    )
+                  }
+                  {
+                    tab == 3 && (
+                    <Password />
+                    )
+                  }
+                  {
+                    tab == 4 && (
+                    <Other />
                     )
                   }
                   
