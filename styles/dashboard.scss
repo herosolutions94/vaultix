@@ -3193,7 +3193,8 @@
 
 .ben_review_assets {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -3424,7 +3425,8 @@
 
 .ben_detail_assets {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  flex-wrap: wrap;
   gap: 1.2rem;
 }
 

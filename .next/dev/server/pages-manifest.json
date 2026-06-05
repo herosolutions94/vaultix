@@ -1,25 +1,8 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
   "/dashboard": "pages/dashboard.js",
-  "/dashboard/activity": "pages/dashboard/activity.js",
   "/dashboard/beneficiaries": "pages/dashboard/beneficiaries.js",
   "/dashboard/beneficiaries/[id]": "pages/dashboard/beneficiaries/[id].js",
-  "/dashboard/beneficiaries/add-beneficiary": "pages/dashboard/beneficiaries/add-beneficiary.js",
-  "/dashboard/inherited-assets": "pages/dashboard/inherited-assets.js",
-  "/dashboard/legacy": "pages/dashboard/legacy.js",
-  "/dashboard/settings": "pages/dashboard/settings.js",
-  "/dashboard/subscription": "pages/dashboard/subscription.js",
-  "/dashboard/transfer-history": "pages/dashboard/transfer-history.js",
-  "/dashboard/triggers": "pages/dashboard/triggers.js",
-  "/dashboard/vault": "pages/dashboard/vault.js",
-  "/dashboard/vault/assets": "pages/dashboard/vault/assets.js",
-  "/dashboard/vault/assets/add-asset": "pages/dashboard/vault/assets/add-asset.js",
-  "/dashboard/vault/categories": "pages/dashboard/vault/categories.js",
-  "/dashboard/vault/categories/[id]": "pages/dashboard/vault/categories/[id].js",
-  "/inherit": "pages/inherit.js",
-  "/inherit/activate": "pages/inherit/activate.js",
-  "/inherit/ownership": "pages/inherit/ownership.js",
-  "/inherit/transfer": "pages/inherit/transfer.js"
+  "/dashboard/beneficiaries/add-beneficiary": "pages/dashboard/beneficiaries/add-beneficiary.js"
 }

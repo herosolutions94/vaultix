@@ -1428,52 +1428,6 @@ function AddBeneficiary() {
                                                                     fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
                                                                     lineNumber: 267,
                                                                     columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                    className: "ben_pct_row",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                            className: "ben_pct_track",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                                className: "ben_pct_fill",
-                                                                                style: {
-                                                                                    width: `${allocations[asset.id] || 0}%`
-                                                                                }
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                                lineNumber: 270,
-                                                                                columnNumber: 29
-                                                                            }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                            lineNumber: 269,
-                                                                            columnNumber: 27
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
-                                                                            type: "number",
-                                                                            className: "ben_pct_input",
-                                                                            min: "0",
-                                                                            max: "100",
-                                                                            value: allocations[asset.id] || 0,
-                                                                            onChange: (e)=>updateAllocation(asset.id, e.target.value)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                            lineNumber: 275,
-                                                                            columnNumber: 27
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                                            className: "ben_pct_symbol",
-                                                                            children: "%"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                            lineNumber: 283,
-                                                                            columnNumber: 27
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                    lineNumber: 268,
-                                                                    columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, asset.id, true, {
@@ -1797,74 +1751,35 @@ function AddBeneficiary() {
                                                 }, this),
                                                 selectedAssets.map((asset)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                                         className: "ben_review_asset_row",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                className: "ben_review_asset_info",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                                        className: "ben_review_asset_name",
-                                                                        children: asset.name
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                        lineNumber: 356,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                                        className: "ben_review_asset_type",
-                                                                        children: [
-                                                                            "TYPE: ",
-                                                                            asset.type
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                        lineNumber: 357,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                lineNumber: 355,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                className: "ben_review_asset_pct_wrap",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                        className: "ben_pct_track",
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                            className: "ben_pct_fill",
-                                                                            style: {
-                                                                                width: `${allocations[asset.id] || 0}%`
-                                                                            }
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                            lineNumber: 361,
-                                                                            columnNumber: 27
-                                                                        }, this)
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                        lineNumber: 360,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                                        className: "ben_review_pct",
-                                                                        children: [
-                                                                            allocations[asset.id] || 0,
-                                                                            "%"
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                        lineNumber: 363,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
-                                                                lineNumber: 359,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, asset.id, true, {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                            className: "ben_review_asset_info",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                                    className: "ben_review_asset_name",
+                                                                    children: asset.name
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
+                                                                    lineNumber: 356,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                                    className: "ben_review_asset_type",
+                                                                    children: [
+                                                                        "TYPE: ",
+                                                                        asset.type
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
+                                                                    lineNumber: 357,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
+                                                            lineNumber: 355,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    }, asset.id, false, {
                                                         fileName: "[project]/pages/dashboard/beneficiaries/add-beneficiary/index.js",
                                                         lineNumber: 354,
                                                         columnNumber: 21

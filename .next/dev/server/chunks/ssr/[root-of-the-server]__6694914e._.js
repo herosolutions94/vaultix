@@ -903,74 +903,35 @@ function BeneficiaryDetail() {
                                         className: "ben_detail_assets",
                                         children: ben.assets.map((asset, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                                 className: "ben_detail_asset_row",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                        className: "ben_detail_asset_info",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                                className: "ben_detail_asset_name",
-                                                                children: asset.name
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
-                                                                lineNumber: 104,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                                className: "ben_detail_asset_type",
-                                                                children: [
-                                                                    "TYPE: ",
-                                                                    asset.type
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
-                                                                lineNumber: 105,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
-                                                        lineNumber: 103,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                        className: "ben_detail_asset_pct",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                className: "ben_pct_track",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                                                    className: "ben_pct_fill",
-                                                                    style: {
-                                                                        width: `${asset.pct}%`
-                                                                    }
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
-                                                                    lineNumber: 109,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
-                                                                lineNumber: 108,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                                className: "ben_detail_pct_num",
-                                                                children: [
-                                                                    asset.pct,
-                                                                    "%"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
-                                                                lineNumber: 111,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
-                                                        lineNumber: 107,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, i, true, {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                    className: "ben_detail_asset_info",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                            className: "ben_detail_asset_name",
+                                                            children: asset.name
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
+                                                            lineNumber: 104,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                            className: "ben_detail_asset_type",
+                                                            children: [
+                                                                "TYPE: ",
+                                                                asset.type
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
+                                                            lineNumber: 105,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
+                                                    lineNumber: 103,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, i, false, {
                                                 fileName: "[project]/pages/dashboard/beneficiaries/[id]/index.js",
                                                 lineNumber: 102,
                                                 columnNumber: 19

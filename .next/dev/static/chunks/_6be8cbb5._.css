@@ -23460,7 +23460,7 @@ table .table_name_flex span {
 }
 
 .ben_review_assets {
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
   display: flex;
 }
@@ -23708,7 +23708,7 @@ table .table_name_flex span {
 }
 
 .ben_detail_assets {
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1.2rem;
   display: flex;
 }
@@ -24560,7 +24560,7 @@ table .table_name_flex span {
   font-family: Medium;
   font-size: 1.1rem;
   position: absolute;
-  top: -1.7px;
+  top: -1.7rem;
   left: 50%;
   transform: translateX(-50%);
 }
