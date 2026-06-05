@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
 import "../styles/custom.scss";
+import "../styles/inherit.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "lightgallery/css/lightgallery.css";

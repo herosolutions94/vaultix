@@ -131,6 +131,7 @@ export default function CategoryDetail() {
   const cat = categoriesData[id] || categoriesData[1];
   const [currentPage, setCurrentPage] = useState(1);
   const [openMenuId, setOpenMenuId] = useState(null);
+  const [menuPos, setMenuPos] = useState({ top: 0, right: 0 });
   const menuRef = useRef(null);
 
   const totalPages = Math.ceil(cat.totalAssets / PER_PAGE);
@@ -236,8 +237,12 @@ export default function CategoryDetail() {
                       {asset.beneficiaries.length > 0 ? (
                         <div className="avatarGroup">
                           {asset.beneficiaries.map((b, i) => (
-                            <div key={i} className={`avatarChip avatarInitials ${b.gold ? "" : "avatarGrey"}`}>
-                              <img src={b.image} alt={b.initials} />
+                            <div key={i} className="avatarChip">
+                              {b.image ? (
+                                <img src={b.image} alt={b.initials} />
+                              ) : (
+                                b.initials
+                              )}
                             </div>
                           ))}
                         </div>
@@ -254,12 +259,23 @@ export default function CategoryDetail() {
                       >
                         <button
                           className="menuBtn"
-                          onClick={() => setOpenMenuId(openMenuId === asset.id ? null : asset.id)}
+                          onClick={(e) => {
+                            if (openMenuId === asset.id) {
+                              setOpenMenuId(null);
+                            } else {
+                              const rect = e.currentTarget.getBoundingClientRect();
+                              setMenuPos({
+                                top: rect.bottom + 4,
+                                right: window.innerWidth - rect.right,
+                              });
+                              setOpenMenuId(asset.id);
+                            }
+                          }}
                         >
-                          ⋮
+                          <img src="/images/dashboard/action_icon.svg" alt="actions" />
                         </button>
                         {openMenuId === asset.id && (
-                          <div className="contextMenu">
+                          <div className="contextMenu" style={{ position: 'fixed', top: `${menuPos.top}px`, right: `${menuPos.right}px` }}>
                             <button className="contextItem" onClick={() => setOpenMenuId(null)}>View</button>
                             <button className="contextItem" onClick={() => setOpenMenuId(null)}>Edit</button>
                             <button className="contextItemDanger" onClick={() => setOpenMenuId(null)}>Delete</button>

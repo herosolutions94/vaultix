@@ -1,0 +1,5 @@
+{
+  "/dashboard/beneficiaries/[id]": [
+    "static/chunks/pages/dashboard/beneficiaries/[id].js"
+  ]
+}

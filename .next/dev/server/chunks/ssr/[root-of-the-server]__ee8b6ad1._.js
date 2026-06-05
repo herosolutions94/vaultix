@@ -680,35 +680,66 @@ const categories = [
     'DIGITAL',
     'PHYSICAL'
 ];
+const SORT_OPTIONS = [
+    {
+        key: 'name-asc',
+        label: 'Name A → Z'
+    },
+    {
+        key: 'name-desc',
+        label: 'Name Z → A'
+    },
+    {
+        key: 'category',
+        label: 'Category'
+    },
+    {
+        key: 'type',
+        label: 'Type'
+    }
+];
 function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
     const categoryRef = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])(null);
+    const sortRef = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])(null);
     const menuRef = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])(null);
     const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])('');
     const [selectedCategory, setSelectedCategory] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])('All');
     const [dropdownOpen, setDropdownOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
+    const [sortOpen, setSortOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
+    const [sortKey, setSortKey] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
     const [openMenuId, setOpenMenuId] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
+    const [menuPos, setMenuPos] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])({
+        top: 0,
+        right: 0
+    });
     const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(1);
     const filtered = allAssets.filter((asset)=>{
         const matchSearch = asset.name.toLowerCase().includes(searchTerm.toLowerCase());
         const matchCategory = selectedCategory === 'All' || asset.category === selectedCategory;
         return matchSearch && matchCategory;
+    }).sort((a, b)=>{
+        if (!sortKey) return 0;
+        if (sortKey === 'name-asc') return a.name.localeCompare(b.name);
+        if (sortKey === 'name-desc') return b.name.localeCompare(a.name);
+        if (sortKey === 'category') return a.category.localeCompare(b.category);
+        if (sortKey === 'type') return a.typeMain.localeCompare(b.typeMain);
+        return 0;
     });
     const totalAssets = 14;
     (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
         const handleClickOutside = (event)=>{
-            // Category dropdown
             if (categoryRef.current && !categoryRef.current.contains(event.target)) {
                 setDropdownOpen(false);
             }
-            // Action menu
+            if (sortRef.current && !sortRef.current.contains(event.target)) {
+                setSortOpen(false);
+            }
             if (menuRef.current && !menuRef.current.contains(event.target)) {
                 setOpenMenuId(null);
             }
         };
         document.addEventListener('mousedown', handleClickOutside);
-        return ()=>{
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
+        return ()=>document.removeEventListener('mousedown', handleClickOutside);
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
         className: "tableWrapper",
@@ -724,7 +755,7 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                 alt: "search"
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 104,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
@@ -735,13 +766,13 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                 onChange: (e)=>setSearchTerm(e.target.value)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 106,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vault/AssetTable.js",
-                        lineNumber: 103,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -767,18 +798,18 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                     points: "6 9 12 15 18 9"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/vault/AssetTable.js",
-                                                    lineNumber: 133,
+                                                    lineNumber: 141,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 125,
+                                                lineNumber: 133,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 117,
+                                        lineNumber: 125,
                                         columnNumber: 13
                                     }, this),
                                     dropdownOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -792,84 +823,128 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                 children: cat
                                             }, cat, false, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 140,
+                                                lineNumber: 148,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 138,
+                                        lineNumber: 146,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 116,
+                                lineNumber: 124,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
-                                className: "sortBtn",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                className: "categoryDropdownWrapper",
+                                ref: sortRef,
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
-                                        width: "14",
-                                        height: "14",
-                                        viewBox: "0 0 24 24",
-                                        fill: "none",
-                                        stroke: "currentColor",
-                                        strokeWidth: "2",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                                        className: `sortBtn${sortKey ? ' sortBtnActive' : ''}`,
+                                        onClick: ()=>setSortOpen((p)=>!p),
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("line", {
-                                                x1: "3",
-                                                y1: "6",
-                                                x2: "21",
-                                                y2: "6"
-                                            }, void 0, false, {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
+                                                width: "14",
+                                                height: "14",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                strokeWidth: "2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("line", {
+                                                        x1: "3",
+                                                        y1: "6",
+                                                        x2: "21",
+                                                        y2: "6"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/vault/AssetTable.js",
+                                                        lineNumber: 180,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("line", {
+                                                        x1: "3",
+                                                        y1: "12",
+                                                        x2: "15",
+                                                        y2: "12"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/vault/AssetTable.js",
+                                                        lineNumber: 181,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("line", {
+                                                        x1: "3",
+                                                        y1: "18",
+                                                        x2: "9",
+                                                        y2: "18"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/vault/AssetTable.js",
+                                                        lineNumber: 182,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 168,
+                                                lineNumber: 172,
                                                 columnNumber: 15
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("line", {
-                                                x1: "3",
-                                                y1: "12",
-                                                x2: "15",
-                                                y2: "12"
+                                            sortKey ? SORT_OPTIONS.find((o)=>o.key === sortKey)?.label : 'Sort'
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/vault/AssetTable.js",
+                                        lineNumber: 168,
+                                        columnNumber: 13
+                                    }, this),
+                                    sortOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                        className: "dropdownMenu",
+                                        children: [
+                                            SORT_OPTIONS.map((opt)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                                                    className: sortKey === opt.key ? 'dropdownItemActive' : 'dropdownItem',
+                                                    onClick: ()=>{
+                                                        setSortKey(sortKey === opt.key ? null : opt.key);
+                                                        setSortOpen(false);
+                                                    },
+                                                    children: opt.label
+                                                }, opt.key, false, {
+                                                    fileName: "[project]/components/vault/AssetTable.js",
+                                                    lineNumber: 190,
+                                                    columnNumber: 19
+                                                }, this)),
+                                            sortKey && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                                                className: "dropdownItem sortClearBtn",
+                                                onClick: ()=>{
+                                                    setSortKey(null);
+                                                    setSortOpen(false);
+                                                },
+                                                children: "Clear sort"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 169,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("line", {
-                                                x1: "3",
-                                                y1: "18",
-                                                x2: "9",
-                                                y2: "18"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 170,
-                                                columnNumber: 15
+                                                lineNumber: 202,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 160,
-                                        columnNumber: 13
-                                    }, this),
-                                    "Sort"
+                                        lineNumber: 188,
+                                        columnNumber: 15
+                                    }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 159,
+                                lineNumber: 167,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vault/AssetTable.js",
-                        lineNumber: 115,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/vault/AssetTable.js",
-                lineNumber: 102,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -886,7 +961,7 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                         children: "Asset Name"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 183,
+                                        lineNumber: 221,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
@@ -894,7 +969,7 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                         children: "Category"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 184,
+                                        lineNumber: 222,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
@@ -902,7 +977,7 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                         children: "Type"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 185,
+                                        lineNumber: 223,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
@@ -910,7 +985,7 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                         children: "Beneficiary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 186,
+                                        lineNumber: 224,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
@@ -918,18 +993,18 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 187,
+                                        lineNumber: 225,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 182,
+                                lineNumber: 220,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/vault/AssetTable.js",
-                            lineNumber: 181,
+                            lineNumber: 219,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("tbody", {
@@ -948,12 +1023,12 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                             alt: asset.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/vault/AssetTable.js",
-                                                            lineNumber: 197,
+                                                            lineNumber: 235,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/vault/AssetTable.js",
-                                                        lineNumber: 196,
+                                                        lineNumber: 234,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -961,18 +1036,18 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                         children: asset.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/vault/AssetTable.js",
-                                                        lineNumber: 199,
+                                                        lineNumber: 237,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 195,
+                                                lineNumber: 233,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/AssetTable.js",
-                                            lineNumber: 194,
+                                            lineNumber: 232,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -981,12 +1056,12 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                 children: asset.category
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 206,
+                                                lineNumber: 244,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/AssetTable.js",
-                                            lineNumber: 205,
+                                            lineNumber: 243,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -996,12 +1071,12 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                 children: asset.typeMain
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 212,
+                                                lineNumber: 250,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/AssetTable.js",
-                                            lineNumber: 211,
+                                            lineNumber: 249,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -1010,27 +1085,27 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                 className: "avatarGroup",
                                                 children: asset.beneficiaries.map((b, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                                         className: "avatarChip",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                                                        children: b.image ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
                                                             src: b.image,
                                                             alt: b.initials
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/vault/AssetTable.js",
-                                                            lineNumber: 225,
-                                                            columnNumber: 25
-                                                        }, this)
+                                                            lineNumber: 260,
+                                                            columnNumber: 27
+                                                        }, this) : b.initials
                                                     }, i, false, {
                                                         fileName: "[project]/components/vault/AssetTable.js",
-                                                        lineNumber: 220,
+                                                        lineNumber: 258,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 218,
+                                                lineNumber: 256,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/AssetTable.js",
-                                            lineNumber: 217,
+                                            lineNumber: 255,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -1041,15 +1116,38 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                                         className: "menuBtn",
-                                                        onClick: ()=>setOpenMenuId(openMenuId === asset.id ? null : asset.id),
-                                                        children: "⋮"
+                                                        onClick: (e)=>{
+                                                            if (openMenuId === asset.id) {
+                                                                setOpenMenuId(null);
+                                                            } else {
+                                                                const rect = e.currentTarget.getBoundingClientRect();
+                                                                setMenuPos({
+                                                                    top: rect.bottom + 4,
+                                                                    right: window.innerWidth - rect.right
+                                                                });
+                                                                setOpenMenuId(asset.id);
+                                                            }
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                                                            src: "/images/dashboard/action_icon.svg",
+                                                            alt: "actions"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/vault/AssetTable.js",
+                                                            lineNumber: 286,
+                                                            columnNumber: 23
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/vault/AssetTable.js",
-                                                        lineNumber: 233,
+                                                        lineNumber: 271,
                                                         columnNumber: 21
                                                     }, this),
                                                     openMenuId === asset.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                                         className: "contextMenu",
+                                                        style: {
+                                                            position: 'fixed',
+                                                            top: `${menuPos.top}px`,
+                                                            right: `${menuPos.right}px`
+                                                        },
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                                                 className: "contextItem",
@@ -1057,66 +1155,69 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                                                 onClick: ()=>{
                                                                     setSelectedAsset(asset.id);
                                                                     toggleAccessPopup();
+                                                                    setOpenMenuId(null);
                                                                 },
                                                                 children: "View"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                                lineNumber: 248,
+                                                                lineNumber: 291,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                                                 className: "contextItem",
+                                                                onClick: ()=>setOpenMenuId(null),
                                                                 children: "Edit"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                                lineNumber: 254,
+                                                                lineNumber: 298,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
                                                                 className: "contextItemDanger",
+                                                                onClick: ()=>setOpenMenuId(null),
                                                                 children: "Delete"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                                lineNumber: 257,
+                                                                lineNumber: 301,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/vault/AssetTable.js",
-                                                        lineNumber: 247,
+                                                        lineNumber: 290,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
-                                                lineNumber: 232,
+                                                lineNumber: 270,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/vault/AssetTable.js",
-                                            lineNumber: 231,
+                                            lineNumber: 269,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, asset.id, true, {
                                     fileName: "[project]/components/vault/AssetTable.js",
-                                    lineNumber: 193,
+                                    lineNumber: 231,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/vault/AssetTable.js",
-                            lineNumber: 191,
+                            lineNumber: 229,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/vault/AssetTable.js",
-                    lineNumber: 180,
+                    lineNumber: 218,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/vault/AssetTable.js",
-                lineNumber: 179,
+                lineNumber: 217,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1133,7 +1234,7 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vault/AssetTable.js",
-                        lineNumber: 272,
+                        lineNumber: 316,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1154,17 +1255,17 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                         points: "15 18 9 12 15 6"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 292,
+                                        lineNumber: 336,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/vault/AssetTable.js",
-                                    lineNumber: 284,
+                                    lineNumber: 328,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 277,
+                                lineNumber: 321,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -1175,7 +1276,7 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 296,
+                                lineNumber: 340,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -1192,35 +1293,35 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                         points: "9 18 15 12 9 6"
                                     }, void 0, false, {
                                         fileName: "[project]/components/vault/AssetTable.js",
-                                        lineNumber: 312,
+                                        lineNumber: 356,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/vault/AssetTable.js",
-                                    lineNumber: 304,
+                                    lineNumber: 348,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/vault/AssetTable.js",
-                                lineNumber: 300,
+                                lineNumber: 344,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vault/AssetTable.js",
-                        lineNumber: 276,
+                        lineNumber: 320,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/vault/AssetTable.js",
-                lineNumber: 271,
+                lineNumber: 315,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/vault/AssetTable.js",
-        lineNumber: 100,
+        lineNumber: 108,
         columnNumber: 5
     }, this);
 }

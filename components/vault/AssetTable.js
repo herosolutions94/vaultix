@@ -49,50 +49,58 @@ const allAssets = [
 
 const categories = ['All', 'FINANCE', 'LEGAL', 'DIGITAL', 'PHYSICAL'];
 
+const SORT_OPTIONS = [
+  { key: 'name-asc',  label: 'Name A → Z' },
+  { key: 'name-desc', label: 'Name Z → A' },
+  { key: 'category',  label: 'Category' },
+  { key: 'type',      label: 'Type' },
+];
+
 export default function AssetTable({toggleAccessPopup , setSelectedAsset,}) {
   const categoryRef = useRef(null);
-  const menuRef = useRef(null);
+  const sortRef     = useRef(null);
+  const menuRef     = useRef(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [sortOpen, setSortOpen] = useState(false);
+  const [sortKey, setSortKey] = useState(null);
   const [openMenuId, setOpenMenuId] = useState(null);
+  const [menuPos, setMenuPos] = useState({ top: 0, right: 0 });
   const [currentPage, setCurrentPage] = useState(1);
 
-  
-
-  const filtered = allAssets.filter((asset) => {
-    const matchSearch = asset.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchCategory =
-      selectedCategory === 'All' || asset.category === selectedCategory;
-    return matchSearch && matchCategory;
-  });
+  const filtered = allAssets
+    .filter((asset) => {
+      const matchSearch = asset.name.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchCategory = selectedCategory === 'All' || asset.category === selectedCategory;
+      return matchSearch && matchCategory;
+    })
+    .sort((a, b) => {
+      if (!sortKey) return 0;
+      if (sortKey === 'name-asc')  return a.name.localeCompare(b.name);
+      if (sortKey === 'name-desc') return b.name.localeCompare(a.name);
+      if (sortKey === 'category')  return a.category.localeCompare(b.category);
+      if (sortKey === 'type')      return a.typeMain.localeCompare(b.typeMain);
+      return 0;
+    });
 
   const totalAssets = 14;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Category dropdown
-      if (
-        categoryRef.current &&
-        !categoryRef.current.contains(event.target)
-      ) {
+      if (categoryRef.current && !categoryRef.current.contains(event.target)) {
         setDropdownOpen(false);
       }
-
-      // Action menu
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target)
-      ) {
+      if (sortRef.current && !sortRef.current.contains(event.target)) {
+        setSortOpen(false);
+      }
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
         setOpenMenuId(null);
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
 
@@ -156,21 +164,51 @@ export default function AssetTable({toggleAccessPopup , setSelectedAsset,}) {
             )}
           </div>
 
-          <button className="sortBtn">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
+          <div className="categoryDropdownWrapper" ref={sortRef}>
+            <button
+              className={`sortBtn${sortKey ? ' sortBtnActive' : ''}`}
+              onClick={() => setSortOpen((p) => !p)}
             >
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="15" y2="12" />
-              <line x1="3" y1="18" x2="9" y2="18" />
-            </svg>
-            Sort
-          </button>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="15" y2="12" />
+                <line x1="3" y1="18" x2="9" y2="18" />
+              </svg>
+              {sortKey ? SORT_OPTIONS.find((o) => o.key === sortKey)?.label : 'Sort'}
+            </button>
+
+            {sortOpen && (
+              <div className="dropdownMenu">
+                {SORT_OPTIONS.map((opt) => (
+                  <button
+                    key={opt.key}
+                    className={sortKey === opt.key ? 'dropdownItemActive' : 'dropdownItem'}
+                    onClick={() => {
+                      setSortKey(sortKey === opt.key ? null : opt.key);
+                      setSortOpen(false);
+                    }}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+                {sortKey && (
+                  <button
+                    className="dropdownItem sortClearBtn"
+                    onClick={() => { setSortKey(null); setSortOpen(false); }}
+                  >
+                    Clear sort
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
@@ -217,12 +255,12 @@ export default function AssetTable({toggleAccessPopup , setSelectedAsset,}) {
                 <td className="tdBeneficiary">
                   <div className="avatarGroup">
                     {asset.beneficiaries.map((b, i) => (
-                      <div
-                        key={i}
-                        className="avatarChip"
-                      >
-                        {/* {b.initials} */}
-                        <img src={b.image} alt={b.initials} />
+                      <div key={i} className="avatarChip">
+                        {b.image ? (
+                          <img src={b.image} alt={b.initials} />
+                        ) : (
+                          b.initials
+                        )}
                       </div>
                     ))}
                   </div>
@@ -232,29 +270,35 @@ export default function AssetTable({toggleAccessPopup , setSelectedAsset,}) {
                   <div className="menuWrapper" ref={openMenuId === asset.id ? menuRef : null}>
                     <button
                       className="menuBtn"
-                      onClick={() =>
-                        setOpenMenuId(
-                          openMenuId === asset.id
-                            ? null
-                            : asset.id
-                        )
-                      }
+                      onClick={(e) => {
+                        if (openMenuId === asset.id) {
+                          setOpenMenuId(null);
+                        } else {
+                          const rect = e.currentTarget.getBoundingClientRect();
+                          setMenuPos({
+                            top: rect.bottom + 4,
+                            right: window.innerWidth - rect.right,
+                          });
+                          setOpenMenuId(asset.id);
+                        }
+                      }}
                     >
-                      ⋮
+                      <img src="/images/dashboard/action_icon.svg" alt="actions" />
                     </button>
 
                     {openMenuId === asset.id && (
-                      <div className="contextMenu">
+                      <div className="contextMenu" style={{ position: 'fixed', top: `${menuPos.top}px`, right: `${menuPos.right}px` }}>
                         <button className="contextItem" type='button' onClick={() => {
                           setSelectedAsset(asset.id);
                           toggleAccessPopup();
+                          setOpenMenuId(null);
                         }}>
                           View
                         </button>
-                        <button className="contextItem">
+                        <button className="contextItem" onClick={() => setOpenMenuId(null)}>
                           Edit
                         </button>
-                        <button className="contextItemDanger">
+                        <button className="contextItemDanger" onClick={() => setOpenMenuId(null)}>
                           Delete
                         </button>
                       </div>

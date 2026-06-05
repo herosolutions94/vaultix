@@ -1,0 +1,1097 @@
+@import "colors";
+@import "mixins";
+
+// ─── Layout Shell ──────────────────────────────────────────
+.inherit-flow {
+  min-height: 100vh;
+  background: $main-dark;
+  color: $grey;
+  font-family: "Regular";
+  display: flex;
+  flex-direction: column;
+}
+
+.inherit-topbar {
+  border-bottom: 1px solid rgba($white, 0.07);
+  padding: 1.4rem 0;
+  text-align: center;
+
+  .inherit-logo {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+// ─── Stepper ──────────────────────────────────────────────
+.inherit-stepper-wrap {
+  padding: 3rem 2rem 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.inherit-stepper {
+  display: flex;
+  align-items: flex-start;
+
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .step-bubble {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.8rem;
+      border: 1.5px solid rgba($grey, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: rgba($grey, 0.3);
+      font-family: "Medium";
+      margin-bottom: 0.7rem;
+    }
+
+    .step-label {
+      color: rgba($grey, 0.7);
+      letter-spacing: 0.02em;
+    }
+
+    &.active{
+      .step-bubble {
+        border-color: $gold;
+        color: $gold;
+      }
+
+      .step-label {
+        color: $grey;
+      }
+    }
+
+    &.done {
+      .step-bubble {
+        border-color: rgba($gold, 0.8);
+        color: $gold;
+        background-color: rgba($gold, 0.12);
+      }
+      .step-label{
+        color: $grey;
+      }
+    }
+  }
+
+  .step-line {
+    width: 10rem;
+    height: 1px;
+    background: rgba($white, 0.12);
+    margin-top: 2rem;
+    flex-shrink: 0;
+  }
+}
+
+// ─── Body ─────────────────────────────────────────────────
+.inherit-body {
+  flex: 1;
+  padding: 4rem 2rem 6rem;
+}
+
+.inherit-page {
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+// ─── Shared: Encrypted Badge ───────────────────────────────
+.enc-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+
+  .enc-dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: $teal;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  span {
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    color: $teal;
+    font-family: "Medium";
+  }
+}
+
+// ─── Shared: Page Heading ──────────────────────────────────
+.inherit-heading {
+  text-align: center;
+  margin-bottom: 0.8rem;
+
+  h1 {
+    font-size: 3.2rem;
+    color: $grey;
+    font-family: "Bold";
+    margin: 0;
+    line-height: 1.2;
+  }
+}
+
+.inherit-subtitle {
+  text-align: center;
+  max-width:65rem;
+  margin: 0 auto 3.5rem;
+  line-height: 1.7;
+}
+
+// ─── Step 1: Claim ────────────────────────────────────────
+.claim-grid {
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  gap: 2.4rem;
+  align-items: start;
+}
+
+.owner-card {
+  background: $primary-color;
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+
+  .owner-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+
+    .owner-label {
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      color: $gold;
+      font-family: "Medium";
+    }
+
+    .owner-shield {
+      width: 4.2rem;
+      height: 4.2rem;
+      background: rgba($gold, 0.12);
+      border-radius: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+        filter: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(556%) hue-rotate(3deg) brightness(100%) contrast(87%);
+      }
+    }
+  }
+
+  .owner-name {
+    font-size: 2rem;
+    color: $grey;
+    font-family: "Medium";
+    margin-bottom: 2rem;
+    line-height: 1.3;
+  }
+
+  .owner-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    margin-bottom: 1.8rem;
+
+    .meta-item {
+      .meta-label {
+        font-size: 1.3rem;
+        color: rgba($grey, 0.8);
+        margin-bottom: 0.4rem;
+      }
+
+      .meta-value {
+        font-size: 1.4rem;
+        color: $grey;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &.verified {
+          color: $teal;
+
+          &::before {
+            content: "";
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 50%;
+            background: $teal;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .meta-item-full {
+      grid-column: 1 / -1;
+
+      .meta-label {
+        font-size: 1.3rem;
+        color: rgba($grey, 0.8);
+        margin-bottom: 0.4rem;
+      }
+
+      .meta-value {
+        font-size: 1.4rem;
+        color: $grey;
+      }
+    }
+  }
+
+  .enc-notice {
+    background: rgba($teal, 0.06);
+    border: 1px solid rgba($teal, 0.2);
+    border-radius: 0.8rem;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 2rem;
+
+    .enc-notice-head {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+
+      .enc-dot {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background: $teal;
+        flex-shrink: 0;
+      }
+
+      span {
+        font-size: 1.3rem;
+        color: $teal;
+        font-family: "Medium";
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: rgba($white, 0.5);
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+
+  .owner-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .btn-accept {
+      width: 100%;
+      background: $gold;
+      color: $main-dark;
+      border: none;
+      border-radius: 0.8rem;
+      padding: 1.4rem 2rem;
+      font-size: 1.5rem;
+      font-family: "Bold";
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .btn-decline {
+      width: 100%;
+      background: transparent;
+      color: rgba($white, 0.5);
+      border: 1px solid rgba($white, 0.15);
+      border-radius: 0.8rem;
+      padding: 1.3rem 2rem;
+      font-size: 1.4rem;
+      font-family: "Regular";
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      transition: all 0.2s;
+
+      &:hover {
+        border-color: rgba($white, 0.3);
+        color: $grey;
+      }
+    }
+  }
+}
+
+.asset-panel {
+  background: $primary-color;
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1.2rem;
+  overflow: hidden;
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 2.4rem;
+    border-bottom: 1px solid rgba($white, 0.07);
+
+    .panel-title {
+      color: $grey;
+    }
+
+    .panel-status-tag {
+      font-size: 1.5rem;
+      color: rgba($white, 0.4);
+    }
+  }
+
+  .asset-list {
+    .asset-row {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      padding: 1.6rem 2.4rem;
+      border-bottom: 1px solid rgba($white, 0.05);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &.restricted {
+        opacity: 0.45;
+      }
+
+      .asset-icon-wrap {
+        width: 4rem;
+        height: 4rem;
+        background: rgba($white, 0.05);
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        img {
+          width: 2rem;
+          height: 2rem;
+          object-fit: contain;
+          filter: brightness(0) invert(1) opacity(0.6);
+        }
+      }
+
+      .asset-info {
+        flex: 1;
+
+        .asset-name {
+          font-size: 1.8rem;
+          color: $grey;
+          margin-bottom: 0.4rem;
+        }
+
+        .asset-meta {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+
+          .asset-type {
+            color: rgba($white, 0.4);
+          }
+
+          .asset-level {
+            color: $teal;
+
+            &.restricted {
+              color: rgba($white, 0.4);
+            }
+          }
+        }
+      }
+
+      .asset-status-col {
+        text-align: right;
+        flex-shrink: 0;
+
+        .status-lbl {
+          font-size: 1.1rem;
+          color: rgba($white, 0.35);
+          display: block;
+          margin-bottom: 0.3rem;
+        }
+
+        .status-val {
+          font-size: 1.3rem;
+          color: $gold;
+          font-family: "Medium";
+
+          &.claim-required {
+            color: rgba($white, 0.5);
+          }
+        }
+      }
+    }
+
+    .hidden-assets-btn {
+      width: 100%;
+      background: rgba($white, 0.03);
+      border: none;
+      border-top: 1px solid rgba($white, 0.06);
+      color: rgba($white, 0.45);
+      font-size: 1.2rem;
+      letter-spacing: 0.07em;
+      padding: 1.4rem 2.4rem;
+      text-align: center;
+      cursor: pointer;
+      font-family: "Regular";
+      transition: background 0.2s;
+
+      &:hover {
+        background: rgba($white, 0.06);
+      }
+    }
+  }
+}
+
+.security-notice-block {
+  display: grid;
+  grid-template-columns: 34rem 1fr;
+  gap: 4rem;
+  align-items: center;
+  background: $primary-color;
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1.2rem;
+  padding: 3rem;
+  margin-top: 2.4rem;
+
+  .security-img {
+    width: 100%;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 24rem;
+      object-fit: cover;
+    }
+  }
+
+  .security-text {
+    h3 {
+      font-size: 2.4rem;
+      color: $gold;
+      font-family: "Bold";
+      margin-bottom: 1.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: rgba($white, 0.55);
+      line-height: 1.7;
+      margin: 0;
+    }
+  }
+}
+
+// ─── Step 2: Activate ─────────────────────────────────────
+.activate-form-wrap {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.form-section-block {
+  background: $primary-color;
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+
+  .section-block-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .section-block-label {
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      color: $gold;
+      font-family: "Medium";
+    }
+
+    .enc-badge-sm {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.1rem;
+      color: $teal;
+
+      .enc-dot {
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background: $teal;
+      }
+    }
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+
+      label {
+        font-size: 1.2rem;
+        color: $grey;
+      }
+
+      input {
+        background: rgba($white, 0.04);
+        border: 1px solid rgba($white, 0.1);
+        border-radius: 0.8rem;
+        padding: 1.2rem 1.4rem;
+        font-size: 1.4rem;
+        color: $grey;
+        font-family: "Regular";
+        outline: none;
+        transition: border-color 0.2s;
+
+        &::placeholder {
+          color: rgba($white, 0.2);
+        }
+
+        &:focus {
+          border-color: rgba($gold, 0.4);
+        }
+      }
+    }
+  }
+}
+
+.toggle-card-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  background: rgba($white, 0.03);
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1rem;
+  padding: 1.6rem;
+
+  .toggle-icon {
+    width: 4rem;
+    height: 4rem;
+    background: rgba($white, 0.06);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      object-fit: contain;
+      filter: brightness(0) invert(1) opacity(0.7);
+    }
+  }
+
+  .toggle-info {
+    flex: 1;
+
+    h4 {
+      font-size: 1.5rem;
+      color: $grey;
+      margin: 0 0 0.4rem;
+      font-family: "Medium";
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: rgba($white, 0.8);
+      margin: 0;
+    }
+  }
+
+  .toggle-switch {
+    position: relative;
+    width: 4.6rem;
+    height: 2.6rem;
+    flex-shrink: 0;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: rgba($white, 0.1);
+      border-radius: 10rem;
+      cursor: pointer;
+      transition: background 0.25s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0.3rem;
+        top: 0.3rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: $white;
+        transition: transform 0.25s;
+      }
+    }
+
+    input:checked + .slider {
+      background: $teal;
+    }
+
+    input:checked + .slider::after {
+      transform: translateX(2rem);
+    }
+  }
+}
+
+.btn-inherit-full {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: block;
+  background: $gold;
+  color: $main-dark;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.6rem 2rem;
+  font-size: 1.4rem;
+  font-family: "Bold";
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.terms-text {
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgba($white, 0.7);
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ─── Step 3: Transfer ────────────────────────────────────
+.transfer-layout {
+  display: grid;
+  grid-template-columns: 1fr 36rem;
+  gap: 2.4rem;
+  align-items: start;
+}
+
+.options-col {
+  display: flex;
+  // flex-direction: column;
+  gap: 1.6rem;
+}
+
+.option-card {
+  background: $primary-color;
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+
+  .option-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+  }
+
+  .option-icon {
+    width: 2rem;
+    height: 2rem;
+    // background: rgba($white, 0.06);
+    border-radius: 0.8rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      object-fit: contain;
+      // filter: brightness(0) invert(1) opacity(0.5);
+    }
+  }
+
+  .option-check {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: $gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: $grey;
+    font-family: "Medium";
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+  }
+
+  p {
+    color: rgba($grey, 0.8);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &.selected {
+    border-color: $gold;
+
+    .option-icon {
+      // background: rgba($gold, 0.12);
+
+      img {
+        filter: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(556%) hue-rotate(3deg) brightness(100%) contrast(87%);
+      }
+    }
+  }
+
+  &:hover:not(.selected) {
+    border-color: rgba($white, 0.2);
+  }
+}
+
+.transfer-summary-card {
+  background: $primary-color;
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+
+  .summary-title {
+    font-size: 1.5rem;
+    color: $grey;
+    font-family: "Medium";
+    margin-bottom: 2rem;
+  }
+
+  .owner-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 2rem;
+
+    .owner-flow-label {
+      font-size: 1.2rem;
+      color: $grey;
+      margin-bottom: 0.8rem;
+    }
+
+    .owner-chip {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .owner-avatar {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        background: rgba($white, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        img {
+          width: 1.4rem;
+          height: 1.4rem;
+          object-fit: contain;
+        }
+
+        &.teal-avatar {
+          background: rgba($gold, 0.9);
+        }
+      }
+
+      .owner-chip-name {
+        font-size: 1.4rem;
+        color: $grey;
+      }
+    }
+
+    .flow-arrow {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      color: rgba($white, 0.9);
+      font-size: 1.8rem;
+    }
+  }
+
+  .summary-divider {
+    height: 1px;
+    background: rgba($white, 0.07);
+    margin: 1.6rem 0;
+  }
+
+  .summary-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .row-label {
+        // font-size: 1.3rem;
+        color: rgba($white, 0.6);
+      }
+
+      .row-value {
+        // font-size: 1.3rem;
+        color: $grey;
+        text-align: right;
+      }
+    }
+  }
+
+  .summary-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.6rem;
+
+    .btn-confirm {
+      width: 100%;
+      background: $gold;
+      color: $main-dark;
+      border: none;
+      border-radius: 0.8rem;
+      padding: 1.4rem 2rem;
+      font-size: 1.4rem;
+      font-family: "Medium";
+      cursor: pointer;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .btn-save-later {
+      width: 100%;
+      background: transparent;
+      color: $grey;
+      border: 1px solid rgba($white, 0.15);
+      border-radius: 0.8rem;
+      padding: 1.3rem 2rem;
+      font-size: 1.4rem;
+      font-family: "Regular";
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        border-color: rgba($white, 0.3);
+      }
+    }
+  }
+
+  .summary-disclaimer {
+    font-size: 1.2rem;
+    color: rgba($grey, 0.8);
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+
+    img {
+      width: 1.4rem;
+      height: 1.4rem;
+      object-fit: contain;
+      margin-top: 0.1rem;
+      flex-shrink: 0;
+    }
+  }
+}
+
+// ─── Step 4: Ownership ────────────────────────────────────
+.ownership-page {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+
+.assets-secured-card {
+  background: $primary-color;
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  .secured-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 2rem 2.4rem;
+    border-bottom: 1px solid rgba($white, 0.07);
+
+    .secured-header-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $grey;
+      font-family: "Medium";
+      margin: 0;
+    }
+  }
+
+  .secured-list {
+    padding: 1.8rem 2.4rem;
+    .secured-row {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      padding: 1.2rem 2rem;
+      background-color: #41424266;
+      margin-bottom: 1rem;
+      @include radius(5px);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .secured-row-icon {
+        width: 3.6rem;
+        height: 3.6rem;
+        background: rgba($white, 0.05);
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        img {
+          width: 1.8rem;
+          height: 1.8rem;
+          object-fit: contain;
+          filter: brightness(0) invert(1) opacity(0.6);
+        }
+      }
+
+      .secured-row-info {
+        flex: 1;
+
+        .secured-row-name {
+          font-size: 1.4rem;
+          color: $grey;
+          font-family: "Medium";
+          margin-bottom: 0rem;
+        }
+
+        .secured-row-sub {
+          font-size: 1.2rem;
+          color: rgba($white, 0.6);
+        }
+      }
+
+      .secured-check {
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+        border: 1.5px solid rgba($teal, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        svg {
+          width: 1.2rem;
+          height: 1.2rem;
+          color: $teal;
+        }
+      }
+    }
+  }
+
+  .secured-footer-note {
+    padding: 1.6rem 2.4rem;
+    border-top: 1px solid rgba($white, 0.07);
+    font-size: 1.2rem;
+    color: rgba($white, 0.3);
+    text-align: center;
+    font-style: italic;
+    line-height: 1.6;
+  }
+}
+
+.btn-go-vault {
+  display: block;
+  margin: 0 auto;
+  background: $gold;
+  color: $main-dark;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.5rem 4rem;
+  font-size: 1.5rem;
+  font-family: "Bold";
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

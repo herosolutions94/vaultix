@@ -1630,13 +1630,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layout$2e$js__
 ;
 ;
 ;
+;
 function App({ Component, pageProps }) {
     const renderWithLayout = Component.getLayout || function(page) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layout$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
             children: page
         }, void 0, false, {
             fileName: "[project]/pages/_app.js",
-            lineNumber: 17,
+            lineNumber: 18,
             columnNumber: 14
         }, this);
     };
@@ -1644,7 +1645,7 @@ function App({ Component, pageProps }) {
         ...pageProps
     }, void 0, false, {
         fileName: "[project]/pages/_app.js",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 27
     }, this));
 }

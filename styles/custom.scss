@@ -439,8 +439,8 @@ _btn {
       }
       &.blank {
         background: transparent;
-        color: #071a2b;
-        border: 1px solid #071a2b;
+        color: $grey;
+        border: 1px solid #4E4639;
         &.blank_color_border {
           border-color: $color;
           color: $color;

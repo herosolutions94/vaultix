@@ -38,6 +38,17 @@ export default function Activity() {
               <div className="date">Oct 12, 2026 • 09:00 AM</div>
             </div>
           </div>
+
+          <div className="inner_activity">
+            <div className="head_list">
+              <h3>Counter reset successfully <span className="response">Response</span></h3>
+            </div>
+            <div className="text">
+              <p>Proof-of-life verified. Missed response counter reset to 0/12. Verification schedule resumed.</p>
+              <div className="date">Aug 14, 2026 • 02:45 PM</div>
+            </div>
+          </div>
+
         </div>
         
         
