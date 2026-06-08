@@ -1,0 +1,653 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   PAGE WRAPPER
+=================================================== */
+.checkout_page {
+  background: $main-dark;
+  color: $grey;
+  padding-top: 72px;
+}
+
+/* ===================================================
+   HERO
+=================================================== */
+.co_hero {
+  background: $blue-bg;
+  padding: 110px 0;
+
+  .co_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: "Regular";
+    font-size: 11px;
+    color: $teal;
+    border: 1px solid rgba($teal, 0.35);
+    background: rgba($teal, 0.05);
+    @include radius(100px);
+    padding: 5px 14px;
+    margin-bottom: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .co_badge_dot {
+    width: 6px;
+    height: 6px;
+    background: $teal;
+    @include radius(50%);
+    flex-shrink: 0;
+  }
+
+  h1 {
+    font-family: "Bold";
+    font-size: 52px;
+    color: $white;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+
+    .co_gold {
+      color: $gold;
+    }
+
+    @include laptop {
+      font-size: 42px;
+    }
+    @include ipad {
+      font-size: 34px;
+    }
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  p {
+    font-family: "Regular";
+    font-size: 14px;
+    color: rgba($grey, 0.5);
+    line-height: 1.78;
+    max-width: 440px;
+    margin: 0;
+  }
+}
+
+/* ===================================================
+   MAIN — two-column
+=================================================== */
+.co_main {
+  background: $main-dark;
+  padding: 110px 0;
+
+  .co_main_wrap {
+    @include flex(flex-start, flex-start);
+    gap: 22px;
+
+    @include ipad_sm {
+      flex-direction: column;
+    }
+  }
+
+  /* ── Left column ── */
+  .co_left {
+    flex: 0 0 58%;
+    max-width: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include ipad_sm {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* ── Right column ── */
+  .co_right {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include ipad_sm {
+      width: 100%;
+    }
+  }
+}
+
+/* ===================================================
+   FORM CARDS
+=================================================== */
+.co_card {
+  background: $primary-color;
+  border: 1px solid rgba($grey, 0.1);
+  border-left-width: 3px;
+  @include radius(10px);
+  overflow: hidden;
+
+  &.co_card_gold {
+    border-left-color: rgba($gold, 0.65);
+  }
+  &.co_card_teal {
+    border-left-color: rgba($teal, 0.65);
+  }
+}
+
+/* Card header */
+.co_card_head {
+  @include flex(center, flex-start);
+  gap: 10px;
+  padding: 16px 20px 14px;
+  border-bottom: 1px solid rgba($grey, 0.07);
+
+  svg {
+    color: rgba($grey, 0.45);
+    flex-shrink: 0;
+  }
+
+  > span {
+    font-family: "SemiBold";
+    font-size: 14px;
+    color: $white;
+    flex: 1;
+  }
+
+  .co_pay_badges {
+    @include flex(center, flex-end);
+    gap: 7px;
+  }
+
+  .co_pay_badge {
+    @include flex(center, flex-start);
+    gap: 4px;
+    font-family: "Regular";
+    font-size: 10px;
+    color: rgba($grey, 0.4);
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(4px);
+    padding: 3px 7px;
+    letter-spacing: 0.04em;
+
+    svg {
+      color: rgba($grey, 0.35);
+    }
+  }
+}
+
+/* Form body */
+.co_form {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 2-col row */
+.co_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Field */
+.co_field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-family: "Regular";
+    font-size: 10px;
+    color: rgba($grey, 0.38);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  input {
+    background: $blue-bg;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(6px);
+    padding: 11px 13px;
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.65);
+    outline: none;
+    width: 100%;
+    @include trans;
+
+    &::placeholder {
+      color: rgba($grey, 0.28);
+    }
+
+    &:focus {
+      border-color: rgba($teal, 0.35);
+      background: rgba($teal, 0.025);
+    }
+  }
+
+  .co_upper_ph::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 11px;
+  }
+}
+
+/* Custom select */
+.co_select_wrap {
+  position: relative;
+
+  select {
+    width: 100%;
+    background: $blue-bg;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(6px);
+    padding: 11px 34px 11px 13px;
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.28);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    @include trans;
+
+    &:focus {
+      border-color: rgba($teal, 0.35);
+    }
+    option {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  .co_chevron {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba($grey, 0.35);
+    pointer-events: none;
+  }
+}
+
+/* Input with embedded icon */
+.co_input_icon_wrap {
+  position: relative;
+  @include flex(center, flex-start);
+
+  .co_input_icon_left {
+    position: absolute;
+    left: 13px;
+    color: rgba($grey, 0.32);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .co_input_pl {
+    padding-left: 38px !important;
+    width: 100%;
+    background: $blue-bg;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(6px);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 13px;
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.65);
+    outline: none;
+    @include trans;
+
+    &::placeholder {
+      color: rgba($grey, 0.28);
+    }
+    &:focus {
+      border-color: rgba($teal, 0.35);
+      background: rgba($teal, 0.025);
+    }
+  }
+
+  .co_input_pr {
+    width: 100%;
+    background: $blue-bg;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(6px);
+    padding: 11px 38px 11px 13px;
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.65);
+    outline: none;
+    @include trans;
+
+    &::placeholder {
+      color: rgba($grey, 0.28);
+      letter-spacing: 0.08em;
+    }
+    &:focus {
+      border-color: rgba($teal, 0.35);
+      background: rgba($teal, 0.025);
+    }
+  }
+}
+
+.co_cvc_info {
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba($grey, 0.32);
+  cursor: pointer;
+  padding: 0;
+  @include flex(center, center);
+  @include trans;
+
+  &:hover {
+    color: rgba($grey, 0.6);
+  }
+}
+
+/* ===================================================
+   PAYMENT TABS
+=================================================== */
+.co_pay_tabs {
+  @include flex(center, flex-start);
+  gap: 8px;
+}
+
+.co_pay_tab {
+  @include flex(center, flex-start);
+  gap: 6px;
+  font-family: "Regular";
+  font-size: 13px;
+  color: rgba($grey, 0.45);
+  background: none;
+  border: 1px solid rgba($grey, 0.14);
+  @include radius(6px);
+  padding: 8px 14px;
+  cursor: pointer;
+  @include trans;
+
+  svg {
+    color: rgba($grey, 0.35);
+    @include trans;
+  }
+
+  &:hover {
+    border-color: rgba($grey, 0.25);
+    color: rgba($grey, 0.7);
+  }
+}
+
+.co_tab_active {
+  color: $gold;
+  border-color: rgba($gold, 0.45);
+  background: rgba($gold, 0.06);
+
+  svg {
+    color: $gold;
+  }
+
+  &:hover {
+    border-color: rgba($gold, 0.6);
+    color: $gold;
+  }
+}
+
+/* Placeholder for Wire / Crypto */
+.co_tab_msg {
+  padding: 18px 20px;
+  background: rgba($main-dark, 0.4);
+  @include radius(6px);
+  border: 1px solid rgba($grey, 0.07);
+
+  p {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.45);
+    line-height: 1.72;
+    margin: 0;
+  }
+}
+
+/* ===================================================
+   ORDER SUMMARY CARD
+=================================================== */
+.co_summary_card {
+  background: $primary-color;
+  border: 1px solid rgba($grey, 0.1);
+  @include radius(10px);
+  padding: 20px 20px 18px;
+}
+
+.co_summary_head {
+  @include flex(flex-start, space-between);
+  gap: 10px;
+  margin-bottom: 18px;
+
+  .co_plan_name {
+    font-family: "SemiBold";
+    font-size: 17px;
+    color: $white;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .co_plan_sub {
+    font-family: "Regular";
+    font-size: 11px;
+    color: rgba($grey, 0.38);
+    margin: 0;
+  }
+
+  .co_plan_price {
+    @include flex(baseline, flex-end);
+    gap: 1px;
+    flex-shrink: 0;
+  }
+
+  .co_price_val {
+    font-family: "Bold";
+    font-size: 30px;
+    color: $gold;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .co_price_per {
+    font-family: "Regular";
+    font-size: 11px;
+    color: rgba($grey, 0.4);
+  }
+}
+
+.co_features {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 16px;
+
+  .co_feat_row {
+    @include flex(center, flex-start);
+    gap: 9px;
+
+    svg {
+      flex-shrink: 0;
+    }
+
+    span {
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.62);
+    }
+  }
+}
+
+.co_divider {
+  height: 1px;
+  background: rgba($grey, 0.07);
+  margin: 14px 0;
+}
+
+.co_cost_rows {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.co_cost_row {
+  @include flex(center, space-between);
+
+  span {
+    font-family: "Regular";
+    font-size: 12.5px;
+    color: rgba($grey, 0.43);
+    line-height: 1.35;
+  }
+}
+
+.co_total_row {
+  @include flex(center, space-between);
+
+  span {
+    font-family: "Bold";
+    font-size: 15px;
+    color: $white;
+  }
+}
+
+/* Activate button */
+.co_activate_btn {
+  @include flex(center, center);
+  gap: 8px;
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 20px;
+  background: $gold;
+  border: none;
+  @include radius(8px);
+  font-family: "SemiBold";
+  font-size: 14px;
+  color: $main-dark;
+  cursor: pointer;
+  @include trans;
+  letter-spacing: 0.01em;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    background: lighten($gold, 6%);
+  }
+}
+
+.co_disclaimer {
+  font-family: "Regular";
+  font-size: 11px;
+  color: rgba($grey, 0.27);
+  text-align: center;
+  line-height: 1.65;
+  margin: 11px 0 0;
+}
+
+/* ===================================================
+   ZERO-KNOWLEDGE CARD
+=================================================== */
+.co_zk_card {
+  background: $primary-color;
+  border: 1px solid rgba($grey, 0.1);
+  @include radius(10px);
+  padding: 24px 22px 22px;
+  text-align: center;
+
+  .co_zk_icon_wrap {
+    width: 48px;
+    height: 48px;
+    @include flex(center, center);
+    @include radius(50%);
+    background: rgba($teal, 0.1);
+    border: 1px solid rgba($teal, 0.22);
+    margin: 0 auto 14px;
+  }
+
+  h3 {
+    font-family: "Bold";
+    font-size: 17px;
+    color: $white;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    font-family: "Regular";
+    font-size: 12.5px;
+    color: rgba($grey, 0.46);
+    line-height: 1.75;
+    margin: 0 auto 18px;
+    max-width: 270px;
+  }
+}
+
+.co_zk_features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+  text-align: left;
+}
+
+.co_zk_feat {
+  @include flex(center, flex-start);
+  gap: 8px;
+
+  .co_zk_dot {
+    width: 6px;
+    height: 6px;
+    @include radius(50%);
+    background: rgba($teal, 0.55);
+    flex-shrink: 0;
+  }
+
+  span:last-child {
+    font-family: "Regular";
+    font-size: 12px;
+    color: rgba($grey, 0.48);
+  }
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+@include ipad {
+  .co_left {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+}
+
+@include ipad_sm {
+  .co_hero {
+    padding: 56px 0 48px;
+  }
+  .co_main {
+    padding: 0 0 70px;
+  }
+}
+
+@include mobile {
+  .co_hero h1 {
+    font-size: 28px;
+  }
+  .co_pay_tab span {
+    display: none;
+  } // icon only on mobile
+}

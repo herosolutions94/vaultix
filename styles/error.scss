@@ -1,0 +1,178 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   ERROR / 404 PAGE
+=================================================== */
+$err-red: #e07b6a;
+
+.err_page {
+  background: $main-dark;
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba($err-red, 0.05) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba($gold, 0.025) 0%, transparent 50%);
+  min-height: calc(100vh - 72px);
+  padding: 72px 20px 48px;
+  @include flex(center, center);
+}
+
+.err_inner {
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
+}
+
+/* Warning triangle */
+.err_icon_wrap {
+  margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(ellipse at center, rgba($err-red, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  svg { display: block; margin: 0 auto; position: relative; }
+}
+
+/* Heading */
+.err_heading {
+  font-family: "Bold";
+  font-size: 36px;
+  color: $white;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 14px;
+
+  @include laptop { font-size: 30px; }
+  @include mobile { font-size: 24px; }
+}
+
+/* Subtitle */
+.err_sub {
+  font-family: "Regular";
+  font-size: 13.5px;
+  color: rgba($grey, 0.44);
+  line-height: 1.75;
+  margin-bottom: 30px;
+
+  .err_br { display: block; }
+  @include mobile { .err_br { display: none; } }
+}
+
+/* Info card */
+.err_info_card {
+  background: rgba($primary-color, 0.85);
+  border: 1px solid rgba($grey, 0.09);
+  @include radius(8px);
+  overflow: hidden;
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.err_info_row {
+  @include flex(center, space-between);
+  padding: 13px 20px;
+  border-bottom: 1px solid rgba($grey, 0.06);
+
+  &:last-child { border-bottom: none; }
+}
+
+.err_info_label {
+  font-family: "Regular";
+  font-size: 13px;
+  color: rgba($grey, 0.42);
+}
+
+.err_info_val {
+  font-family: monospace;
+  font-size: 12px;
+  color: rgba($grey, 0.58);
+  letter-spacing: 0.04em;
+  text-align: right;
+
+  &.err_info_val_err {
+    color: $err-red;
+    letter-spacing: 0.06em;
+  }
+}
+
+/* Buttons */
+.err_btns {
+  @include flex(center, center);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.err_btn_gold {
+  @include flex(center, center);
+  gap: 7px;
+  font-family: "SemiBold";
+  font-size: 13px;
+  color: $main-dark;
+  background: $gold;
+  border: 1px solid $gold;
+  @include radius(7px);
+  padding: 11px 20px;
+  text-decoration: none;
+  @include trans;
+  white-space: nowrap;
+
+  &:hover {
+    background: lighten($gold, 6%);
+    border-color: lighten($gold, 6%);
+    color: $main-dark;
+  }
+}
+
+.err_btn_ghost {
+  @include flex(center, center);
+  gap: 7px;
+  font-family: "Regular";
+  font-size: 13px;
+  color: rgba($grey, 0.6);
+  border: 1px solid rgba($grey, 0.16);
+  background: rgba($grey, 0.03);
+  @include radius(7px);
+  padding: 11px 20px;
+  text-decoration: none;
+  @include trans;
+  white-space: nowrap;
+
+  &:hover {
+    border-color: rgba($grey, 0.3);
+    color: rgba($grey, 0.85);
+  }
+}
+
+/* ===================================================
+   RESPONSIVE ADJUSTMENTS
+=================================================== */
+@include mobile {
+  .err_btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .err_btn_gold,
+  .err_btn_ghost {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@include mobile_md {
+  .err_page {
+    padding: 60px 16px 40px;
+  }
+  .err_heading {
+    font-size: 22px;
+  }
+}

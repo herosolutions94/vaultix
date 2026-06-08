@@ -13323,3 +13323,4 @@ styles/inherit.scss 2:9  root stylesheet
 
 
 [04:45:10.701] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[04:46:34.185] Server  LOG     ✓ Compiled in 1729ms

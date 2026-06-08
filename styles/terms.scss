@@ -1,0 +1,384 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   PAGE WRAPPER
+=================================================== */
+.terms_page {
+  background: $main-dark;
+  color: $grey;
+  padding-top: 72px;
+}
+
+/* ===================================================
+   HERO
+=================================================== */
+.tc_hero {
+  background: $main-dark;
+  padding: 70px 0 0;
+  border-bottom: 1px solid rgba($grey, 0.07);
+
+  .tc_hero_wrap {
+    @include flex(flex-end, space-between);
+    gap: 40px;
+
+    @include ipad_sm { flex-direction: column; gap: 36px; }
+  }
+
+  /* ── Left ── */
+  .tc_hero_left {
+    flex: 0 0 44%;
+    max-width: 44%;
+    padding-bottom: 60px;
+
+    @include ipad_sm { flex: 0 0 100%; max-width: 100%; padding-bottom: 0; }
+  }
+
+  .tc_badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Regular";
+    font-size: 11px;
+    color: $teal;
+    border: 1px solid rgba($teal, 0.4);
+    background: rgba($teal, 0.05);
+    @include radius(100px);
+    padding: 5px 14px;
+    margin-bottom: 26px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: "Bold";
+    font-size: 40px;
+    color: $white;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+
+    @include laptop { font-size: 34px; }
+    @include ipad   { font-size: 28px; }
+    @include mobile { font-size: 24px; }
+  }
+
+  .tc_gold { color: $gold; }
+
+  p {
+    font-family: "Regular";
+    font-size: 14px;
+    color: rgba($grey, 0.5);
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  /* ── Right image ── */
+  .tc_hero_right {
+    flex: 0 0 52%;
+    max-width: 52%;
+    align-self: flex-end;
+
+    @include ipad_sm { flex: 0 0 100%; max-width: 100%; }
+
+    img {
+      width: 100%;
+      display: block;
+      @include radius(12px 12px 0 0);
+      object-fit: cover;
+      aspect-ratio: 16 / 10;
+    }
+  }
+}
+
+/* ===================================================
+   BODY — sidebar + content
+=================================================== */
+.tc_body {
+  background: $main-dark;
+  padding: 80px 0 100px;
+
+  .tc_body_wrap {
+    @include flex(flex-start, flex-start);
+    gap: 44px;
+
+    @include ipad_sm { flex-direction: column; }
+  }
+
+  /* ── Sidebar ── */
+  .tc_sidebar {
+    flex: 0 0 190px;
+    width: 190px;
+    position: sticky;
+    top: 100px;
+
+    @include ipad_sm { position: static; width: 100%; }
+  }
+
+  .tc_sidebar_label {
+    font-family: "Regular";
+    font-size: 10px;
+    color: rgba($grey, 0.35);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-left: 14px;
+  }
+
+  .tc_nav {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba($grey, 0.1);
+
+    @include ipad_sm {
+      flex-direction: row;
+      border-left: none;
+      border-bottom: 1px solid rgba($grey, 0.1);
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+  }
+
+  .tc_nav_link {
+    font-family: "Regular";
+    font-size: 12.5px;
+    color: rgba($grey, 0.45);
+    padding: 8px 14px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    @include trans;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    line-height: 1.4;
+
+    &:hover { color: rgba($grey, 0.75); }
+
+    @include ipad_sm {
+      border-left: none;
+      border-bottom: 2px solid transparent;
+      margin-left: 0;
+      padding: 6px 12px;
+    }
+  }
+
+  .tc_nav_active {
+    color: $gold;
+    border-left-color: $gold;
+
+    @include ipad_sm { border-bottom-color: $gold; border-left-color: transparent; }
+  }
+
+  /* ── Content ── */
+  .tc_content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* ===================================================
+   SECTION BLOCKS
+=================================================== */
+.tc_section {
+  padding: 36px 0 38px;
+  border-bottom: 1px solid rgba($grey, 0.07);
+
+  &:first-child { padding-top: 0; }
+  &:last-child  { border-bottom: none; }
+}
+
+/* Section heading row */
+.tc_sec_head {
+  @include flex(baseline, flex-start);
+  gap: 14px;
+  margin-bottom: 18px;
+
+  .tc_sec_num {
+    font-family: "Bold";
+    font-size: 22px;
+    color: rgba($grey, 0.22);
+    letter-spacing: -0.01em;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  h2 {
+    font-family: "Bold";
+    font-size: 26px;
+    color: $white;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0;
+
+    @include mobile { font-size: 21px; }
+  }
+}
+
+/* Body paragraph */
+.tc_content .tc_section > p {
+  font-family: "Regular";
+  font-size: 13px;
+  color: rgba($grey, 0.52);
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* ===================================================
+   ALERT BOX (section 02)
+=================================================== */
+.tc_alert_box {
+  margin-top: 20px;
+  background: rgba($gold, 0.04);
+  border: 1px solid rgba($gold, 0.25);
+  border-left: 3px solid rgba($gold, 0.7);
+  @include radius(8px);
+  padding: 18px 20px 16px;
+
+  .tc_alert_head {
+    @include flex(center, flex-start);
+    gap: 8px;
+    margin-bottom: 8px;
+
+    span {
+      font-family: "SemiBold";
+      font-size: 13px;
+      color: $gold;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  .tc_alert_em {
+    font-family: "SemiBold";
+    font-size: 13px;
+    color: rgba($gold, 0.85);
+    margin-bottom: 10px;
+    line-height: 1.45;
+  }
+
+  p:not(.tc_alert_em) {
+    font-family: "Regular";
+    font-size: 12px;
+    color: rgba($grey, 0.5);
+    line-height: 1.8;
+    margin: 0;
+  }
+}
+
+/* ===================================================
+   IMAGE BLOCK (section 04)
+=================================================== */
+.tc_img_block {
+  margin-top: 22px;
+  @include radius(8px);
+  overflow: hidden;
+  border: 1px solid rgba($grey, 0.08);
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 7;
+  }
+
+  .tc_img_caption {
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: rgba($grey, 0.3);
+    text-align: center;
+    padding: 8px 0 10px;
+    background: rgba($grey, 0.02);
+    border-top: 1px solid rgba($grey, 0.06);
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+/* ===================================================
+   WORKFLOW STEPS (section 05)
+=================================================== */
+.tc_workflow {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tc_wf_step {
+  @include flex(flex-start, flex-start);
+  gap: 18px;
+}
+
+.tc_wf_left {
+  @include flex(center, flex-start);
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  width: 32px;
+}
+
+.tc_wf_circle {
+  width: 32px;
+  height: 32px;
+  @include flex(center, center);
+  @include radius(50%);
+  border: 1.5px solid rgba($teal, 0.6);
+  background: rgba($teal, 0.07);
+  font-family: "SemiBold";
+  font-size: 13px;
+  color: $teal;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.tc_wf_line {
+  width: 1px;
+  flex: 1;
+  min-height: 36px;
+  background: rgba($teal, 0.2);
+  margin: 4px 0;
+}
+
+.tc_wf_text {
+  padding-bottom: 30px;
+  flex: 1;
+  min-width: 0;
+}
+
+.tc_wf_step:last-child .tc_wf_text {
+  padding-bottom: 0;
+}
+
+.tc_wf_title {
+  font-family: "SemiBold";
+  font-size: 14px;
+  color: $white;
+  margin-bottom: 6px;
+  line-height: 1.35;
+  padding-top: 5px;
+}
+
+.tc_wf_desc {
+  font-family: "Regular";
+  font-size: 12.5px;
+  color: rgba($grey, 0.5);
+  line-height: 1.78;
+  margin: 0;
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+@include ipad {
+  .tc_hero h1 { font-size: 32px; }
+  .tc_sec_head h2 { font-size: 22px; }
+  .tc_sec_head .tc_sec_num { font-size: 20px; }
+}
+
+@include mobile {
+  .tc_body { padding: 60px 0 80px; }
+  .tc_section { padding: 28px 0 28px; }
+}

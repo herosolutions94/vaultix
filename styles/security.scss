@@ -1,0 +1,1108 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   SECURITY PAGE WRAPPER
+=================================================== */
+.security_page {
+  background: $main-dark;
+  color: $grey;
+  padding-top: 72px;
+}
+
+/* ===================================================
+   HERO — full-width chip background
+=================================================== */
+.sec_hero {
+  position: relative;
+  min-height: 660px;
+  overflow: hidden;
+  @include flex(center, flex-start);
+  padding: 0;
+
+  /* ── full-bleed background image ── */
+  .sec_hero_bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    z-index: 0;
+    display: block;
+  }
+
+  /* ── left-to-right dark gradient so text is readable ── */
+  .sec_hero_overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      rgba($main-dark, 0.97) 0%,
+      rgba($main-dark, 0.88) 38%,
+      rgba($main-dark, 0.55) 58%,
+      rgba($main-dark, 0.1) 100%
+    );
+    z-index: 1;
+  }
+
+  .pg_contain {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  /* ── two-column layout ── */
+  .sec_hero_wrap {
+    @include flex(center, space-between);
+    gap: 60px;
+
+    @include ipad_sm {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+
+  /* ── Left text ── */
+  .sec_hero_left {
+    flex: 0 0 44%;
+    max-width: 44%;
+
+    @include ipad_sm {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .sec_badge {
+    display: inline-block;
+    font-family: "Regular";
+    font-size: 13px;
+    color: $teal;
+    border: 1px solid rgba($teal, 0.35);
+    background: rgba($teal, 0.06);
+    @include radius(100px);
+    padding: 6px 18px;
+    margin-bottom: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-family: "Bold";
+    font-size: 52px;
+    color: $white;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 22px;
+
+    @include laptop {
+      font-size: 42px;
+    }
+    @include ipad {
+      font-size: 34px;
+    }
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  .sec_hero_left p {
+    font-family: "Regular";
+    font-size: 16px;
+    color: rgba($grey, 0.6);
+    line-height: 1.78;
+    margin-bottom: 36px;
+    max-width: 480px;
+  }
+
+  .sec_hero_btns {
+    @include flex(center, flex-start);
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  /* ── Right: terminal card ── */
+  .sec_hero_right {
+    flex: 0 0 42%;
+    max-width: 42%;
+
+    @include ipad {
+      flex: 0 0 48%;
+      max-width: 48%;
+    }
+    @include ipad_sm {
+      flex: 0 0 100%;
+      max-width: 540px;
+    }
+  }
+
+  .sec_hero_card {
+    background: rgba(#0d1014, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba($grey, 0.14);
+    @include radius(12px);
+    overflow: hidden;
+  }
+
+  /* card header row */
+  .shc_header {
+    @include flex(center, space-between);
+    padding: 18px 22px 16px;
+
+    .shc_label {
+      font-family: monospace;
+      font-size: 13px;
+      color: $gold;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    .shc_shield {
+      width: 32px;
+      height: 32px;
+      background: rgba($gold, 0.1);
+      border: 1px solid rgba($gold, 0.25);
+      @include radius(7px);
+      @include flex(center, center);
+      color: $gold;
+      flex-shrink: 0;
+    }
+  }
+
+  /* full-width gold bar */
+  .shc_progress_bar {
+    height: 3px;
+    background: linear-gradient(to right, $gold, lighten($gold, 10%));
+    margin: 0 22px 18px;
+    @include radius(2px);
+  }
+
+  /* three block placeholders */
+  .shc_blocks {
+    @include flex(center, flex-start);
+    gap: 10px;
+    padding: 0 22px 18px;
+
+    .shc_block {
+      flex: 1;
+      height: 52px;
+      background: rgba($grey, 0.05);
+      border: 1px solid rgba($grey, 0.08);
+      @include radius(6px);
+
+      &.shc_block_active {
+        background: rgba($teal, 0.12);
+        border-color: rgba($teal, 0.3);
+      }
+    }
+  }
+
+  /* footer text lines */
+  .shc_footer {
+    padding: 14px 22px 20px;
+    border-top: 1px solid rgba($grey, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .shc_line {
+      font-family: monospace;
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0;
+
+      .shc_key {
+        color: rgba($grey, 0.38);
+      }
+      .shc_val {
+        color: $teal;
+      }
+    }
+  }
+}
+
+/* ===================================================
+   IMMUTABLE AUDIT TRAILS
+=================================================== */
+.sec_audit {
+  background: $main-dark;
+  padding: 100px 0;
+
+  /* ── Header ── */
+  .sec_audit_header {
+    @include flex(flex-end, space-between);
+    margin-bottom: 32px;
+    gap: 24px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .sec_audit_hd_left {
+    h2 {
+      font-family: "Bold";
+      font-size: 38px;
+      color: $white;
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      margin-bottom: 8px;
+
+      @include laptop {
+        font-size: 32px;
+      }
+      @include mobile {
+        font-size: 26px;
+      }
+    }
+
+    p {
+      font-family: "Regular";
+      font-size: 15px;
+      color: rgba($grey, 0.48);
+      margin: 0;
+    }
+  }
+
+  /* Dark "Export Ledger" button */
+  .sec_export_btn {
+    font-family: "Medium";
+    font-size: 14px;
+    color: $white;
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.18);
+    padding: 12px 28px;
+    @include radius(6px);
+    white-space: nowrap;
+    flex-shrink: 0;
+    cursor: pointer;
+    @include trans;
+    line-height: 1;
+
+    &:hover {
+      border-color: rgba($grey, 0.35);
+      background: lighten($primary-color, 4%);
+    }
+  }
+
+  /* ── Log rows ── */
+  .sec_audit_card {
+    border: 1px solid rgba($grey, 0.08);
+    @include radius(6px);
+    overflow: hidden;
+  }
+
+  .sec_audit_row {
+    @include flex(center, flex-start);
+    gap: 20px;
+    padding: 22px 24px;
+    background: $primary-color;
+    border-bottom: 1px solid rgba($grey, 0.07);
+    @include trans;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      background: lighten($primary-color, 2%);
+    }
+
+    /* Teal checkmark circle */
+    .sar_icon {
+      flex-shrink: 0;
+      @include flex(center, center);
+      width: 32px;
+      height: 32px;
+
+      svg {
+        display: block;
+      }
+    }
+
+    /* Monospace teal timestamp */
+    .sar_time {
+      font-family: monospace;
+      font-size: 13px;
+      color: $teal;
+      letter-spacing: 0.04em;
+      flex-shrink: 0;
+      width: 76px;
+    }
+
+    /* Event text */
+    .sar_event {
+      font-family: "Regular";
+      font-size: 14px;
+      color: rgba($grey, 0.75);
+      flex: 1;
+      line-height: 1.5;
+
+      /* Gold-highlighted keyword */
+      .sar_hl {
+        color: $gold;
+        font-family: "Medium";
+      }
+    }
+
+    /* Rectangular VERIFIED badge */
+    .sar_badge {
+      font-family: monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: $teal;
+      border: 1px solid rgba($teal, 0.4);
+      background: rgba($teal, 0.06);
+      padding: 5px 12px;
+      @include radius(4px);
+      flex-shrink: 0;
+    }
+  }
+}
+
+/* ===================================================
+   AUTOMATED INHERITANCE PROTOCOL
+=================================================== */
+.sec_auto_proto {
+  background: $grey-bg;
+  padding: 110px 0;
+
+  /* ── 5-step horizontal timeline ── */
+  .sap_timeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    margin-top: 64px;
+
+    @include ipad {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 48px;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+      row-gap: 36px;
+    }
+  }
+
+  .sap_step {
+    @include flex(center, flex-start);
+    flex-direction: column;
+    text-align: center;
+    // padding: 0 12px;
+  }
+
+  /* connector row: line — box — line */
+  .sap_connector {
+    @include flex(center, center);
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  /* horizontal connector line */
+  .sap_line {
+    flex: 1;
+    height: 1px;
+    background: rgba($grey, 0.15);
+  }
+
+  /* numbered rounded square */
+  .sap_box {
+    width: 54px;
+    height: 54px;
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.18);
+    @include radius(10px);
+    @include flex(center, center);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+
+    span {
+      font-family: "Bold";
+      font-size: 18px;
+      color: $white;
+    }
+
+    /* last step: solid teal fill */
+    &.sap_box_active {
+      background: $teal;
+      border-color: $teal;
+
+      span {
+        color: $white;
+      }
+    }
+  }
+
+  .sap_step h4 {
+    font-family: "SemiBold";
+    font-size: 15px;
+    color: $white;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .sap_step p {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.46);
+    line-height: 1.72;
+    margin: 0;
+    max-width: 180px;
+  }
+}
+
+/* ===================================================
+   ADAPTIVE MFA
+=================================================== */
+.sec_mfa {
+  background: $main-dark;
+  padding: 110px 0;
+
+  .sec_mfa_wrap {
+    @include flex(center, space-between);
+    gap: 80px;
+
+    @include ipad_sm {
+      flex-direction: column;
+      gap: 52px;
+    }
+  }
+
+  /* ── Left: MFA card ── */
+  .sec_mfa_left {
+    flex: 0 0 46%;
+    max-width: 46%;
+
+    @include ipad_sm {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .mfa_card {
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(14px);
+    overflow: hidden;
+  }
+
+  /* Card header */
+  .mfa_card_header {
+    @include flex(center, flex-start);
+    gap: 14px;
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba($grey, 0.07);
+
+    .mfa_icon_box {
+      width: 40px;
+      height: 40px;
+      background: rgba($gold, 0.1);
+      border: 1px solid rgba($gold, 0.22);
+      @include radius(9px);
+      @include flex(center, center);
+      color: $gold;
+      flex-shrink: 0;
+    }
+
+    .mfa_header_text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .mfa_title {
+      font-family: "SemiBold";
+      font-size: 15px;
+      color: $white;
+    }
+
+    .mfa_sub {
+      font-family: monospace;
+      font-size: 11px;
+      color: rgba($grey, 0.36);
+      letter-spacing: 0.03em;
+    }
+  }
+
+  /* Auth rows */
+  .mfa_rows {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mfa_row {
+    @include flex(center, flex-start);
+    gap: 14px;
+    padding: 18px 24px;
+    border-bottom: 1px solid rgba($grey, 0.06);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    /* left status dot */
+    .mfa_dot {
+      width: 8px;
+      height: 8px;
+      @include radius(50%);
+      flex-shrink: 0;
+
+      &.mfa_dot_gold {
+        background: $gold;
+      }
+      &.mfa_dot_idle {
+        background: rgba($grey, 0.25);
+      }
+    }
+
+    /* label */
+    .mfa_row_label {
+      font-family: "Regular";
+      font-size: 14px;
+      color: rgba($grey, 0.75);
+      flex: 1;
+    }
+
+    /* right status icon */
+    .mfa_row_status {
+      flex-shrink: 0;
+      @include flex(center, center);
+    }
+
+    /* Active / in-progress row: subtle gold tint */
+    &.mfa_row_active {
+      background: rgba($gold, 0.05);
+
+      .mfa_row_label {
+        color: rgba($grey, 0.55);
+        font-style: italic;
+      }
+    }
+  }
+
+  /* ── Right: content ── */
+  .sec_mfa_right {
+    flex: 1;
+
+    h2 {
+      font-family: "Bold";
+      font-size: 40px;
+      color: $white;
+      line-height: 1.14;
+      letter-spacing: -0.028em;
+      margin-bottom: 20px;
+
+      @include laptop {
+        font-size: 34px;
+      }
+      @include mobile {
+        font-size: 27px;
+      }
+    }
+
+    > p {
+      font-family: "Regular";
+      font-size: 15px;
+      color: rgba($grey, 0.52);
+      line-height: 1.82;
+      margin-bottom: 36px;
+    }
+  }
+
+  .mfa_features {
+    @include list;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    li {
+      @include flex(flex-start, flex-start);
+      gap: 16px;
+    }
+
+    /* Teal circle with shield-check icon */
+    .mfa_feat_icon {
+      width: 32px;
+      height: 32px;
+      background: rgba($teal, 0.08);
+      border: 1px solid rgba($teal, 0.28);
+      @include radius(50%);
+      @include flex(center, center);
+      color: $teal;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .mfa_feat_text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      strong {
+        font-family: "SemiBold";
+        font-size: 15px;
+        color: $white;
+        display: block;
+      }
+
+      span {
+        font-family: "Regular";
+        font-size: 13px;
+        color: rgba($grey, 0.46);
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+/* ===================================================
+   INSTITUTIONAL SECURITY PILLARS
+=================================================== */
+.sec_pillars {
+  // background: $primary-color;
+  padding: 0 0 110px 0;
+
+  .sec_pillars_heading {
+    font-family: "Bold";
+    font-size: 38px;
+    color: $white;
+    letter-spacing: -0.025em;
+    line-height: 1.18;
+    margin-bottom: 52px;
+
+    @include laptop {
+      font-size: 32px;
+    }
+    @include mobile {
+      font-size: 26px;
+      margin-bottom: 36px;
+    }
+  }
+
+  .sec_pillars_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+    @include ipad {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sp_card {
+    background: $main-dark;
+    border: 1px solid rgba($grey, 0.07);
+    @include radius(14px);
+    padding: 32px 28px 36px;
+    @include trans;
+
+    &:hover {
+      border-color: rgba($gold, 0.18);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba($black, 0.2);
+    }
+
+    .sp_icon {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 22px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    }
+
+    h3 {
+      font-family: "SemiBold";
+      font-size: 17px;
+      color: $white;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-family: "Regular";
+      font-size: 14px;
+      color: rgba($grey, 0.46);
+      line-height: 1.78;
+      margin: 0;
+    }
+  }
+}
+
+/* ===================================================
+   ENCRYPTION INFRASTRUCTURE
+=================================================== */
+.sec_infra {
+  background: $main-dark;
+  padding-top: 110px;
+  padding-bottom: 0;
+
+  /* centered heading */
+  .sec_infra_head {
+    text-align: center;
+    margin-bottom: 64px;
+
+    h2 {
+      font-family: "Bold";
+      font-size: 40px;
+      color: $white;
+      letter-spacing: -0.028em;
+      line-height: 1.15;
+      margin-bottom: 18px;
+
+      @include laptop {
+        font-size: 34px;
+      }
+      @include ipad {
+        font-size: 28px;
+      }
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      font-family: "Regular";
+      font-size: 15px;
+      color: rgba($grey, 0.48);
+      line-height: 1.8;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  }
+
+  .sec_infra_visual {
+    position: relative;
+    min-height: 540px;
+
+    @include ipad {
+      min-height: 420px;
+    }
+    @include mobile {
+      min-height: 320px;
+    }
+
+    .infra_bg_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      min-height: 540px;
+
+      @include ipad {
+        min-height: 420px;
+      }
+      @include mobile {
+        min-height: 320px;
+      }
+    }
+
+    .infra_overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba($main-dark, 0.18) 0%,
+        rgba($main-dark, 0.06) 35%,
+        rgba($main-dark, 0.8) 80%,
+        rgba($main-dark, 0.96) 100%
+      );
+      z-index: 1;
+    }
+
+    .infra_layers_wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
+
+    .infra_layers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .infra_layer {
+      padding: 26px 36px;
+      border: 1px solid rgba($grey, 0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      // background: rgba($main-dark, 0.9);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+      position: relative;
+
+      /* left accent bar — teal by default */
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: 100%;
+        background: $teal;
+        border-radius: 2px;
+      }
+
+      /* middle panel: gold accent + gold label */
+      &:nth-child(2) {
+        border-right-color: rgba($gold, 0.25);
+        border-left: 1px solid rgba($gold, 0.25);
+
+        &::before {
+          background: $gold;
+        }
+
+        .infra_layer_num {
+          color: $gold;
+        }
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      @include mobile {
+        border-right: none;
+        &:nth-child(2) {
+          border-left: none;
+        }
+        border-bottom: 1px solid rgba($grey, 0.1);
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      .infra_layer_num {
+        font-family: "Medium";
+        font-size: 11px;
+        color: $teal;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .infra_layer_title {
+        font-family: "SemiBold";
+        font-size: 17px;
+        color: $white;
+        line-height: 1.3;
+      }
+    }
+  }
+}
+
+/* ===================================================
+   INVISIBLE TO VAULTIX
+=================================================== */
+.sec_invisible {
+  background: $main-dark;
+  padding: 110px 0;
+  text-align: center;
+
+  .pg_contain {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Gold shield icon */
+  .si_icon {
+    @include flex(center, center);
+    margin-bottom: 30px;
+
+    svg {
+      display: block;
+    }
+  }
+
+  h2 {
+    font-family: "Bold";
+    font-size: 45px;
+    color: $white;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+
+    @include laptop {
+      font-size: 42px;
+    }
+    @include ipad {
+      font-size: 34px;
+    }
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  .pg_contain > p {
+    font-family: "Regular";
+    font-size: 16px;
+    color: rgba($grey, 0.52);
+    line-height: 1.82;
+    margin: 0 auto;
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+}
+
+/* ===================================================
+   PROTECTED WORKFLOW
+=================================================== */
+.sec_workflow {
+  background: $main-dark;
+  padding: 110px 0;
+  border-top: 1px solid rgba($grey, 0.06);
+
+  /* ── 5 step cards with teal border ── */
+  .sw_steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+
+    @include ipad {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 16px;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sw_step {
+    border: 1px solid rgba($teal, 0.3);
+    @include radius(6px);
+    padding: 32px 20px 28px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include trans;
+
+    &:hover {
+      background: rgba($teal, 0.03);
+    }
+
+    .sw_step_num {
+      font-family: "Bold";
+      font-size: 40px;
+      color: $teal;
+      line-height: 1;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    h4 {
+      font-family: "SemiBold";
+      font-size: 14px;
+      color: $white;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.46);
+      line-height: 1.72;
+      margin: 0;
+      max-width: 180px;
+    }
+  }
+
+  /* ── 4 stat cards with teal border ── */
+  .sw_stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+
+    @include ipad {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sw_stat {
+    border: 1px solid rgba($teal, 0.3);
+    @include radius(6px);
+    padding: 24px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    /* teal dot + badge label */
+    .sw_stat_badge {
+      @include flex(center, flex-start);
+      gap: 8px;
+      margin-bottom: 14px;
+
+      .sw_stat_dot {
+        width: 8px;
+        height: 8px;
+        @include radius(50%);
+        background: $teal;
+        flex-shrink: 0;
+      }
+
+      .sw_badge_text {
+        font-family: monospace;
+        font-size: 11px;
+        color: $teal;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+      }
+    }
+
+    /* large white value */
+    .sw_stat_val {
+      font-family: "Bold";
+      font-size: 45px;
+      color: $white;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 10px;
+      display: block;
+
+      @include laptop {
+        font-size: 42px;
+      }
+      @include mobile {
+        font-size: 36px;
+      }
+    }
+
+    /* grey sublabel */
+    .sw_stat_label {
+      font-family: "Regular";
+      font-size: 14px;
+      color: rgba($grey, 0.46);
+      line-height: 1.4;
+      display: block;
+    }
+  }
+}

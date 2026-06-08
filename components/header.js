@@ -4,21 +4,10 @@ import React, { useState, useEffect } from "react";
 
 export default function Header() {
   const router = useRouter();
-  const isHome = router.pathname === "/";
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const ToggleAction = () => setToggle(!toggle);
-  const [closing, setClosing] = useState(false);
-  const closeMenu = () => {
-    if (toggle) {
-      setClosing(true);
-      setTimeout(() => {
-        setToggle(false);
-        setClosing(false);
-      }, 500);
-    }
-  };
+  const closeMenu = () => setToggle(false);
 
   useEffect(() => {
     if (toggle) {
@@ -34,121 +23,100 @@ export default function Header() {
       window.scrollTo(0, parseInt(scrollY || "0") * -1);
     }
   }, [toggle]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (toggle) return;
       setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [toggle]);
+
   useEffect(() => {
     setToggle(false);
   }, [router.pathname]);
-  return (
-    <header
-      className={`header ${isHome ? "home-header" : "inner-header"} ${
-        scrolled ? "scrolled" : ""
-      }`}
-    >
-      <div className={`top_nav ${scrolled ? "hide" : ""}`}>
-        <div className="contain">
-          <p>
-            Free shipping on orders over $50 • Easy returns within 7 days •
-            Worldwide delivery
-          </p>
-        </div>
-      </div>
 
-      <div className="contain-fluid">
-        <div className="logo">
+  const navLinks = [
+    { href: "/about", label: "About Us" },
+    { href: "/how-it-works", label: "How It Works" },
+    { href: "/security", label: "Security" },
+    { href: "/pricing", label: "Pricing" },
+  ];
+
+  return (
+    <header className={`site_header ${scrolled ? "scrolled" : ""}`}>
+      <div className="header_wrap">
+        {/* Logo */}
+        <div className="hdr_logo">
           <Link href="/" onClick={closeMenu}>
-            <img src="/images/logo.png" alt="" />
+            <img src="/images/front-images/logo.png" alt="Vaultix" />
           </Link>
         </div>
 
-        <div
-          className={toggle ? "toggle active" : "toggle"}
-          onClick={ToggleAction}
-        >
-          <span></span>
-        </div>
-
-        <nav
-          id="nav"
-          className={`${toggle ? "active" : ""} ${closing ? "closing" : ""}`}
-        >
+        {/* Center Nav */}
+        <nav className={`hdr_nav ${toggle ? "open" : ""}`}>
           <ul>
-            <li>
-              <Link href="/about" onClick={closeMenu}>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/how_work" onClick={closeMenu}>
-                How It Works
-              </Link>
-            </li>
-            <li>
-              <Link href="/measurement_guide" onClick={closeMenu}>
-                Measurement Guide
-              </Link>
-            </li>
-            <li>
-              <Link href="/gallery" onClick={closeMenu}>
-                Gallery
-              </Link>
-            </li>
+            {navLinks.map((link) => (
+              <li
+                key={link.href}
+                className={router.pathname === link.href ? "active" : ""}
+              >
+                <Link href={link.href} onClick={closeMenu}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
-
-          <div className="bTn desk">
-            <div className="col">
-              <div className="search">
-                <button>
-                  <img src="/images/search.png" alt="" />
-                </button>
-                <input type="text" placeholder="search" />
-              </div>
-            </div>
-            <div className="col">
-              <Link href="" onClick={closeMenu}>
-                <img src="/images/user.png" alt="" />
-              </Link>
-            </div>
-            <div className="col">
-              <Link href="" onClick={closeMenu}>
-                <img src="/images/box.png" alt="" />
-              </Link>
-            </div>
-          </div>
         </nav>
 
-        <div className="mobile_icon">
-          <div className="bTn">
-            <div className="col">
-              <div className="search">
-                <button>
-                  <img src="/images/search.png" alt="" />
-                </button>
-                <input type="text" placeholder="search" />
-              </div>
-            </div>
-            <div className="col">
-              <Link href="" onClick={closeMenu}>
-                <img src="/images/user.png" alt="" />
-              </Link>
-            </div>
-            <div className="col">
-              <Link href="" onClick={closeMenu}>
-                <img src="/images/box.png" alt="" />
-              </Link>
-            </div>
-          </div>
+        {/* Right CTAs */}
+        <div className="hdr_cta">
+          <Link href="/contact" className="hdr_contact" onClick={closeMenu}>
+            Contact Us
+          </Link>
+          <Link href="/dashboard" className="hdr_access_btn" onClick={closeMenu}>
+            Access Vault
+          </Link>
         </div>
 
-        <div className="clearfix"></div>
+        {/* Hamburger */}
+        <button
+          className={`hdr_hamburger ${toggle ? "active" : ""}`}
+          onClick={() => setToggle(!toggle)}
+          aria-label="Toggle menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {toggle && (
+        <div className="hdr_mobile_menu">
+          <ul>
+            {navLinks.map((link) => (
+              <li
+                key={link.href}
+                className={router.pathname === link.href ? "active" : ""}
+              >
+                <Link href={link.href} onClick={closeMenu}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="hdr_mobile_cta">
+            <Link href="/contact" className="hdr_contact" onClick={closeMenu}>
+              Contact Us
+            </Link>
+            <Link href="/dashboard" className="hdr_access_btn" onClick={closeMenu}>
+              Access Vault
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
