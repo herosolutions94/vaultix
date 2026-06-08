@@ -1,8 +1,6 @@
 node_modules
-# Next.js build and development files
+.next
+.env.local
+.env.development.local
+.env.test.local
 .next/
-out/
-
-# OS specific files
-.DS_Store
-public/.DS_Store

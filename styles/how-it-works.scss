@@ -1,0 +1,556 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   PAGE WRAPPER
+=================================================== */
+.hiw_page {
+  background: $main-dark;
+  color: $grey;
+  padding-top: 72px;
+}
+
+/* ===================================================
+   HERO
+=================================================== */
+.hiw_hero {
+  background: $main-dark;
+  padding: 90px 0 100px;
+  text-align: center;
+
+  .pg_contain {
+    max-width: 760px;
+  }
+
+  .hiw_badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Regular";
+    font-size: 11px;
+    color: $teal;
+    border: 1px solid rgba($teal, 0.4);
+    background: rgba($teal, 0.05);
+    @include radius(100px);
+    padding: 5px 16px;
+    margin-bottom: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: "Bold";
+    font-size: 54px;
+    color: $white;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+
+    @include laptop {
+      font-size: 44px;
+    }
+    @include ipad {
+      font-size: 36px;
+    }
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  .hiw_hero_sub {
+    font-family: "Bold";
+    font-size: 45px;
+    color: $gold;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+
+    @include laptop {
+      font-size: 44px;
+    }
+    @include ipad {
+      font-size: 36px;
+    }
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    font-family: "Regular";
+    font-size: 15px;
+    color: rgba($grey, 0.5);
+    line-height: 1.8;
+    margin-bottom: 36px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hiw_hero_btns {
+    @include flex(center, center);
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ===================================================
+   OVERVIEW — 5-step row
+=================================================== */
+.hiw_overview {
+  background: $primary-color;
+  padding: 80px 0 90px;
+  border-top: 1px solid rgba($grey, 0.07);
+  border-bottom: 1px solid rgba($grey, 0.07);
+
+  .hiw_sec_head {
+    text-align: center;
+    margin-bottom: 56px;
+
+    h2 {
+      font-family: "Bold";
+      font-size: 38px;
+      color: $white;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-bottom: 14px;
+
+      @include laptop {
+        font-size: 32px;
+      }
+      @include ipad {
+        font-size: 26px;
+      }
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+
+    p {
+      font-family: "Regular";
+      font-size: 14px;
+      color: rgba($grey, 0.5);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+  }
+}
+
+.hiw_steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+  @include ipad {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hiw_step {
+  padding: 28px 35px;
+  border: 1px solid rgba($grey, 0.07);
+  position: relative;
+  background-color: #111418;
+  @include radius(8px);
+  text-align: center;
+
+  &:first-child {
+    border-left: 1px solid rgba($grey, 0.07);
+  }
+
+  @include ipad {
+    &:nth-child(3n) {
+      border-right: none;
+    }
+    &:nth-child(3n + 1) {
+      border-left: 1px solid rgba($grey, 0.07);
+    }
+  }
+
+  @include mobile {
+    &:nth-child(2n) {
+      border-right: none;
+    }
+    &:first-child {
+      border-left: none;
+    }
+    border-left: 1px solid rgba($grey, 0.07);
+  }
+
+  .hiw_step_num {
+    display: block;
+    font-family: "Medium";
+    font-size: 20px;
+    color: $gold;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    background-color: $blue-bg;
+    @include radius(4px);
+    @include flex(center, center);
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 20px;
+    border: 1px solid rgba($grey, 0.3);
+  }
+
+  h4 {
+    font-family: "SemiBold";
+    font-size: 14px;
+    color: $white;
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: "Regular";
+    font-size: 12px;
+    color: rgba($grey, 0.45);
+    line-height: 1.72;
+    margin: 0;
+  }
+}
+
+/* ===================================================
+   PHASE SECTIONS
+=================================================== */
+.hiw_phase {
+  background: $main-dark;
+  padding: 90px 0;
+  border-bottom: 1px solid rgba($grey, 0.06);
+
+  &.hiw_phase_alt {
+    background: $primary-color;
+  }
+}
+
+.hiw_phase_wrap {
+  @include flex(center, space-between);
+  gap: 64px;
+
+  @include ipad_sm {
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  &.hiw_img_right {
+    @include ipad_sm {
+      flex-direction: column;
+    }
+  }
+
+  &.hiw_img_left {
+    @include ipad_sm {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+/* Image column */
+.hiw_phase_img {
+  flex: 0 0 48%;
+  max-width: 48%;
+
+  @include ipad_sm {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    @include radius(12px);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Text column */
+.hiw_phase_text {
+  flex: 1;
+  min-width: 0;
+
+  @include ipad_sm {
+    width: 100%;
+  }
+}
+
+.hiw_phase_label {
+  display: block;
+  font-family: "Medium";
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $gold;
+  margin-bottom: 14px;
+}
+
+.hiw_phase_text h3 {
+  font-family: "Bold";
+  font-size: 34px;
+  color: $white;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 18px;
+
+  @include laptop {
+    font-size: 28px;
+  }
+  @include ipad {
+    font-size: 24px;
+  }
+  @include mobile {
+    font-size: 22px;
+  }
+}
+
+.hiw_phase_desc {
+  font-family: "Regular";
+  font-size: 14px;
+  color: rgba($grey, 0.5);
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* ── Phase 01: asset type grid ── */
+.hiw_asset_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.hiw_asset_item {
+  @include flex(center, flex-start);
+  gap: 10px;
+  background: $blue-bg;
+  border: 1px solid rgba($grey, 0.08);
+  @include radius(8px);
+  padding: 14px 16px;
+
+  .hiw_asset_icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    @include flex(center, center);
+    color: $teal;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  span {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.7);
+    line-height: 1.3;
+  }
+}
+
+/* Quote/note box */
+.hiw_quote_box {
+  @include flex(flex-start, flex-start);
+  gap: 12px;
+  background: rgba($grey, 0.03);
+  border: 1px solid rgba($grey, 0.08);
+  border-left: 3px solid $teal;
+  @include radius(8px);
+  padding: 16px 18px;
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  p {
+    font-family: "Regular";
+    font-size: 12px;
+    color: rgba($grey, 0.5);
+    line-height: 1.8;
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+/* ── Feature list ── */
+.hiw_feats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Bullet-dot style (phases 02-04) */
+.hiw_feat {
+  @include flex(flex-start, flex-start);
+  gap: 14px;
+
+  .hiw_feat_dot {
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    background: $gold;
+    @include radius(50%);
+    margin-top: 6px;
+  }
+
+  .hiw_feat_title {
+    font-family: "SemiBold";
+    font-size: 14px;
+    color: $white;
+    margin-bottom: 5px;
+    line-height: 1.35;
+  }
+
+  .hiw_feat_desc {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.5);
+    line-height: 1.75;
+    margin: 0;
+  }
+}
+
+/* Box-icon style (phases 02–05) */
+.hiw_box_feat {
+  @include flex(flex-start, flex-start);
+  gap: 14px;
+
+  .hiw_box_icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    @include flex(center, center);
+    border: 1px solid rgba($teal, 0.25);
+    background: rgba($teal, 0.08);
+    @include radius(8px);
+    color: $teal;
+  }
+
+  .hiw_feat_title {
+    font-family: "SemiBold";
+    font-size: 14px;
+    color: $white;
+    margin-bottom: 5px;
+    line-height: 1.35;
+  }
+
+  .hiw_feat_desc {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.45);
+    line-height: 1.75;
+    margin: 0;
+  }
+}
+
+/* ── Phase 05: inline-icon feature list ── */
+.hiw_p5_feats {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiw_p5_feat {
+  padding: 22px 0;
+  border-bottom: 1px solid rgba($grey, 0.07);
+
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .hiw_p5_head {
+    @include flex(center, flex-start);
+    gap: 10px;
+    margin-bottom: 10px;
+    color: $teal;
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+
+  .hiw_feat_title {
+    font-family: "SemiBold";
+    font-size: 15px;
+    color: $white;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .hiw_feat_desc {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.45);
+    line-height: 1.8;
+    margin: 0;
+    padding-left: 26px;
+  }
+}
+
+/* ===================================================
+   RESPONSIVE ADJUSTMENTS
+=================================================== */
+@include ipad {
+  .hiw_phase_wrap {
+    gap: 44px;
+  }
+  .hiw_phase_img {
+    flex: 0 0 46%;
+    max-width: 46%;
+  }
+  .hiw_hero {
+    padding: 70px 0 80px;
+  }
+}
+
+@include ipad_sm {
+  .hiw_hero {
+    padding: 56px 0 64px;
+  }
+  .hiw_phase {
+    padding: 60px 0;
+  }
+  .hiw_overview {
+    padding: 60px 0;
+  }
+}
+
+@include mobile {
+  .hiw_hero {
+    padding: 44px 0 52px;
+  }
+  .hiw_phase {
+    padding: 44px 0;
+  }
+  .hiw_overview {
+    padding: 44px 0;
+  }
+  .hiw_sec_head {
+    margin-bottom: 36px;
+  }
+  .hiw_asset_grid {
+    grid-template-columns: 1fr;
+  }
+  .hiw_steps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include mobile_md {
+  .hiw_hero {
+    padding: 36px 0 44px;
+  }
+  .hiw_steps {
+    grid-template-columns: 1fr;
+  }
+}
