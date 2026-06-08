@@ -265,7 +265,7 @@ export default function AddBeneficiary() {
                           </button>
                         </div>
                         <div className="ben_summary_pct_label">PORTFOLIO PERCENTAGE</div>
-                        <div className="ben_pct_row">
+                        {/* <div className="ben_pct_row">
                           <div className="ben_pct_track">
                             <div
                               className="ben_pct_fill"
@@ -281,7 +281,7 @@ export default function AddBeneficiary() {
                             onChange={(e) => updateAllocation(asset.id, e.target.value)}
                           />
                           <span className="ben_pct_symbol">%</span>
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>
@@ -356,12 +356,12 @@ export default function AddBeneficiary() {
                         <span className="ben_review_asset_name">{asset.name}</span>
                         <span className="ben_review_asset_type">TYPE: {asset.type}</span>
                       </div>
-                      <div className="ben_review_asset_pct_wrap">
+                      {/* <div className="ben_review_asset_pct_wrap">
                         <div className="ben_pct_track">
                           <div className="ben_pct_fill" style={{ width: `${allocations[asset.id] || 0}%` }} />
                         </div>
                         <span className="ben_review_pct">{allocations[asset.id] || 0}%</span>
-                      </div>
+                      </div> */}
                     </div>
                   ))}
                 </div>

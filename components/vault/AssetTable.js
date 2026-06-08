@@ -254,15 +254,15 @@ export default function AssetTable({toggleAccessPopup , setSelectedAsset,}) {
 
                 <td className="tdBeneficiary">
                   <div className="avatarGroup">
-                    {asset.beneficiaries.map((b, i) => (
-                      <div key={i} className="avatarChip">
-                        {b.image ? (
-                          <img src={b.image} alt={b.initials} />
+                    {asset.beneficiaries[0] && (
+                      <div className="avatarChip">
+                        {asset.beneficiaries[0].image ? (
+                          <img src={asset.beneficiaries[0].image} alt={asset.beneficiaries[0].initials} />
                         ) : (
-                          b.initials
+                          asset.beneficiaries[0].initials
                         )}
                       </div>
-                    ))}
+                    )}
                   </div>
                 </td>
 

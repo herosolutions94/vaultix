@@ -44,7 +44,7 @@ export default function KeyBeneficiaries() {
     <div className="benefSection">
       <div className="dash_sec_header">
         <h3 className="recentTitle dash_title">Key Beneficiaries</h3>
-        <Link href="" className="viewAllBtn">VIEW ALL BENEFICIARIES</Link>
+        <Link href="/dashboard/beneficiaries" className="viewAllBtn">VIEW ALL BENEFICIARIES</Link>
       </div>
 
       <div className="benefRow">

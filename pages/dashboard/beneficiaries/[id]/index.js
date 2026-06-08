@@ -104,12 +104,12 @@ export default function BeneficiaryDetail() {
                       <span className="ben_detail_asset_name">{asset.name}</span>
                       <span className="ben_detail_asset_type">TYPE: {asset.type}</span>
                     </div>
-                    <div className="ben_detail_asset_pct">
+                    {/* <div className="ben_detail_asset_pct">
                       <div className="ben_pct_track">
                         <div className="ben_pct_fill" style={{ width: `${asset.pct}%` }} />
                       </div>
                       <span className="ben_detail_pct_num">{asset.pct}%</span>
-                    </div>
+                    </div> */}
                   </div>
                 ))}
               </div>

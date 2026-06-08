@@ -55,7 +55,7 @@ export default function Vault() {
                       <span>END-TO-END ENCRYPTED SESSION</span>
                     </div>
                     <div className="btn_blk">
-                      <Link href="" className="site_btn color"><img src="/images/dashboard/add.svg" alt="add assets" /><span>Add Asset</span></Link>
+                      <Link href="vault/assets/add-asset" className="site_btn color"><img src="/images/dashboard/add.svg" alt="add assets" /><span>Add Asset</span></Link>
                     </div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Vault() {
                 <div className="recentSection">
                     <div className="dash_sec_header">
                         <h3 className="recentTitle dash_title">High-Value Assets</h3>
-                        <Link href="" className="viewAllBtn">VIEW ALL ASSETS</Link>
+                        <Link href="vault/assets" className="viewAllBtn">VIEW ALL ASSETS</Link>
                     </div>
 
                     <div className="assetsRow">
@@ -120,7 +120,7 @@ export default function Vault() {
                 <div className="vault_category_dash">
                     <div className="dash_sec_header">
                         <h3 className="recentTitle dash_title">Vault Categories</h3>
-                        <Link href="" className="viewAllBtn">VIEW ALL CATEGORIES</Link>
+                        <Link href="vault/categories" className="viewAllBtn">VIEW ALL CATEGORIES</Link>
                     </div>
                     <div className="vault_flex_cate flex">
                         <div className="col">

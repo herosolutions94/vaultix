@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 // ─── Icons ─────────────────────────────
 const VaultixLogo = () => <img src="/images/logo.png" alt="" />;
@@ -62,6 +63,15 @@ const BOTTOM_NAV = [
 // ─── Component ─────────────────────────
 export default function Sidebar() {
   const pathname = usePathname() || "";
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    const handleToggle = () => setMobileOpen((prev) => !prev);
+    window.addEventListener("toggleSidebar", handleToggle);
+    return () => window.removeEventListener("toggleSidebar", handleToggle);
+  }, []);
+
+  const closeSidebar = () => setMobileOpen(false);
 
   // ✅ Vault submenu auto open based on route
   const isVaultOpen = pathname.startsWith("/dashboard/vault");
@@ -77,7 +87,13 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="sidebar">
+    <>
+    <aside className={`sidebar${mobileOpen ? " mobile-open" : ""}`}>
+      <button className="sidebar-close-btn" onClick={closeSidebar} aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        </svg>
+      </button>
       {/* Logo */}
       <Link href="/dashboard" className="side_logo">
         <VaultixLogo />
@@ -93,6 +109,7 @@ export default function Sidebar() {
                 <Link
                   href={item.href}
                   className={`nav-item ${isParentActive(item.href) ? "active" : ""}`}
+                  onClick={closeSidebar}
                 >
                   <span className="nav-icon">{item.icon}</span>
                   <span className="nav-label">{item.label}</span>
@@ -117,6 +134,7 @@ export default function Sidebar() {
                       className={`sub-item ${
                         pathname === child.href ? "sub-active" : ""
                       }`}
+                      onClick={closeSidebar}
                     >
                       <span className="sub-dot" />
                       {child.label}
@@ -128,6 +146,7 @@ export default function Sidebar() {
               <Link
                 href={item.href}
                 className={`nav-item ${isActive(item.href) ? "active" : ""}`}
+                onClick={closeSidebar}
               >
                 <span className="nav-icon">{item.icon}</span>
                 <span className="nav-label">{item.label}</span>
@@ -144,6 +163,7 @@ export default function Sidebar() {
             key={item.href}
             href={item.href}
             className={`nav-item ${isActive(item.href) ? "active" : ""}`}
+            onClick={closeSidebar}
           >
             <span className="nav-icon">{item.icon}</span>
             <span className="nav-label">{item.label}</span>
@@ -155,5 +175,10 @@ export default function Sidebar() {
         </div>
       </div>
     </aside>
+    <div
+      className={`sidebar-overlay${mobileOpen ? " active" : ""}`}
+      onClick={closeSidebar}
+    />
+    </>
   );
 }

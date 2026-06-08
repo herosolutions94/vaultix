@@ -106,7 +106,7 @@
     }
   }
   .bottom-nav{
-    @include pos($t:null);
+    margin-top: auto;
     .nav-item{
       display: flex;
       gap: 1rem;
@@ -191,9 +191,13 @@
 .dash_header{
   @include flex($justify:space-between , $align:center);
   margin-bottom: 3rem;
+  // @include ipad{
+  //   flex-direction: column;
+  //   align-items: unset;
+  // }
   .left_col{
     // flex: 1;
-    max-width: 90rem;
+    max-width: 50rem;
     padding-right: 2rem;
     *{
       color: $grey;
@@ -203,9 +207,14 @@
     }
   }
   .right_col{
-    width: fit-content;
-    @include flex($flow:column , $align:flex-end);
-    gap: 1rem;
+    @include flex($align: center, $justify: space-between);
+    @include laptop{
+      flex-direction: column;
+    }
+    @include ipad_sm{
+      flex-direction: row;
+    }
+    gap: 1.5rem;
     .btn_blk{
       .site_btn{
         &:hover{
@@ -620,6 +629,7 @@
   align-items: center;
   gap: 14px;
   transition: border-color 0.2s;
+  position: relative;
 }
 
 
@@ -662,6 +672,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  @include ipad{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
   img{
     @include object(contain);
   }
@@ -799,6 +814,7 @@
     .col{
       width: 20%;
       padding: 1rem;
+      flex: unset;
       .inner{
         background-color: #15181c;
         border: 1px solid #272727;
@@ -833,10 +849,19 @@
   .colL{
     width: 60%;
     padding-right: 1rem;
+    @include ipad{
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
   }
   .colR{
     width: 40%;
     padding-left: 1rem;
+    @include ipad{
+      width: 100%;
+      padding-left: 0;
+    }
   }
 }
 // =====vault health======
@@ -851,6 +876,9 @@
   gap: 28px;
   flex: 1;
   height: 100%;
+  @include mobile_sm{
+    flex-direction: column;
+  }
 
   .healthGaugeWrapper {
     position: relative;
@@ -1062,7 +1090,7 @@
   background-color: #15181c;
   border: 1px solid #272727;
   border-radius: 14px;
-  overflow: visible;
+  overflow: hidden;
 
     /* ── Toolbar ── */
   .toolbar {
@@ -1218,10 +1246,12 @@
   /* ── Table ── */
   .tableScroll {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .dataTable {
     width: 100%;
+    min-width: 64rem;
     border-collapse: collapse;
   }
 
@@ -1263,6 +1293,7 @@
     padding: 20px 18px;
     vertical-align: middle;
     color: $grey;
+    white-space: nowrap;
   }
 
   /* Asset name cell */
@@ -1297,6 +1328,7 @@
   /* Type cell */
   .typeMain {
     color: $grey;
+    white-space: nowrap;
   }
 
 
@@ -1304,6 +1336,7 @@
   .avatarGroup {
     display: flex;
     align-items: center;
+    
     .avatarChip {
       width: 35px;
       height: 35px;
@@ -1516,6 +1549,10 @@
         border-color: #353534;
         font-size: 5rem;
         text-align: center;
+        @include mobile_sm{
+          font-size: 3rem;
+          height: 5rem;
+        }
       }
     }
     .btn_blk{
@@ -1560,6 +1597,9 @@
     @include radius(6px);
     border: 1px solid #5d5d5d81;
     position: relative;
+    @include mobile_sm{
+      padding: 2rem;
+    }
     .add_cate_pop_header{
       margin-bottom: 3rem;
       *{
@@ -1583,6 +1623,11 @@
   .colL{
     width: 30%;
     padding-right: 1rem;
+    @include ipad{
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
     ul{
       @include list;
       li{
@@ -1615,15 +1660,24 @@
   .colR{
     width: 70%;
     padding-left: 1rem;
+    @include ipad{
+      width: 100%;
+      padding-left: 0;
+    }
+    .ben_tiles_grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      @include ipad_sm {
+        grid-template-columns: 1fr;
+      }
+    }
     .tile_dt{
         background-color: #1C1B1B;
         @include radius(5px);
         padding: 2.5rem;
         color: $grey;
         border: 1px solid rgba($gold, 0.06);
-        &:not(:last-child){
-          margin-bottom: 2rem;
-        }
       .inner_fx{
         flex: 1;
         gap: 1rem;
@@ -2041,6 +2095,11 @@
       margin-bottom: 0;
     }
     margin-bottom: 2rem;
+    .tag_enc{
+      @include mobile_sm{
+        display: none;
+      }
+    }
   }
   .ben_devide_asset_flex{
     @include flex($flow:wrap);
@@ -2048,6 +2107,9 @@
     .col_ben{
       padding: 1rem;
       width: calc(100% / 3);
+      @include mobile_sm{
+        width: 100%;
+      }
       .inner_ben{
         background-color: #1C1B1B;
         padding: 2rem;
@@ -2535,12 +2597,14 @@
   background-color: #15181c;
   border: 1px solid #272727;
   border-radius: 14px;
-  overflow: visible;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .ben_table_head {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 80px;
+  min-width: 56rem;
   padding: 1.4rem 2rem;
   border-bottom: 1px solid #2a2f2e;
   background: rgba(14, 14, 14, 0.48);
@@ -2552,6 +2616,7 @@
   font-size: 1.4rem;
   letter-spacing: 0.5px;
   font-family: 'Medium';
+  white-space: nowrap;
 }
 
 .ben_table_body {
@@ -2562,6 +2627,7 @@
 .ben_row {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 80px;
+  min-width: 56rem;
   align-items: center;
   padding: 1.8rem 2rem;
   border-bottom: 1px solid #1f2625;
@@ -2573,6 +2639,7 @@
 .ben_td {
   color: $grey;
   font-size: 1.5rem;
+  white-space: nowrap;
 }
 
 .ben_name_cell {
@@ -2645,10 +2712,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: 56rem;
   padding: 1.4rem 2rem;
   border-top: 1px solid #2a2f2e;
   background: rgba(14, 14, 14, 0.48);
   border-radius: 0 0 14px 14px;
+  @include mobile_sm{
+    flex-direction: column;
+  }
 }
 
 
@@ -2751,6 +2822,9 @@
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;
+  @include mobile_xs{
+    padding: 2rem;
+  }
 }
 
 .ben_form_card_title {
@@ -3106,6 +3180,9 @@
   border-radius: 10px;
   padding: 2.5rem;
   margin-bottom: 2rem;
+  @include mobile_xs{
+    padding: 2rem;
+  }
 }
 
 .ben_review_section_head {
@@ -3193,7 +3270,8 @@
 
 .ben_review_assets {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -3258,6 +3336,11 @@
   margin: 2.5rem auto 0;
   padding-top: 2rem;
   border-top: 1px solid #272727;
+  @include mobile_sm{
+    flex-direction: column;
+    justify-content: unset;
+    align-items: self-start;
+  }
 }
 
 .ben_back_btn {
@@ -3269,12 +3352,20 @@
   cursor: pointer;
   @include trans;
   &:hover { color: $gold; }
+  @include mobile_sm{
+    margin-right: auto;
+  }
 }
 
 .ben_nav_right {
   display: flex;
   align-items: center;
   gap: 2rem;
+  @include mobile_sm{
+    width: 100%;
+    justify-content: space-between;
+  }
+  
 }
 
 .ben_draft_btn {
@@ -3366,6 +3457,10 @@
   overflow: hidden;
   flex-shrink: 0;
   img { width: 100%; height: 100%; object-fit: cover; }
+  @include mobile{
+    width: 7rem;
+    height: 7rem;
+  }
 }
 
 .ben_detail_photo_placeholder {
@@ -3425,6 +3520,7 @@
 .ben_detail_assets {
   display: flex;
   flex-direction: column;
+  // flex-wrap: wrap;
   gap: 1.2rem;
 }
 
@@ -3496,8 +3592,12 @@
           font-size: 1.2rem;
           border: 1px solid transparent;
           @include radius(2px);
-         position: relative;
-         padding-left: 2rem;
+          position: relative;
+          padding-left: 2rem;
+          white-space: nowrap;
+          display: inline-flex;
+          align-items: center;
+          vertical-align: middle;
          &:before{
           @include pos($t:1rem, $l:.7rem);
           content: '';
@@ -3538,6 +3638,9 @@
   border-radius: 14px;
   padding: 3rem;
   margin-bottom: 2rem;
+  @include mobile_sm{
+    padding: 2rem;
+  }
 
   &.trig_card_inline {
     display: flex;
@@ -3616,6 +3719,7 @@
   background-color:$main-dark;
   @include radius(5px);
   padding: 1rem 2rem;
+  
 }
 
 .trig_row_label {
@@ -3714,7 +3818,13 @@
   justify-content: flex-end;
   gap: 1.5rem;
   padding-top: 1rem;
+  @include mobile_sm{
+    flex-direction: column;
+  }
   .site_btn{
+    @include mobile_sm{
+      width: 100%;
+    }
     &.color{
       img{
         filter: brightness(0);
@@ -3734,6 +3844,9 @@
   border-radius: 14px;
   padding: 3rem;
   margin-bottom: 2rem;
+  @include mobile_sm{
+    padding: 2rem;
+  }
 }
 
 .sett_profile_card {
@@ -4115,6 +4228,9 @@
   color: #fff !important;
   flex-shrink: 0;
   white-space: nowrap;
+  @include mobile_sm{
+    width: 100%;
+  }
 
   &:hover {
     background-color: #991b1b !important;
@@ -4252,7 +4368,7 @@
 
 .sub_plan_current_badge {
   position: absolute;
-  top: -1.7px;
+  top: -1.7rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: $gold;
@@ -4445,9 +4561,18 @@
   background-color: #15181c; border: 1px solid #272727;
   border-radius: 14px; padding: 3rem; margin-bottom: 2rem;
   display: flex; flex-direction: column; gap: 2rem;
+  .site_btn{
+    @include mobile_sm{
+      width: 100%;
+    }
+  }
 }
 
-.leg_step_head { display: flex; align-items: center; justify-content: space-between; }
+.leg_step_head { display: flex; align-items: center; justify-content: space-between; @include mobile_sm{
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}}
 
 .leg_step_left { display: flex; align-items: center; gap: 1.4rem; }
 
@@ -4475,6 +4600,9 @@
   min-width: 10rem; color: #d1d5db; font-size: 1.3rem;
   img { width: 2.4rem; height: 2.4rem; object-fit: contain; filter: brightness(0) invert(0.7); }
   &:hover { border-color: #C9A84C; }
+  @include mobile_sm{
+    width: 100%;
+  }
 }
 
 .leg_start_link {
@@ -4571,22 +4699,30 @@
   img { width: 1.8rem; height: 1.8rem; object-fit: contain; }
 }
 
-.ia_table_card { background-color: #15181c; border: 1px solid #272727; border-radius: 14px; overflow: visible; }
+.ia_table_card { background-color: #15181c; border: 1px solid #272727; border-radius: 14px; overflow: hidden; }
 
-.ia_tabs { display: flex; border-bottom: 1px solid #272727; padding: 0 2rem; }
+.ia_tabs { display: flex; border-bottom: 1px solid #272727; padding: 0 2rem; -webkit-overflow-scrolling: touch; flex-wrap: nowrap;
+@include mobile_sm{
+  justify-content: space-between;
+  padding: 0 1rem;
+} }
 
 .ia_tab {
   background: none; border: none; border-bottom: 2px solid transparent;
   color: #6b7280; font-size: 1.3rem; letter-spacing: 0.5px;
   padding: 1.6rem 1.6rem; cursor: pointer;
+  @include mobile_sm{
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+  }
   transition: color 0.15s, border-color 0.15s; margin-bottom: -1px;
   &:hover { color: #d1d5db; }
   &.ia_tab_active { color: #d1d5db; border-bottom-color: #C9A84C; }
 }
 
-.ia_table_scroll { overflow-x: auto; }
+.ia_table_scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
-.ia_table { width: 100%; border-collapse: collapse; }
+.ia_table { width: 100%; min-width: 64rem; border-collapse: collapse; }
 
 .ia_thead_row {
   border-bottom: 1px solid #2a2f2e;
@@ -4598,12 +4734,12 @@
   border-bottom: 1px solid #1f2625; transition: background 0.15s;
   &:last-child { border-bottom: none; }
   &:hover { background-color: rgba(#C9A84C, 0.02); }
-  td { padding: 2rem 2rem; vertical-align: middle; }
+  td { padding: 2rem 2rem; vertical-align: middle; white-space: nowrap; }
 }
 
-.ia_td_name { color: #d1d5db; max-width: 22rem; }
-.ia_td_type { color: $grey;}
-.ia_td_from { color: $grey;}
+.ia_td_name { color: #d1d5db; }
+.ia_td_type { color: $grey; white-space: nowrap; }
+.ia_td_from { color: $grey; white-space: nowrap; }
 
 .ia_status_badge {
   display: inline-block; padding: 0.1rem 1.2rem; border-radius: 4px;
@@ -4633,4 +4769,489 @@
   font-size: 1.2rem; font-family: 'Medium'; letter-spacing: 0.5px;
   cursor: pointer; padding: 0.5rem 0; transition: opacity 0.15s;
   &:hover { opacity: 0.7; }
+}
+
+
+// ══════════════════════════════════════════
+// RESPONSIVE — ALL DASHBOARD PAGES
+// ══════════════════════════════════════════
+
+// ─── Hamburger (hidden on desktop) ─────────────────
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: .5rem;
+  flex-shrink: 0;
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: $grey;
+    border-radius: 2px;
+    @include trans;
+  }
+}
+
+// ─── Sidebar close btn (hidden on desktop) ─────────
+.sidebar-close-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: $grey;
+  cursor: pointer;
+  padding: .5rem 2rem 0;
+  align-self: flex-end;
+  @include trans;
+  &:hover { color: $gold; @include trans; }
+}
+
+// ─── Mobile overlay (always rendered, hidden until .active) ─
+.sidebar-overlay {
+  display: none;
+  @include pos($t: 0, $r: 0, $b: 0, $l: 0, $z: 199, $pos: fixed);
+  background: rgba(0, 0, 0, 0.65);
+  &.active { display: block; }
+}
+
+// ══════════════════════════════════════════
+// ipad ≤ 1025px — sidebar only
+// ══════════════════════════════════════════
+@include ipad {
+
+  // ── Sidebar slide-in ────────────────────
+  .sidebar {
+    @include pos($t: 0, $l: 0, $b: 0, $r: null, $z: 200, $pos: fixed);
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    @include trans;
+    &.mobile-open {
+      overflow: auto;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .sidebar-close-btn { display: flex; justify-content: flex-end; }
+  .hamburger-btn     { display: flex; }
+
+  // ── Header full-width + search bar gap ──
+  .logged_header {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .contain { padding: 0 1.5rem; }
+  }
+  .dashload_side {
+    form {
+      flex: 1;
+      width: auto;
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  // ── Dashboard main ──────────────────────
+  .dashboard-main { padding: 9rem 1.5rem 2rem; width: 100%; }
+}
+
+// ipad_sm ≤ 991px — sidebar + all pages
+// ══════════════════════════════════════════
+@include ipad_sm {
+
+  // ── Sidebar slide-in ────────────────────
+  .sidebar {
+    @include pos($t: 0, $l: 0, $b: 0, $r: null, $z: 200, $pos: fixed);
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    @include trans;
+    &.mobile-open {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .sidebar-close-btn { display: flex; justify-content: flex-end; }
+  .hamburger-btn     { display: flex; }
+
+  // ── Header full-width + search bar gap ──
+  .logged_header {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .contain { padding: 0 1.5rem; }
+  }
+  .dashload_side {
+    form {
+      flex: 1;
+      width: auto;
+      margin-left: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  // ── Dashboard main ──────────────────────
+  .dashboard-main { padding: 9rem 1.5rem 2rem; width: 100%; }
+
+  // ── Dash header ─────────────────────────
+  .dash_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    .left_col { padding-right: 0; max-width: 100%; }
+    .right_col {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .btn_blk { flex-wrap: wrap; }
+  }
+
+  // ── Stat cards (dashboard index) ────────
+  .main_intro_flex .col { width: 50%; }
+
+  // ── Vault distribution ──────────────────
+  .vaultSection  { padding: 2.5rem 1.5rem; }
+  .vaultInner    { flex-direction: column; gap: 2rem; }
+  .vaultRight    { min-width: unset; }
+
+  // ── Recent assets cards ─────────────────
+  .recentSection {
+    .assetsRow {
+      flex-wrap: wrap;
+      gap: 10px;
+      .assetCard { flex: unset; width: calc(50% - 5px); }
+    }
+  }
+
+  // ── Beneficiary cards (dashboard) ───────
+  .benefSection {
+    .benefRow {
+      flex-wrap: wrap;
+      gap: 10px;
+      .benefCard { width: calc(50% - 5px); }
+    }
+  }
+
+  // ── Risk timeline ───────────────────────
+  .riskSection { padding: 2.5rem 1.5rem; }
+  .timelineStepsRow { gap: 0; }
+
+  // ── Vault health & trigger (vault page) ─
+  .vault_pg_flex {
+    flex-direction: column;
+    .colL, .colR { width: 100%; padding: 0; }
+    .colL { margin-bottom: 2rem; }
+  }
+  
+
+  // ── Asset detail page ───────────────────
+  .asset_dt_fx {
+    flex-direction: column;
+    .colL, .colR { width: 100%; padding: 0; }
+    .colL { margin-bottom: 2rem; }
+    .tile_dt {
+      // flex-direction: column;
+      gap: 1.5rem;
+      // .right_fx { width: 100%; }
+    }
+  }
+
+  // ── Vault categories dash widget ────────
+  .vault_category_dash {
+    .vault_flex_cate {
+      .col { width: 33.33%; }
+    }
+  }
+
+  // ── Category page grid ──────────────────
+  .cat_grid { grid-template-columns: repeat(2, 1fr); }
+  .cat_detail_stats { flex-wrap: wrap; }
+  .cat_dt_stat_card { width: calc(50% - 1rem); }
+
+  // ── Asset table / toolbar ───────────────
+  .tableWrapper {
+    .toolbar {
+      flex-wrap: wrap;
+      .searchBox { max-width: 100%; flex: 1; }
+      .toolbarRight { flex-wrap: wrap; }
+    }
+    
+  }
+
+  // ── Beneficiaries list table — horizontal scroll, no column hiding
+
+ 
+
+  
+
+  // ── Trigger settings ─────────────────────
+  .trig_card_inline { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .trig_row         { flex-wrap: wrap; gap: 1rem; }
+
+  
+  // ── Subscription ─────────────────────────
+  .sub_plans_grid { grid-template-columns: repeat(2, 1fr); }
+  
+
+  // ── Inherited assets stats ────────────────
+  .ia_stats_grid { grid-template-columns: repeat(2, 1fr); }
+
+  // ── Legacy / continue page ────────────────
+  .leg_two_col { grid-template-columns: 1fr; }
+
+  // ── Activity list ─────────────────────────
+  .activity_list .inner_activity { padding: 1.5rem; }
+  .activity_list .inner_activity .head_list h3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .6rem;
+    font-size: 1.6rem;
+    > span { margin-left: 0; }
+  }
+}
+
+
+// ══════════════════════════════════════════
+// mobile ≤ 767px
+// ══════════════════════════════════════════
+@include mobile {
+
+  .dashboard-main { padding: 9rem 1.5rem 2rem; }
+
+  // Stat cards: full-width single column
+  .main_intro_flex .col { width: 100%; }
+
+  // Recent asset cards: stacked
+  .recentSection {
+    .assetsRow {
+      flex-direction: column;
+      .assetCard { width: 100%; }
+    }
+  }
+  .sett_two_col  { grid-template-columns: 1fr;}
+  
+
+  // Beneficiary cards: stacked
+  .benefSection {
+    .benefRow {
+      flex-direction: column;
+      .benefCard { width: 100%; }
+    }
+  }
+
+  // Risk timeline: wrap steps
+  .timelineStepsRow {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    .timelineStep { width: calc(50% - 1.5rem); }
+  }
+  .timelineTrack { display: none; }
+  .riskSection   { padding: 2rem 1.5rem; }
+
+  // Vault categories dash: 2 cols
+  .vault_category_dash {
+    .vault_flex_cate {
+      .col { width: calc(100% / 3); }
+    }
+  }
+
+  // Category page: single col
+  .cat_grid         { grid-template-columns: 1fr; }
+  .cat_icon_picker  { grid-template-columns: repeat(3, 1fr); }
+  .cat_detail_stats { flex-direction: column; }
+  .cat_dt_stat_card { width: 100%; }
+
+  // Add asset form: all fields full-width
+  .dbl_field {
+    .field_text { width: 100% !important;}
+  }
+
+  // Beneficiary forms: single col
+  .ben_fields_grid  { grid-template-columns: 1fr; }
+  .ben_review_id_grid { grid-template-columns: 1fr 1fr; }
+  
+
+  // Settings: single col grids
+  .sett_form_grid { grid-template-columns: 1fr; }
+  .sett_danger_card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  // Subscription: single col
+  .sub_plans_grid { grid-template-columns: 1fr; }
+
+  // Inherited assets: 2-col stats
+  .ia_stats_grid { grid-template-columns: 1fr 1fr; }
+
+  // Triggers: wrap counter row
+  .trig_row_right { flex-wrap: wrap; justify-content: flex-end; }
+
+  // Header form full-width
+  .dashload_side {
+    form {
+      flex: 1;
+      width: auto;
+      margin-left: 1rem;
+      margin-right: .5rem;
+      .input { font-size: 1.2rem; }
+    }
+  }
+}
+
+@include mobile_md{
+  .sub_current_banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    .sub_banner_right  { align-items: flex-start; }
+    .sub_banner_left   { flex-wrap: wrap; gap: 1rem; }
+  }
+
+  // ── Settings page ────────────────────────
+  .sett_profile_card {
+    flex-direction: column;
+    .sett_profile_left { width: 100%; align-items: center; }
+    .sett_profile_right{width: 100%;
+    .sett_profile_actions{
+      justify-content: center;
+    }}
+  }
+  .sett_two_col  { grid-template-columns: 1fr; display: flex;
+  gap: 2rem; flex-direction: column;}
+  .sett_form_grid { grid-template-columns: 1fr; }
+
+}
+// ══════════════════════════════════════════
+// mobile_sm ≤ 475px
+// ══════════════════════════════════════════
+@include mobile_sm {
+// ── Beneficiary detail ───────────────────
+  .ben_detail_flex { flex-direction: column;align-items: unset; }
+  .dashboard-main { padding: 9rem 1.5rem 2rem; }
+
+  .dash_header {
+    .right_col { flex-direction: column; align-items: flex-start; }
+    .btn_blk {
+      width: 100%;
+      .site_btn {
+        padding: .8rem 1.2rem;
+        width: 100%;
+        span { font-size: 1.2rem; }
+      }
+    }
+  }
+  .add_category_form{
+    .btn_blk{
+      flex-direction: column;
+    }
+  }
+   // ── Add beneficiary ──────────────────────
+  .ben_identity_grid { flex-direction: column; align-items: unset; }
+  .ben_fields_grid   { grid-template-columns: 1fr; }
+  .ben_stepper       { max-width: 100%; }
+  .ben_alloc_grid {
+    flex-direction: column;
+    .ben_alloc_right { width: 100%; }
+  }
+  .ben_review_identity { flex-direction: column; }
+  .ben_review_id_grid  { grid-template-columns: 1fr; }
+  .asset_dt_fx {
+    .colR{
+      .tile_dt {
+        flex-direction: column;
+        .right_fx { width: 100%; }
+      }
+    }
+  }
+  .tableFooter {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  // Vault categories: 2 cols
+  .vault_category_dash {
+    .vault_flex_cate {
+      .col { width: 50%; }
+    }
+  }
+
+  .toolbar {
+      flex-wrap: wrap;
+      flex-direction: column;
+      .searchBox { width: 100%;}
+      .toolbarRight { justify-content: space-between;
+        width: 100%; }
+    }
+
+  // Timeline: full-width steps
+  // .timelineStepsRow .timelineStep { width: 100%; }
+
+  // Inherited assets: single col
+  .ia_stats_grid { grid-template-columns: 1fr; }
+
+  // Subscription: always single col
+  .sub_plans_grid { grid-template-columns: 1fr; }
+
+  // Category icon picker: 2 cols
+  .cat_icon_picker { grid-template-columns: repeat(2, 1fr); }
+
+  // Add asset tabs: vertical scroll
+  .tabs_flx {
+    height: auto !important;
+    max-height: 22rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: .3rem;
+    button {
+      flex: unset;
+      width: 100%;
+      padding: .9rem 1.2rem;
+      white-space: nowrap;
+      text-align: left;
+    }
+  }
+
+  // Header: smaller search placeholder
+  .dashload_side form .input::placeholder { font-size: 1.1rem; }
+  .sett_profile_actions{
+      flex-direction: column;
+    }
+    .sett_2fa_row_left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .1rem;
+    }
+
+    .trig_row{
+      flex-direction: column;
+    }
+    .trig_row_label{
+      text-align: center;
+    }
+}
+@include mobile_xs{
+.sub_banner_name_row{
+  flex-direction: column;
+  align-items: flex-start;
+}
 }
