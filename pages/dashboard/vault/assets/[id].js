@@ -54,31 +54,19 @@ export default function AssetDetail() {
                       <div className="dash_sec_header">
                           <h3 className="recentTitle dash_title">Beneficiary Allocation</h3>
                       </div>
-                      <div className="tile_dt flex">
-                        <div className="inner_fx flex">
-                            <div className="img_icon">
-                              <img src="/images/dashboard/ben1.svg" alt="" />
-                            </div>
-                            <div className="info_ben">
-                              <div className="name">Sarah Jenkins</div>
-                            </div>
-                        </div>
-                        <div className="right_fx">
-                          <ProgressBar value={70} />
-                        </div>
-                      </div>
-
-                      <div className="tile_dt flex">
-                        <div className="inner_fx flex">
-                            <div className="img_icon">
-                              <img src="/images/dashboard/ben2.svg" alt="" />
-                            </div>
-                            <div className="info_ben">
-                              <div className="name">John Doe</div>
-                            </div>
-                        </div>
-                        <div className="right_fx">
-                          <ProgressBar value={30} />
+                      <div className="ben_tiles_grid">
+                        <div className="tile_dt flex">
+                          <div className="inner_fx flex">
+                              <div className="img_icon">
+                                <img src="/images/dashboard/ben1.svg" alt="" />
+                              </div>
+                              <div className="info_ben">
+                                <div className="name">Sarah Jenkins</div>
+                              </div>
+                          </div>
+                          {/* <div className="right_fx">
+                            <ProgressBar value={70} />
+                          </div> */}
                         </div>
                       </div>
                     </div>

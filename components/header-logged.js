@@ -7,6 +7,10 @@ export default function LoggedHeader() {
   const [userDrop, setUserDrop] = useState(false);
   const dropRef = useRef(null);
 
+  const toggleSidebar = () => {
+    window.dispatchEvent(new CustomEvent("toggleSidebar"));
+  };
+
   const ToggleUserDrop = () => {
     setUserDrop((prev) => !prev);
   };
@@ -27,6 +31,12 @@ export default function LoggedHeader() {
     <header className="logged_header dash_logged_header">
       <div className="contain">
         <div className="logged_side dashload_side">
+
+          <button className="hamburger-btn" onClick={toggleSidebar} aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
           <form>
             <div className="inner">

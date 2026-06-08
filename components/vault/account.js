@@ -24,7 +24,7 @@ export default function Account() {
             <label htmlFor="#name">WALLET LOGIN PASSWORD</label>
             <input type="text" className="input" placeholder="e.g., MySecurePassword123"/>
         </div>
-        <div className="field_text m_b_2">
+        <div className="field_text">
             <label htmlFor="#name">SECURE NOTES / ACCESS INSTRUCTIONS</label>
             <input type="text" className="input" placeholder="e.g., Bitcoin Cold Wallet, Ethereum Ledger, Coinbase Account"/>
         </div>

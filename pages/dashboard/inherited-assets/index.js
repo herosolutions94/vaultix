@@ -6,7 +6,9 @@ import LoggedHeader from "@/components/header-logged";
 const TABS = ["ACTIVE (8)", "TRANSFERRED (3)", "PENDING (1)"];
 
 const ASSETS = [
+  // ── Active
   {
+    tab: 0,
     name: "Bayerische Motoren Real Estate",
     type: "Commercial Property",
     from: "Alexander V.",
@@ -16,6 +18,7 @@ const ASSETS = [
     action: "VIEW ASSET",
   },
   {
+    tab: 0,
     name: "Lumina Venture Capital Fund III",
     type: "Private Equity",
     from: "Alexander V.",
@@ -25,6 +28,7 @@ const ASSETS = [
     action: "AUTHORIZE",
   },
   {
+    tab: 0,
     name: 'Digital Art - "The Ether Vault"',
     type: "Digital Asset",
     from: "Alexander V.",
@@ -33,7 +37,40 @@ const ASSETS = [
     progress: 100,
     action: "VIEW ASSET",
   },
+  // ── Transferred
   {
+    tab: 1,
+    name: "Geneva Bond Portfolio",
+    type: "Fixed Income",
+    from: "Estate of J. Müller",
+    status: "SECURED",
+    statusVariant: "secured",
+    progress: 100,
+    action: "VIEW ASSET",
+  },
+  {
+    tab: 1,
+    name: "Monaco Penthouse Suite",
+    type: "Real Estate",
+    from: "Alexander V.",
+    status: "SECURED",
+    statusVariant: "secured",
+    progress: 100,
+    action: "VIEW ASSET",
+  },
+  {
+    tab: 1,
+    name: "Alpine Equity Fund",
+    type: "Private Equity",
+    from: "Family Trust B",
+    status: "TITLE LOCK",
+    statusVariant: "titlelock",
+    progress: 90,
+    action: "AUTHORIZE",
+  },
+  // ── Pending
+  {
+    tab: 2,
     name: "Zurich Private Banking - Acct 09",
     type: "Liquid Capital",
     from: "Family Trust B",
@@ -123,7 +160,7 @@ export default function InheritedAssets() {
                   </tr>
                 </thead>
                 <tbody>
-                  {ASSETS.map((asset, i) => (
+                  {ASSETS.filter((a) => a.tab === activeTab).map((asset, i) => (
                     <tr key={i} className="ia_row">
                       <td className="ia_td_name">{asset.name}</td>
                       <td className="ia_td_type">{asset.type}</td>

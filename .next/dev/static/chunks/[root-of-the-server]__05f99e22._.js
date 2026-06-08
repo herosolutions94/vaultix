@@ -483,6 +483,9 @@ function LoggedHeader() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [userDrop, setUserDrop] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const dropRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const toggleSidebar = ()=>{
+        window.dispatchEvent(new CustomEvent("toggleSidebar"));
+    };
     const ToggleUserDrop = ()=>{
         setUserDrop((prev)=>!prev);
     };
@@ -509,6 +512,32 @@ function LoggedHeader() {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "logged_side dashload_side",
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "hamburger-btn",
+                        onClick: toggleSidebar,
+                        "aria-label": "Toggle menu",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/header-logged.js",
+                        lineNumber: 35,
+                        columnNumber: 11
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "inner",
@@ -518,7 +547,7 @@ function LoggedHeader() {
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 33,
+                                    lineNumber: 43,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -527,18 +556,18 @@ function LoggedHeader() {
                                     className: "input"
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 34,
+                                    lineNumber: 44,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/header-logged.js",
-                            lineNumber: 32,
+                            lineNumber: 42,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/header-logged.js",
-                        lineNumber: 31,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -556,17 +585,17 @@ function LoggedHeader() {
                                             alt: ""
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 49,
+                                            lineNumber: 59,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/header-logged.js",
-                                        lineNumber: 48,
+                                        lineNumber: 58,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 44,
+                                    lineNumber: 54,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -579,12 +608,12 @@ function LoggedHeader() {
                                                 children: "Dashboard"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header-logged.js",
-                                                lineNumber: 55,
+                                                lineNumber: 65,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 54,
+                                            lineNumber: 64,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -594,45 +623,45 @@ function LoggedHeader() {
                                                 children: "Logout"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header-logged.js",
-                                                lineNumber: 61,
+                                                lineNumber: 71,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 60,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 53,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/header-logged.js",
-                            lineNumber: 43,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/header-logged.js",
-                        lineNumber: 42,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/header-logged.js",
-                lineNumber: 29,
+                lineNumber: 33,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/header-logged.js",
-            lineNumber: 28,
+            lineNumber: 32,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/header-logged.js",
-        lineNumber: 27,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
@@ -758,9 +787,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 // ─── Icons ─────────────────────────────
@@ -769,7 +800,7 @@ const VaultixLogo = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 _c = VaultixLogo;
@@ -778,7 +809,7 @@ const IconDashboard = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$p
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 29
     }, ("TURBOPACK compile-time value", void 0));
 _c1 = IconDashboard;
@@ -787,7 +818,7 @@ const IconVault = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 25
     }, ("TURBOPACK compile-time value", void 0));
 _c2 = IconVault;
@@ -796,7 +827,7 @@ const IconBeneficiaries = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 33
     }, ("TURBOPACK compile-time value", void 0));
 _c3 = IconBeneficiaries;
@@ -805,7 +836,7 @@ const IconTrigger = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 _c4 = IconTrigger;
@@ -814,7 +845,7 @@ const IconActivity = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pr
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 _c5 = IconActivity;
@@ -823,7 +854,7 @@ const IconSubscription = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 32
     }, ("TURBOPACK compile-time value", void 0));
 _c6 = IconSubscription;
@@ -832,7 +863,7 @@ const IconSettings = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pr
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 _c7 = IconSettings;
@@ -853,12 +884,12 @@ const IconChevron = ({ open })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module_
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 _c8 = IconChevron;
@@ -869,7 +900,7 @@ const NAV_ITEMS = [
         href: "/dashboard",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconDashboard, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 40,
+            lineNumber: 41,
             columnNumber: 51
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -878,7 +909,7 @@ const NAV_ITEMS = [
         href: "/dashboard/vault",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconVault, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: [
@@ -897,7 +928,7 @@ const NAV_ITEMS = [
         href: "/dashboard/beneficiaries",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconBeneficiaries, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 52,
+            lineNumber: 53,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -906,7 +937,7 @@ const NAV_ITEMS = [
         href: "/dashboard/triggers",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconTrigger, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 53,
+            lineNumber: 54,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -915,7 +946,7 @@ const NAV_ITEMS = [
         href: "/dashboard/activity",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconActivity, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 54,
+            lineNumber: 55,
             columnNumber: 64
         }, ("TURBOPACK compile-time value", void 0))
     }
@@ -926,7 +957,7 @@ const BOTTOM_NAV = [
         href: "/dashboard/subscription",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconSubscription, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 58,
+            lineNumber: 59,
             columnNumber: 67
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -935,7 +966,7 @@ const BOTTOM_NAV = [
         href: "/dashboard/settings",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconSettings, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 59
         }, ("TURBOPACK compile-time value", void 0))
     }
@@ -943,6 +974,21 @@ const BOTTOM_NAV = [
 function Sidebar() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["usePathname"])() || "";
+    const [mobileOpen, setMobileOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Sidebar.useEffect": ()=>{
+            const handleToggle = {
+                "Sidebar.useEffect.handleToggle": ()=>setMobileOpen({
+                        "Sidebar.useEffect.handleToggle": (prev)=>!prev
+                    }["Sidebar.useEffect.handleToggle"])
+            }["Sidebar.useEffect.handleToggle"];
+            window.addEventListener("toggleSidebar", handleToggle);
+            return ({
+                "Sidebar.useEffect": ()=>window.removeEventListener("toggleSidebar", handleToggle)
+            })["Sidebar.useEffect"];
+        }
+    }["Sidebar.useEffect"], []);
+    const closeSidebar = ()=>setMobileOpen(false);
     // ✅ Vault submenu auto open based on route
     const isVaultOpen = pathname.startsWith("/dashboard/vault");
     // ✅ Active helper
@@ -953,191 +999,236 @@ function Sidebar() {
     const isParentActive = (href)=>{
         return pathname.startsWith(href);
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-        className: "sidebar",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                href: "/dashboard",
-                className: "side_logo",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(VaultixLogo, {}, void 0, false, {
-                    fileName: "[project]/components/Sidebar.js",
-                    lineNumber: 83,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/Sidebar.js",
-                lineNumber: 82,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "side_nav",
-                children: NAV_ITEMS.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: item.children ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+                className: `sidebar${mobileOpen ? " mobile-open" : ""}`,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "sidebar-close-btn",
+                        onClick: closeSidebar,
+                        "aria-label": "Close menu",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                            width: "18",
+                            height: "18",
+                            viewBox: "0 0 14 14",
+                            fill: "none",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M1 1l12 12M13 1L1 13",
+                                stroke: "currentColor",
+                                strokeWidth: "1.5",
+                                strokeLinecap: "round"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 94,
+                                columnNumber: 11
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Sidebar.js",
+                            lineNumber: 93,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 92,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/dashboard",
+                        className: "side_logo",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(VaultixLogo, {}, void 0, false, {
+                            fileName: "[project]/components/Sidebar.js",
+                            lineNumber: 99,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 98,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "side_nav",
+                        children: NAV_ITEMS.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: item.children ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: item.href,
+                                            className: `nav-item ${isParentActive(item.href) ? "active" : ""}`,
+                                            onClick: closeSidebar,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "nav-icon",
+                                                    children: item.icon
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 114,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "nav-label",
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 115,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "chevron",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconChevron, {
+                                                        open: isVaultOpen
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Sidebar.js",
+                                                        lineNumber: 117,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 116,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 109,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "sub-menu",
+                                            style: {
+                                                maxHeight: isVaultOpen ? "200px" : "0px",
+                                                overflow: "hidden",
+                                                transition: "max-height 0.3s ease"
+                                            },
+                                            children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: child.href,
+                                                    className: `sub-item ${pathname === child.href ? "sub-active" : ""}`,
+                                                    onClick: closeSidebar,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "sub-dot"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Sidebar.js",
+                                                            lineNumber: 139,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        child.label
+                                                    ]
+                                                }, child.href, true, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 131,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 122,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: item.href,
-                                    className: `nav-item ${isParentActive(item.href) ? "active" : ""}`,
+                                    className: `nav-item ${isActive(item.href) ? "active" : ""}`,
+                                    onClick: closeSidebar,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "nav-icon",
                                             children: item.icon
                                         }, void 0, false, {
                                             fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 97,
-                                            columnNumber: 19
+                                            lineNumber: 151,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "nav-label",
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 98,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "chevron",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconChevron, {
-                                                open: isVaultOpen
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/Sidebar.js",
-                                                lineNumber: 100,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 99,
-                                            columnNumber: 19
+                                            lineNumber: 152,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 93,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "sub-menu",
-                                    style: {
-                                        maxHeight: isVaultOpen ? "200px" : "0px",
-                                        overflow: "hidden",
-                                        transition: "max-height 0.3s ease"
-                                    },
-                                    children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: child.href,
-                                            className: `sub-item ${pathname === child.href ? "sub-active" : ""}`,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "sub-dot"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/Sidebar.js",
-                                                    lineNumber: 121,
-                                                    columnNumber: 23
-                                                }, this),
-                                                child.label
-                                            ]
-                                        }, child.href, true, {
-                                            fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 114,
-                                            columnNumber: 21
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 105,
-                                    columnNumber: 17
+                                    lineNumber: 146,
+                                    columnNumber: 15
                                 }, this)
-                            ]
-                        }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: item.href,
-                            className: `nav-item ${isActive(item.href) ? "active" : ""}`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-icon",
-                                    children: item.icon
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 132,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-label",
-                                    children: item.label
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 133,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 128,
-                            columnNumber: 15
-                        }, this)
-                    }, item.href, false, {
-                        fileName: "[project]/components/Sidebar.js",
-                        lineNumber: 89,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/components/Sidebar.js",
-                lineNumber: 87,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bottom-nav",
-                children: [
-                    BOTTOM_NAV.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: item.href,
-                            className: `nav-item ${isActive(item.href) ? "active" : ""}`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-icon",
-                                    children: item.icon
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 148,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-label",
-                                    children: item.label
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 149,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, item.href, true, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 143,
-                            columnNumber: 11
-                        }, this)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "lock-btn",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            children: "LOCK VAULT"
-                        }, void 0, false, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 154,
-                            columnNumber: 11
-                        }, this)
+                            }, item.href, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/Sidebar.js",
-                        lineNumber: 153,
-                        columnNumber: 9
+                        lineNumber: 103,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bottom-nav",
+                        children: [
+                            BOTTOM_NAV.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: item.href,
+                                    className: `nav-item ${isActive(item.href) ? "active" : ""}`,
+                                    onClick: closeSidebar,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "nav-icon",
+                                            children: item.icon
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 168,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "nav-label",
+                                            children: item.label
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 169,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, item.href, true, {
+                                    fileName: "[project]/components/Sidebar.js",
+                                    lineNumber: 162,
+                                    columnNumber: 11
+                                }, this)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "lock-btn",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    children: "LOCK VAULT"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Sidebar.js",
+                                    lineNumber: 174,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 173,
+                                columnNumber: 9
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 160,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Sidebar.js",
-                lineNumber: 141,
-                columnNumber: 7
+                lineNumber: 91,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: `sidebar-overlay${mobileOpen ? " active" : ""}`,
+                onClick: closeSidebar
+            }, void 0, false, {
+                fileName: "[project]/components/Sidebar.js",
+                lineNumber: 178,
+                columnNumber: 5
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/components/Sidebar.js",
-        lineNumber: 80,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 }
-_s(Sidebar, "wVXOWZKWdId76kQQO0KX6Oz3JDA=", false, function() {
+_s(Sidebar, "khesOwOBAvascYw/Af55eeGrjpc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];
@@ -1427,6 +1518,10 @@ function CategoryDetail() {
     const cat = categoriesData[id] || categoriesData[1];
     const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(1);
     const [openMenuId, setOpenMenuId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [menuPos, setMenuPos] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])({
+        top: 0,
+        right: 0
+    });
     const menuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const totalPages = Math.ceil(cat.totalAssets / PER_PAGE);
     const pageAssets = cat.assets.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE);
@@ -1449,12 +1544,12 @@ function CategoryDetail() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Sidebar$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                lineNumber: 151,
+                lineNumber: 152,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2d$logged$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                lineNumber: 152,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1470,20 +1565,20 @@ function CategoryDetail() {
                                         children: cat.name
                                     }, void 0, false, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 158,
+                                        lineNumber: 159,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: cat.description
                                     }, void 0, false, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 159,
+                                        lineNumber: 160,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                lineNumber: 157,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1496,31 +1591,31 @@ function CategoryDetail() {
                                             alt: ""
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                            lineNumber: 163,
+                                            lineNumber: 164,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "END-TO-END ENCRYPTED SESSION"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                            lineNumber: 164,
+                                            lineNumber: 165,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                    lineNumber: 162,
+                                    lineNumber: 163,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                lineNumber: 161,
+                                lineNumber: 162,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                        lineNumber: 156,
+                        lineNumber: 157,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1537,7 +1632,7 @@ function CategoryDetail() {
                                                 children: "TOTAL ASSETS"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 173,
+                                                lineNumber: 174,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1545,13 +1640,13 @@ function CategoryDetail() {
                                                 children: cat.totalAssets
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 174,
+                                                lineNumber: 175,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 172,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1561,18 +1656,18 @@ function CategoryDetail() {
                                             alt: ""
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                            lineNumber: 177,
+                                            lineNumber: 178,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 176,
+                                        lineNumber: 177,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                lineNumber: 171,
+                                lineNumber: 172,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1586,7 +1681,7 @@ function CategoryDetail() {
                                                 children: "BENEFICIARIES"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 182,
+                                                lineNumber: 183,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1594,13 +1689,13 @@ function CategoryDetail() {
                                                 children: cat.totalBeneficiaries
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 183,
+                                                lineNumber: 184,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 181,
+                                        lineNumber: 182,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1610,24 +1705,24 @@ function CategoryDetail() {
                                             alt: ""
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                            lineNumber: 186,
+                                            lineNumber: 187,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 185,
+                                        lineNumber: 186,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                lineNumber: 180,
+                                lineNumber: 181,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                        lineNumber: 170,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1647,7 +1742,7 @@ function CategoryDetail() {
                                                         children: "Asset Name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                        lineNumber: 197,
+                                                        lineNumber: 198,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1655,7 +1750,7 @@ function CategoryDetail() {
                                                         children: "Protection Status"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                        lineNumber: 198,
+                                                        lineNumber: 199,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1663,7 +1758,7 @@ function CategoryDetail() {
                                                         children: "Assigned Beneficiary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                        lineNumber: 199,
+                                                        lineNumber: 200,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1671,18 +1766,18 @@ function CategoryDetail() {
                                                         children: "Actions"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                        lineNumber: 200,
+                                                        lineNumber: 201,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 196,
+                                                lineNumber: 197,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                            lineNumber: 195,
+                                            lineNumber: 196,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1701,12 +1796,12 @@ function CategoryDetail() {
                                                                             alt: asset.name
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                            lineNumber: 211,
+                                                                            lineNumber: 212,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                        lineNumber: 210,
+                                                                        lineNumber: 211,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1716,23 +1811,23 @@ function CategoryDetail() {
                                                                             children: asset.name
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                            lineNumber: 214,
+                                                                            lineNumber: 215,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                        lineNumber: 213,
+                                                                        lineNumber: 214,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                lineNumber: 209,
+                                                                lineNumber: 210,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                            lineNumber: 208,
+                                                            lineNumber: 209,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1745,14 +1840,14 @@ function CategoryDetail() {
                                                                         alt: "verified"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                        lineNumber: 223,
+                                                                        lineNumber: 224,
                                                                         columnNumber: 26
                                                                     }, this),
                                                                     "Verified"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                lineNumber: 222,
+                                                                lineNumber: 223,
                                                                 columnNumber: 25
                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "cat_status_badge cat_status_protected",
@@ -1762,19 +1857,19 @@ function CategoryDetail() {
                                                                         alt: "protected"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                        lineNumber: 228,
+                                                                        lineNumber: 229,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     "Protected"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                lineNumber: 227,
+                                                                lineNumber: 228,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                            lineNumber: 220,
+                                                            lineNumber: 221,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1782,35 +1877,35 @@ function CategoryDetail() {
                                                             children: asset.beneficiaries.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "avatarGroup",
                                                                 children: asset.beneficiaries.map((b, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: `avatarChip avatarInitials ${b.gold ? "" : "avatarGrey"}`,
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                        className: "avatarChip",
+                                                                        children: b.image ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                                             src: b.image,
                                                                             alt: b.initials
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                            lineNumber: 240,
-                                                                            columnNumber: 31
-                                                                        }, this)
+                                                                            lineNumber: 242,
+                                                                            columnNumber: 33
+                                                                        }, this) : b.initials
                                                                     }, i, false, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                        lineNumber: 239,
+                                                                        lineNumber: 240,
                                                                         columnNumber: 29
                                                                     }, this))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                lineNumber: 237,
+                                                                lineNumber: 238,
                                                                 columnNumber: 25
                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "cat_unassigned",
                                                                 children: "Unassigned"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                lineNumber: 245,
+                                                                lineNumber: 250,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                            lineNumber: 235,
+                                                            lineNumber: 236,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1821,15 +1916,38 @@ function CategoryDetail() {
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                         className: "menuBtn",
-                                                                        onClick: ()=>setOpenMenuId(openMenuId === asset.id ? null : asset.id),
-                                                                        children: "⋮"
+                                                                        onClick: (e)=>{
+                                                                            if (openMenuId === asset.id) {
+                                                                                setOpenMenuId(null);
+                                                                            } else {
+                                                                                const rect = e.currentTarget.getBoundingClientRect();
+                                                                                setMenuPos({
+                                                                                    top: rect.bottom + 4,
+                                                                                    right: window.innerWidth - rect.right
+                                                                                });
+                                                                                setOpenMenuId(asset.id);
+                                                                            }
+                                                                        },
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                            src: "/images/dashboard/action_icon.svg",
+                                                                            alt: "actions"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/pages/dashboard/vault/categories/[id].js",
+                                                                            lineNumber: 275,
+                                                                            columnNumber: 27
+                                                                        }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                        lineNumber: 255,
+                                                                        lineNumber: 260,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     openMenuId === asset.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "contextMenu",
+                                                                        style: {
+                                                                            position: 'fixed',
+                                                                            top: `${menuPos.top}px`,
+                                                                            right: `${menuPos.right}px`
+                                                                        },
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                 className: "contextItem",
@@ -1837,7 +1955,7 @@ function CategoryDetail() {
                                                                                 children: "View"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                                lineNumber: 263,
+                                                                                lineNumber: 279,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1846,7 +1964,7 @@ function CategoryDetail() {
                                                                                 children: "Edit"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                                lineNumber: 264,
+                                                                                lineNumber: 280,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1855,46 +1973,46 @@ function CategoryDetail() {
                                                                                 children: "Delete"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                                lineNumber: 265,
+                                                                                lineNumber: 281,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                        lineNumber: 262,
+                                                                        lineNumber: 278,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                                lineNumber: 251,
+                                                                lineNumber: 256,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                            lineNumber: 250,
+                                                            lineNumber: 255,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, asset.id, true, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                    lineNumber: 205,
+                                                    lineNumber: 206,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                            lineNumber: 203,
+                                            lineNumber: 204,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                    lineNumber: 194,
+                                    lineNumber: 195,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                lineNumber: 193,
+                                lineNumber: 194,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1911,7 +2029,7 @@ function CategoryDetail() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 279,
+                                        lineNumber: 295,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1932,17 +2050,17 @@ function CategoryDetail() {
                                                         points: "15 18 9 12 15 6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                        lineNumber: 289,
+                                                        lineNumber: 305,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                    lineNumber: 288,
+                                                    lineNumber: 304,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 283,
+                                                lineNumber: 299,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1955,7 +2073,7 @@ function CategoryDetail() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 292,
+                                                lineNumber: 308,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1973,51 +2091,51 @@ function CategoryDetail() {
                                                         points: "9 18 15 12 9 6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                        lineNumber: 301,
+                                                        lineNumber: 317,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                    lineNumber: 300,
+                                                    lineNumber: 316,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                                lineNumber: 295,
+                                                lineNumber: 311,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                        lineNumber: 282,
+                                        lineNumber: 298,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                                lineNumber: 278,
+                                lineNumber: 294,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                        lineNumber: 192,
+                        lineNumber: 193,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-                lineNumber: 153,
+                lineNumber: 154,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-        lineNumber: 150,
+        lineNumber: 151,
         columnNumber: 5
     }, this);
 }
-_s(CategoryDetail, "WVUg+06BvRFyIUUg9cERQ1368tE=", false, function() {
+_s(CategoryDetail, "rQHIaoZ4yAJWBmV5VWX+c/gOp70=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
@@ -2028,7 +2146,7 @@ CategoryDetail.getLayout = function(page) {
         children: page
     }, void 0, false, {
         fileName: "[project]/pages/dashboard/vault/categories/[id].js",
-        lineNumber: 314,
+        lineNumber: 330,
         columnNumber: 10
     }, this);
 };

@@ -150,6 +150,12 @@
   display: grid;
 }
 
+@media (max-width: 1025px) {
+  .claim-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .owner-card {
   background: #15181c;
   border: 1px solid #ffffff14;
@@ -287,6 +293,12 @@
   display: flex;
 }
 
+@media (max-width: 1025px) {
+  .owner-card .owner-actions {
+    flex-direction: row;
+  }
+}
+
 .owner-card .owner-actions .btn-accept {
   color: #0e1012;
   cursor: pointer;
@@ -343,6 +355,12 @@
   align-items: center;
   padding: 1.8rem 2.4rem;
   display: flex;
+}
+
+@media (max-width: 475px) {
+  .asset-panel .panel-header {
+    flex-direction: column;
+  }
 }
 
 .asset-panel .panel-header .panel-title {
@@ -517,6 +535,13 @@
   display: flex;
 }
 
+@media (max-width: 475px) {
+  .form-section-block .section-block-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .form-section-block .section-block-header .section-block-label {
   letter-spacing: .1em;
   color: #e9c176;
@@ -595,6 +620,12 @@
   width: 4rem;
   height: 4rem;
   display: flex;
+}
+
+@media (max-width: 375px) {
+  .toggle-card-item .toggle-icon {
+    display: none;
+  }
 }
 
 .toggle-card-item .toggle-icon img {
@@ -1063,8 +1094,109 @@
   display: block;
 }
 
+@media (max-width: 475px) {
+  .btn-go-vault {
+    width: 100%;
+  }
+}
+
 .btn-go-vault:hover {
   opacity: .9;
+}
+
+@media (max-width: 991px) {
+  .inherit-body {
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .inherit-heading h1 {
+    font-size: 2.6rem;
+  }
+
+  .inherit-stepper .step-line {
+    width: 5rem;
+  }
+
+  .security-notice-block {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .security-notice-block .security-img img {
+    height: 16rem;
+  }
+
+  .transfer-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 769px) {
+  .inherit-body {
+    padding: 2rem 1.2rem 3rem;
+  }
+
+  .inherit-heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .inherit-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .owner-actions {
+    flex-direction: column !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 475px) {
+  .inherit-topbar .inherit-logo {
+    width: 7rem;
+    height: 5rem;
+  }
+
+  .inherit-heading h1 {
+    font-size: 1.9rem;
+  }
+
+  .owner-card {
+    padding: 1.8rem;
+  }
+
+  .asset-panel .asset-list .asset-row {
+    flex-wrap: wrap;
+    padding: 1.2rem 1.6rem;
+  }
+
+  .asset-panel .asset-list .asset-row .asset-status-col {
+    width: 100%;
+  }
+
+  .options-col {
+    flex-direction: column;
+  }
+
+  .inherit-stepper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .inherit-stepper .step-line {
+    display: none;
+  }
+
+  .form-section-block, .transfer-summary-card {
+    padding: 1.6rem;
+  }
+
+  .security-notice-block {
+    padding: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=styles_inherit_scss_css_65f1660e._.single.css.map*/
