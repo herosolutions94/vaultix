@@ -5145,12 +5145,7 @@
 // ── Beneficiary detail ───────────────────
   .ben_detail_flex { flex-direction: column;align-items: unset; }
   .dashboard-main { padding: 9rem 1.5rem 2rem; }
-.trig_row{
-  flex-direction: column;
-}
-.trig_row_label{
-  text-align: center;
-}
+
   .dash_header {
     .right_col { flex-direction: column; align-items: flex-start; }
     .btn_blk {
@@ -5245,6 +5240,13 @@
         flex-direction: column;
         align-items: flex-start;
         gap: .1rem;
+    }
+
+    .trig_row{
+      flex-direction: column;
+    }
+    .trig_row_label{
+      text-align: center;
     }
 }
 @include mobile_xs{
