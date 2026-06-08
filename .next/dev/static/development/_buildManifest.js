@@ -5,11 +5,17 @@ self.__BUILD_MANIFEST = {
   "/dashboard/beneficiaries": [
     "static/chunks/pages/dashboard/beneficiaries.js"
   ],
-  "/dashboard/beneficiaries/[id]": [
-    "static/chunks/pages/dashboard/beneficiaries/[id].js"
+  "/dashboard/settings": [
+    "static/chunks/pages/dashboard/settings.js"
   ],
-  "/dashboard/beneficiaries/add-beneficiary": [
-    "static/chunks/pages/dashboard/beneficiaries/add-beneficiary.js"
+  "/dashboard/vault": [
+    "static/chunks/pages/dashboard/vault.js"
+  ],
+  "/dashboard/vault/assets": [
+    "static/chunks/pages/dashboard/vault/assets.js"
+  ],
+  "/dashboard/vault/categories": [
+    "static/chunks/pages/dashboard/vault/categories.js"
   ],
   "__rewrites": {
     "afterFiles": [],

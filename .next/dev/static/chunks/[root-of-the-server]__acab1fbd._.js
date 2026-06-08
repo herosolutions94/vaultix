@@ -1479,7 +1479,7 @@ function RecentAssets() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "",
+                        href: "/dashboard/vault/assets",
                         className: "viewAllBtn",
                         children: "VIEW ALL ASSETS"
                     }, void 0, false, {
@@ -1693,7 +1693,7 @@ function KeyBeneficiaries() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "",
+                        href: "/dashboard/beneficiaries",
                         className: "viewAllBtn",
                         children: "VIEW ALL BENEFICIARIES"
                     }, void 0, false, {
@@ -2058,7 +2058,7 @@ function Dashboard() {
                                             className: "btn_blk",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "",
+                                                    href: "/dashboard/vault/assets/add-asset",
                                                     className: "site_btn color",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2067,14 +2067,14 @@ function Dashboard() {
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.js",
                                                             lineNumber: 30,
-                                                            columnNumber: 64
+                                                            columnNumber: 97
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Add Asset"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.js",
                                                             lineNumber: 30,
-                                                            columnNumber: 120
+                                                            columnNumber: 153
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
@@ -2083,7 +2083,7 @@ function Dashboard() {
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "",
+                                                    href: "/dashboard/beneficiaries/add-beneficiary",
                                                     className: "site_btn blank green",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2092,14 +2092,14 @@ function Dashboard() {
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.js",
                                                             lineNumber: 31,
-                                                            columnNumber: 70
+                                                            columnNumber: 110
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Add Beneficiary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.js",
                                                             lineNumber: 31,
-                                                            columnNumber: 135
+                                                            columnNumber: 175
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
@@ -2108,7 +2108,7 @@ function Dashboard() {
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "",
+                                                    href: "/dashboard/triggers",
                                                     className: "site_btn blank white",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -2117,14 +2117,14 @@ function Dashboard() {
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.js",
                                                             lineNumber: 32,
-                                                            columnNumber: 70
+                                                            columnNumber: 89
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Create Rule"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/index.js",
                                                             lineNumber: 32,
-                                                            columnNumber: 132
+                                                            columnNumber: 151
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
