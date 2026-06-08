@@ -2,11 +2,14 @@ self.__BUILD_MANIFEST = {
   "/dashboard": [
     "static/chunks/pages/dashboard.js"
   ],
+  "/dashboard/activity": [
+    "static/chunks/pages/dashboard/activity.js"
+  ],
   "/dashboard/beneficiaries": [
     "static/chunks/pages/dashboard/beneficiaries.js"
   ],
-  "/dashboard/settings": [
-    "static/chunks/pages/dashboard/settings.js"
+  "/dashboard/triggers": [
+    "static/chunks/pages/dashboard/triggers.js"
   ],
   "/dashboard/vault": [
     "static/chunks/pages/dashboard/vault.js"

@@ -20168,7 +20168,7 @@ table .table_name_flex span {
 }
 
 .dash_header .left_col {
-  max-width: 90rem;
+  max-width: 50rem;
   padding-right: 2rem;
 }
 
@@ -25295,8 +25295,8 @@ table .table_name_flex span {
 }
 
 .inherit-topbar .inherit-logo {
-  width: 6rem;
-  height: 6rem;
+  width: 10rem;
+  height: 7rem;
   display: inline-block;
 }
 

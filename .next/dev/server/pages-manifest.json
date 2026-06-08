@@ -2,8 +2,9 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/dashboard": "pages/dashboard.js",
+  "/dashboard/activity": "pages/dashboard/activity.js",
   "/dashboard/beneficiaries": "pages/dashboard/beneficiaries.js",
-  "/dashboard/settings": "pages/dashboard/settings.js",
+  "/dashboard/triggers": "pages/dashboard/triggers.js",
   "/dashboard/vault": "pages/dashboard/vault.js",
   "/dashboard/vault/assets": "pages/dashboard/vault/assets.js",
   "/dashboard/vault/categories": "pages/dashboard/vault/categories.js"
