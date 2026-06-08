@@ -35,7 +35,7 @@ export default function RecentAssets() {
     <div className="recentSection">
       <div className="dash_sec_header">
         <h3 className="recentTitle dash_title">Recent Assets</h3>
-        <Link href="" className="viewAllBtn">VIEW ALL ASSETS</Link>
+        <Link href="/dashboard/vault/assets" className="viewAllBtn">VIEW ALL ASSETS</Link>
       </div>
 
       <div className="assetsRow">

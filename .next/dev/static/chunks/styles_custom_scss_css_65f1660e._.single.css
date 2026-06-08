@@ -10367,7 +10367,7 @@ table .table_name_flex span {
 }
 
 .ben_detail_assets {
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1.2rem;
   display: flex;
 }

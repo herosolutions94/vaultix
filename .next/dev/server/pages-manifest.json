@@ -3,6 +3,8 @@
   "/_document": "pages/_document.js",
   "/dashboard": "pages/dashboard.js",
   "/dashboard/beneficiaries": "pages/dashboard/beneficiaries.js",
-  "/dashboard/beneficiaries/[id]": "pages/dashboard/beneficiaries/[id].js",
-  "/dashboard/beneficiaries/add-beneficiary": "pages/dashboard/beneficiaries/add-beneficiary.js"
+  "/dashboard/settings": "pages/dashboard/settings.js",
+  "/dashboard/vault": "pages/dashboard/vault.js",
+  "/dashboard/vault/assets": "pages/dashboard/vault/assets.js",
+  "/dashboard/vault/categories": "pages/dashboard/vault/categories.js"
 }

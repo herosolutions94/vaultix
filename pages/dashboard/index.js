@@ -27,9 +27,9 @@ export default function Dashboard() {
                       <span>END-TO-END ENCRYPTED SESSION</span>
                     </div>
                     <div className="btn_blk">
-                      <Link href="" className="site_btn color"><img src="/images/dashboard/add.svg" alt="add assets" /><span>Add Asset</span></Link>
-                      <Link href="" className="site_btn blank green"><img src="/images/dashboard/add-ben.svg" alt="Add Beneficiary" /><span>Add Beneficiary</span></Link>
-                      <Link href="" className="site_btn blank white"><img src="/images/dashboard/rule.svg" alt="Add Beneficiary" /><span>Create Rule</span></Link>
+                      <Link href="/dashboard/vault/assets/add-asset" className="site_btn color"><img src="/images/dashboard/add.svg" alt="add assets" /><span>Add Asset</span></Link>
+                      <Link href="/dashboard/beneficiaries/add-beneficiary" className="site_btn blank green"><img src="/images/dashboard/add-ben.svg" alt="Add Beneficiary" /><span>Add Beneficiary</span></Link>
+                      <Link href="/dashboard/triggers" className="site_btn blank white"><img src="/images/dashboard/rule.svg" alt="Add Beneficiary" /><span>Create Rule</span></Link>
                     </div>
                   </div>
                 </div>
