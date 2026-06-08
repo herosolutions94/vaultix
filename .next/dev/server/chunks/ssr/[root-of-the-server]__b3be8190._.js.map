@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/imac/Desktop/next-projects/vaultix/components/layoutDashbaord.js"],"sourcesContent":["\n\nimport SiteMaster from './sitemaster';\n\nexport default function LayoutDashboard({ children }) {\n  return (\n    <>\n      <div className=\"content\">\n          <SiteMaster />\n          {/* <LoggedHeader memberRow={memberRow} /> */}\n          \n          {children}\n        </div>\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;;;AAEe,SAAS,gBAAgB,EAAE,QAAQ,EAAE;IAClD,qBACE;kBACE,cAAA,qKAAC;YAAI,WAAU;;8BACX,qKAAC,4HAAU;;;;;gBAGV;;;;;;;;AAIX"}},
-    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["file:///Users/imac/Desktop/next-projects/vaultix/pages/dashboard/index.js"],"sourcesContent":["import React, { useEffect, useState } from \"react\";\nimport Link from \"next/link\";\nimport LayoutDashboard from \"@/components/layoutDashbaord\";\n\nexport default function Dashboard({ result }) {\n   \n    return (\n        <>\n            <main>\n                \n            </main>\n        </>\n    );\n}\nDashboard.getLayout = function (page) {\n    return <LayoutDashboard>{page}</LayoutDashboard>;\n};"],"names":[],"mappings":";;;;;AAAA;AACA;AACA;;;;;AAEe,SAAS,UAAU,EAAE,MAAM,EAAE;IAExC,qBACI;kBACI,cAAA,qKAAC;;;;;;AAKb;AACA,UAAU,SAAS,GAAG,SAAU,IAAI;IAChC,qBAAO,qKAAC,iIAAe;kBAAE;;;;;;AAC7B"}}]
-}
