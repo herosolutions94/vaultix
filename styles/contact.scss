@@ -1,0 +1,524 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   PAGE WRAPPER
+=================================================== */
+.contact_page {
+  background: $main-dark;
+  color: $grey;
+  padding-top: 72px;
+}
+
+/* ===================================================
+   HERO — centered
+=================================================== */
+.ct_hero {
+  background: $main-dark;
+  padding: 90px 0 80px;
+  text-align: center;
+
+  .pg_contain {
+    max-width: 700px;
+  }
+
+  .ct_badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Regular";
+    font-size: 11px;
+    color: $teal;
+    border: 1px solid rgba($teal, 0.4);
+    background: rgba($teal, 0.05);
+    @include radius(100px);
+    padding: 5px 16px;
+    margin-bottom: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: "Bold";
+    font-size: 52px;
+    color: $white;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+
+    @include laptop {
+      font-size: 42px;
+    }
+    @include ipad {
+      font-size: 34px;
+    }
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    font-family: "Regular";
+    font-size: 15px;
+    color: rgba($grey, 0.5);
+    line-height: 1.78;
+    margin-bottom: 36px;
+  }
+
+  .ct_hero_btns {
+    @include flex(center, center);
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ===================================================
+   MAIN — form + support info
+=================================================== */
+.ct_main {
+  background: $main-dark;
+  padding: 60px 0 90px;
+
+  .ct_main_wrap {
+    @include flex(flex-start, space-between);
+    gap: 28px;
+
+    @include ipad_sm {
+      flex-direction: column;
+    }
+  }
+
+  /* ── Left: form column ── */
+  .ct_form_col {
+    flex: 0 0 56%;
+    max-width: 56%;
+
+    @include ipad_sm {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .ct_form_card {
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(12px);
+    overflow: hidden;
+  }
+
+  /* Form header */
+  .ct_form_head {
+    @include flex(center, space-between);
+    padding: 22px 26px 18px;
+    border-bottom: 1px solid rgba($grey, 0.07);
+
+    h2 {
+      font-family: "Bold";
+      font-size: 20px;
+      color: $white;
+      margin: 0;
+    }
+
+    .ct_e2e_badge {
+      @include flex(center, flex-start);
+      gap: 6px;
+      font-family: "Regular";
+      font-size: 11px;
+      color: $teal;
+      border: 1px solid rgba($teal, 0.3);
+      background: rgba($teal, 0.06);
+      @include radius(100px);
+      padding: 4px 12px;
+      white-space: nowrap;
+    }
+  }
+
+  /* Form body */
+  .ct_form {
+    padding: 22px 26px 20px;
+  }
+
+  .ct_form_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 18px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ct_field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    &.ct_field_full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-family: "Regular";
+      font-size: 10px;
+      color: rgba($grey, 0.45);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .ct_optional {
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 10px;
+      color: rgba($grey, 0.3);
+    }
+
+    input,
+    textarea {
+      background: rgba($main-dark, 0.5);
+      border: 1px solid rgba($grey, 0.1);
+      @include radius(6px);
+      padding: 10px 13px;
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.7);
+      outline: none;
+      width: 100%;
+      @include trans;
+      resize: none;
+
+      &::placeholder {
+        color: rgba($grey, 0.28);
+      }
+
+      &:focus {
+        border-color: rgba($teal, 0.35);
+        background: rgba($teal, 0.025);
+      }
+    }
+
+    textarea {
+      min-height: 110px;
+    }
+  }
+
+  /* Custom select */
+  .ct_select_wrap {
+    position: relative;
+
+    select {
+      width: 100%;
+      background: rgba($main-dark, 0.5);
+      border: 1px solid rgba($grey, 0.1);
+      @include radius(6px);
+      padding: 10px 36px 10px 13px;
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.28);
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      @include trans;
+
+      &:focus {
+        border-color: rgba($teal, 0.35);
+      }
+
+      option {
+        background: $primary-color;
+        color: $white;
+      }
+    }
+
+    .ct_chevron {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba($grey, 0.35);
+      pointer-events: none;
+    }
+  }
+
+  /* Form footer */
+  .ct_form_footer {
+    @include flex(flex-end, space-between);
+    gap: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba($grey, 0.06);
+    flex-wrap: wrap;
+
+    .ct_disclaimer {
+      font-family: "Regular";
+      font-size: 11px;
+      color: rgba($grey, 0.32);
+      line-height: 1.65;
+      max-width: 280px;
+      margin: 0;
+    }
+
+    .ct_submit_btn {
+      font-size: 13px;
+      padding: 10px 22px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      cursor: pointer;
+      border: none;
+    }
+  }
+
+  /* ── Right: info column ── */
+  .ct_info_col {
+    flex: 1;
+
+    @include ipad_sm {
+      width: 100%;
+    }
+  }
+
+  .ct_info_card {
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(12px);
+    overflow: hidden;
+  }
+
+  .ct_info_title {
+    font-family: "Bold";
+    font-size: 18px;
+    color: $white;
+    margin: 0;
+    padding: 22px 22px 16px;
+    border-bottom: 1px solid rgba($grey, 0.07);
+  }
+
+  /* 2×3 categories grid */
+  .ct_categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid rgba($grey, 0.07);
+  }
+
+  .ct_cat_item {
+    padding: 18px 18px 16px;
+    border-bottom: 1px solid rgba($grey, 0.06);
+    border-right: 1px solid rgba($grey, 0.06);
+    @include trans;
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+    &:nth-last-child(-n + 2) {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: rgba($grey, 0.02);
+    }
+
+    .ct_cat_icon {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .ct_cat_title {
+      font-family: "SemiBold";
+      font-size: 11px;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+
+    .ct_cat_desc {
+      font-family: "Regular";
+      font-size: 12px;
+      color: rgba($grey, 0.42);
+      line-height: 1.65;
+      margin: 0;
+    }
+  }
+
+  /* Response Standards */
+  .ct_response {
+    padding: 16px 22px 18px;
+  }
+
+  .ct_response_label {
+    font-family: "Regular";
+    font-size: 10px;
+    color: rgba($grey, 0.35);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .ct_response_row {
+    @include flex(center, space-between);
+    padding: 10px 0;
+    border-bottom: 1px solid rgba($grey, 0.06);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .ct_response_type {
+      @include flex(center, flex-start);
+      gap: 7px;
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.6);
+    }
+
+    .ct_response_val {
+      font-family: "Regular";
+      font-size: 12px;
+      letter-spacing: 0.02em;
+    }
+
+    .ct_val_gold {
+      color: $gold;
+    }
+    .ct_val_teal {
+      color: $teal;
+    }
+  }
+}
+
+/* ===================================================
+   RESPONSIVE ADJUSTMENTS
+=================================================== */
+@include ipad_sm {
+  .ct_hero     { padding: 60px 0 50px; }
+  .ct_main     { padding: 44px 0 60px; }
+}
+
+@include mobile {
+  .ct_hero     { padding: 44px 0 36px; }
+  .ct_main     { padding: 36px 0 48px; }
+  .ct_channels { padding: 0 0 48px; }
+  .ct_form_head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .ct_form_footer { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+@include mobile_md {
+  .ct_hero   { padding: 32px 0 28px; }
+  .ct_main   { padding: 28px 0 36px; }
+  .ct_form   { padding: 16px 16px 14px; }
+}
+
+/* ===================================================
+   CONTACT CHANNELS
+=================================================== */
+.ct_channels {
+  background: $main-dark;
+  padding: 0 0 90px;
+
+  .ct_channels_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Base card */
+  .ct_channel_card {
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(12px);
+    padding: 26px 28px 28px;
+    @include trans;
+
+    &:hover {
+      border-color: rgba($grey, 0.18);
+    }
+
+    h3 {
+      font-family: "Bold";
+      font-size: 22px;
+      color: $white;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    p {
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.46);
+      line-height: 1.72;
+      margin-bottom: 14px;
+    }
+  }
+
+  /* Teal-accented Secure Mail card */
+  .ct_card_teal {
+    border-color: rgba($teal, 0.3);
+
+    &:hover {
+      border-color: rgba($teal, 0.5);
+    }
+  }
+
+  /* Channel card header */
+  .ct_channel_head {
+    @include flex(flex-start, space-between);
+    margin-bottom: 18px;
+
+    .ct_ch_icon {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      display: block;
+    }
+  }
+
+  /* Status badges */
+  .ct_ch_badge {
+    font-family: "Regular";
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    @include radius(100px);
+  }
+
+  .ct_badge_active {
+    color: $teal;
+    border: 1px solid rgba($teal, 0.35);
+    background: rgba($teal, 0.06);
+  }
+
+  .ct_badge_vaults {
+    color: rgba($grey, 0.55);
+    border: 1px solid rgba($grey, 0.15);
+    background: transparent;
+  }
+
+  /* email link */
+  .ct_ch_link {
+    font-family: "Regular";
+    font-size: 13px;
+    color: $teal;
+    text-decoration: none;
+    @include trans;
+
+    &:hover {
+      color: lighten($teal, 10%);
+    }
+  }
+
+  /* region label */
+  .ct_ch_region {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.55);
+  }
+}

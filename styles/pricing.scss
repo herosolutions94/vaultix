@@ -1,0 +1,538 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   PAGE WRAPPER
+=================================================== */
+.pricing_page {
+  background: $main-dark;
+  color: $grey;
+  padding-top: 72px;
+}
+
+/* shared centered section heading used across sections */
+.pricing_page .sec_head {
+  text-align: center;
+  margin-bottom: 56px;
+
+  h2 {
+    font-family: "Bold";
+    font-size: 38px;
+    color: $white;
+    letter-spacing: -0.025em;
+    line-height: 1.18;
+    margin-bottom: 14px;
+
+    @include laptop {
+      font-size: 32px;
+    }
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  p {
+    font-family: "Regular";
+    font-size: 15px;
+    color: rgba($grey, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+}
+
+/* ===================================================
+   HERO
+=================================================== */
+.pr_hero {
+  background: $main-dark;
+  padding: 110px 0;
+
+  .pr_hero_wrap {
+    @include flex(center, space-between);
+    gap: 48px;
+
+    @include ipad_sm {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  /* ── Left text ── */
+  .pr_hero_left {
+    flex: 0 0 42%;
+    max-width: 42%;
+
+    @include ipad_sm {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-bottom: 0;
+    }
+  }
+
+  .pr_badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Regular";
+    font-size: 11px;
+    color: $teal;
+    border: 1px solid rgba($teal, 0.4);
+    background: rgba($teal, 0.05);
+    @include radius(100px);
+    padding: 5px 14px;
+    margin-bottom: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: "Bold";
+    font-size: 48px;
+    color: $white;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin-bottom: 22px;
+
+    @include laptop {
+      font-size: 40px;
+    }
+    @include ipad {
+      font-size: 32px;
+    }
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  .pr_hero_left p {
+    font-family: "Regular";
+    font-size: 15px;
+    color: rgba($grey, 0.5);
+    line-height: 1.82;
+  }
+
+  /* ── Right image ── */
+  .pr_hero_right {
+    flex: 0 0 54%;
+    max-width: 54%;
+    align-self: flex-end;
+
+    @include ipad_sm {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      @include radius(12px 12px 0 0);
+    }
+  }
+}
+
+/* ===================================================
+   FEATURES STRIP
+=================================================== */
+.pr_strip {
+  background: $primary-color;
+  padding: 28px 0;
+  border-top: 1px solid rgba($grey, 0.06);
+  border-bottom: 1px solid rgba($grey, 0.06);
+
+  .pr_strip_items {
+    @include flex(center, center);
+    gap: 48px;
+    flex-wrap: wrap;
+
+    @include ipad_sm {
+      gap: 28px;
+    }
+    @include mobile {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
+
+  .pr_strip_item {
+    @include flex(center, flex-start);
+    gap: 10px;
+
+    span {
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.65);
+      white-space: nowrap;
+    }
+  }
+}
+
+/* ===================================================
+   PRICING PLANS
+=================================================== */
+.pr_plans {
+  background: $main-dark;
+  padding: 100px 0;
+
+  .pr_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    align-items: stretch;
+
+    @include ipad {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ── Base card ── */
+  .pr_card {
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(10px);
+    padding: 28px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include trans;
+
+    &:hover {
+      border-color: rgba($grey, 0.2);
+    }
+  }
+
+  /* ── Recommended (Annual) card — gold border ── */
+  .pr_card_recommended {
+    border-color: rgba($gold, 0.55);
+    background: $primary-color;
+
+    .pr_plan_name {
+      color: $gold;
+    }
+
+    &:hover {
+      border-color: rgba($gold, 0.8);
+    }
+  }
+
+  /* RECOMMENDED tag — top right corner */
+  .pr_recommended_tag {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: rgba($gold, 0.08);
+    color: $gold;
+    border: 1px solid rgba($gold, 0.35);
+    font-family: "Regular";
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    padding: 3px 8px;
+    @include radius(4px);
+    white-space: nowrap;
+  }
+
+  /* ── Card top block ── */
+  .pr_card_top {
+    margin-bottom: 22px;
+  }
+
+  .pr_plan_name {
+    font-family: "SemiBold";
+    font-size: 15px;
+    color: $white;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    /* leave space for RECOMMENDED tag on Annual */
+    padding-right: 90px;
+  }
+
+  .pr_card_recommended .pr_plan_name {
+    padding-right: 90px;
+  }
+
+  .pr_price_row {
+    @include flex(baseline, flex-start);
+    gap: 4px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pr_price {
+    font-family: "Bold";
+    font-size: 46px;
+    color: $white;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+
+  .pr_period {
+    font-family: "Regular";
+    font-size: 14px;
+    color: rgba($grey, 0.42);
+    line-height: 1;
+  }
+
+  .pr_plan_desc {
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.45);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── Feature list — grows to fill card ── */
+  .pr_features {
+    @include list;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+    margin-bottom: 28px;
+
+    li {
+      @include flex(flex-start, flex-start);
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .pr_feat_icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+      @include flex(center, center);
+      width: 16px;
+      height: 16px;
+    }
+
+    /* included feature text */
+    .pr_feat_ok .pr_feat_text {
+      font-family: "Regular";
+      font-size: 16px;
+      color: rgba($grey, 0.75);
+      line-height: 1.5;
+    }
+
+    /* excluded feature text — dimmer */
+    .pr_feat_no .pr_feat_text {
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.28);
+      line-height: 1.5;
+    }
+  }
+
+  /* ── CTA button — pinned to bottom ── */
+  .pr_card_bottom {
+    margin-top: auto;
+  }
+
+  .pr_plan_btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Medium";
+    font-size: 14px;
+    padding: 12px 20px;
+    @include radius(6px);
+    @include trans;
+    cursor: pointer;
+  }
+
+  .btn_outline_white {
+    color: $white;
+    border: 1px solid rgba($grey, 0.25);
+    background: transparent;
+
+    &:hover {
+      border-color: rgba($grey, 0.5);
+      background: rgba($grey, 0.06);
+      color: $white;
+    }
+  }
+}
+
+/* ===================================================
+   COMPARISON TABLE
+=================================================== */
+.pr_compare {
+  background: $grey-bg;
+  padding: 100px 0;
+
+  .pr_table_wrap {
+    overflow-x: auto;
+    @include radius(10px);
+    border: 1px solid rgba($grey, 0.1);
+  }
+
+  .pr_table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+    background: $blue-bg;
+
+    /* ── Header row ── */
+    thead tr {
+      border-bottom: 1px solid rgba($grey, 0.08);
+    }
+
+    th {
+      font-family: "SemiBold";
+      font-size: 13px;
+      color: rgba($grey, 0.65);
+      padding: 18px 24px;
+      text-align: center;
+      white-space: nowrap;
+      background: $primary-color;
+
+      &.pr_th_label {
+        text-align: left;
+        font-family: "Bold";
+        font-size: 13px;
+        color: $white;
+      }
+
+      /* Annual column header — gold */
+      &.pr_th_annual {
+        color: $gold;
+      }
+    }
+
+    /* ── Body rows ── */
+    tbody tr {
+      border-bottom: 1px solid rgba($grey, 0.06);
+
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        background: rgba($grey, 0.025);
+      }
+    }
+
+    td {
+      padding: 20px 24px;
+      text-align: center;
+      vertical-align: middle;
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &.pr_td_label {
+        text-align: left;
+        font-family: "Regular";
+        font-size: 14px;
+        color: rgba($grey, 0.65);
+      }
+    }
+
+    /* dash for not-included */
+    .pr_dash {
+      font-family: "Regular";
+      font-size: 18px;
+      color: rgba($grey, 0.22);
+      line-height: 1;
+    }
+
+    /* plain text value (e.g. "7 Days", "Forever") */
+    .pr_text_val {
+      font-family: "Regular";
+      font-size: 13px;
+      color: rgba($grey, 0.55);
+    }
+
+    /* gold text value (Annual "1 Year") */
+    .pr_text_gold {
+      font-family: "Regular";
+      font-size: 13px;
+      color: $gold;
+    }
+  }
+}
+
+/* ===================================================
+   RESPONSIVE ADJUSTMENTS
+=================================================== */
+@include ipad_sm {
+  .pr_hero            { padding: 72px 0; }
+  .pr_plans           { padding: 72px 0; }
+  .pr_compare         { padding: 72px 0; }
+  .pr_standard        { padding: 72px 0; }
+  .pricing_page .sec_head { margin-bottom: 40px; }
+}
+
+@include mobile {
+  .pr_hero            { padding: 48px 0; }
+  .pr_plans           { padding: 56px 0; }
+  .pr_compare         { padding: 56px 0; }
+  .pr_standard        { padding: 56px 0; }
+  .pricing_page .sec_head { margin-bottom: 28px; }
+  .pr_price           { font-size: 36px; }
+}
+
+@include mobile_md {
+  .pr_hero            { padding: 36px 0; }
+  .pr_plans           { padding: 44px 0; }
+  .pr_compare         { padding: 44px 0; }
+  .pr_standard        { padding: 44px 0; }
+}
+
+/* ===================================================
+   STANDARD ACROSS ALL VAULTS
+=================================================== */
+.pr_standard {
+  background: $main-dark;
+  padding: 100px 0;
+
+  .pr_std_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    @include ipad_sm {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .pr_std_card {
+    background: $primary-color;
+    border: 1px solid rgba($grey, 0.08);
+    @include radius(10px);
+    padding: 32px 28px 36px;
+    @include trans;
+
+    &:hover {
+      border-color: rgba($grey, 0.14);
+      transform: translateY(-2px);
+    }
+
+    .pr_std_icon {
+      width: 44px;
+      height: 44px;
+      background: rgba($gold, 0.08);
+      border: 1px solid rgba($gold, 0.2);
+      @include radius(10px);
+      @include flex(center, center);
+      color: $gold;
+      margin-bottom: 22px;
+    }
+
+    h4 {
+      font-family: "SemiBold";
+      font-size: 16px;
+      color: $white;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-family: "Regular";
+      font-size: 14px;
+      color: rgba($grey, 0.46);
+      line-height: 1.75;
+      margin: 0;
+    }
+  }
+}

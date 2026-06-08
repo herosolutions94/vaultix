@@ -1,0 +1,622 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+/* ===================================================
+   FULL-PAGE WRAPPER
+=================================================== */
+.auth_page {
+  min-height: 100vh;
+  background: $main-dark;
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba($teal, 0.06) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba($gold, 0.03) 0%, transparent 50%);
+  @include flex(center, center);
+  flex-direction: column;
+  padding: 48px 20px;
+}
+
+/* ===================================================
+   LOGO AREA
+=================================================== */
+.auth_logo_wrap {
+  @include flex(center, center);
+  flex-direction: column;
+  margin-bottom: 28px;
+
+  .auth_logo_img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .auth_logo_text {
+    font-family: "Bold";
+    font-size: 28px;
+    color: $white;
+    letter-spacing: -0.025em;
+    line-height: 1;
+  }
+}
+
+/* ===================================================
+   AUTH CARD
+=================================================== */
+.auth_card {
+  width: 100%;
+  max-width: 480px;
+  background: $primary-color;
+  border: 1px solid rgba($grey, 0.08);
+  @include radius(14px);
+  overflow: hidden;
+}
+
+/* Form area — full width, no side panel */
+.auth_card_body {
+  width: 100%;
+  padding: 36px 32px 32px;
+  position: relative;
+
+  /* top-left teal glow */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(
+      ellipse at top left,
+      rgba($teal, 0.14) 0%,
+      transparent 70%
+    );
+    pointer-events: none;
+    border-radius: 14px 0 0 0;
+  }
+
+  @include mobile {
+    padding: 28px 20px 24px;
+  }
+}
+
+/* ===================================================
+   CARD HEADINGS
+=================================================== */
+.auth_title {
+  font-family: "Bold";
+  font-size: 24px;
+  color: $white;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.auth_subtitle {
+  font-family: "Regular";
+  font-size: 13px;
+  color: rgba($grey, 0.4);
+  text-align: center;
+  line-height: 1.72;
+  margin-bottom: 28px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===================================================
+   FORM FIELDS
+=================================================== */
+.auth_forgot_row {
+  text-align: right;
+  margin: -10px 0 18px;
+
+  a {
+    font-family: "Regular";
+    font-size: 12px;
+    color: rgba($grey, 0.4);
+    text-decoration: none;
+    @include trans;
+
+    &:hover { color: $teal; }
+  }
+}
+
+.auth_fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.auth_field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  label {
+    font-family: "Regular";
+    font-size: 10px;
+    color: rgba($grey, 0.65);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    background: $blue-bg;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(7px);
+    padding: 12px 14px;
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.7);
+    outline: none;
+    @include trans;
+
+    &::placeholder {
+      color: rgba($grey, 0.25);
+    }
+    &:focus {
+      border-color: rgba($teal, 0.35);
+      background: $blue-bg;
+    }
+
+    /* override browser autofill white/blue background */
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px $blue-bg inset;
+      box-shadow: 0 0 0px 1000px $blue-bg inset;
+      -webkit-text-fill-color: rgba($grey, 0.7);
+      transition: background-color 5000s ease-in-out 0s;
+      caret-color: rgba($grey, 0.7);
+    }
+  }
+}
+
+/* Password field with eye toggle */
+.auth_pw_wrap {
+  position: relative;
+  @include flex(center, flex-start);
+
+  input {
+    padding-right: 44px !important;
+    flex: 1;
+  }
+
+  .auth_icon_left {
+    position: absolute;
+    left: 13px;
+    color: rgba($grey, 0.3);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &.auth_pw_has_left_icon input {
+    padding-left: 38px !important;
+  }
+
+  .auth_eye_btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba($grey, 0.32);
+    cursor: pointer;
+    padding: 0;
+    @include flex(center, center);
+    @include trans;
+
+    &:hover {
+      color: rgba($grey, 0.6);
+    }
+  }
+}
+
+/* Custom select */
+.auth_select_wrap {
+  position: relative;
+
+  select {
+    width: 100%;
+    background: $blue-bg;
+    border: 1px solid rgba($grey, 0.1);
+    @include radius(7px);
+    padding: 12px 38px 12px 14px;
+    font-family: "Regular";
+    font-size: 13px;
+    color: rgba($grey, 0.7);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    @include trans;
+
+    &:focus {
+      border-color: rgba($teal, 0.35);
+      background: $blue-bg;
+    }
+    option {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  .auth_chevron {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba($grey, 0.35);
+    pointer-events: none;
+  }
+}
+
+/* ===================================================
+   CHECKBOX
+=================================================== */
+.auth_check_row {
+  @include flex(flex-start, flex-start);
+  gap: 10px;
+  margin-bottom: 20px;
+
+  /* hide the real native input completely */
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+
+  /* custom visual box (the <span> sibling) */
+  .auth_cb_box {
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    @include radius(3px);
+    @include trans;
+    background: rgba($main-dark, 0.8);
+    border: 1px solid rgba($grey, 0.2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    cursor: pointer;
+  }
+
+  /* show tick only when the hidden input is checked */
+  input[type="checkbox"]:checked + .auth_cb_box {
+    background-color: rgba($gold, 0.12);
+    border-color: rgba($gold, 0.5);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M1.5 5l2.5 2.5L8.5 2' stroke='%23e9c176' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+
+  label,
+  span {
+    font-family: "Regular";
+    font-size: 12px;
+    color: rgba($grey, 0.45);
+    line-height: 1.65;
+    cursor: pointer;
+  }
+}
+
+/* ===================================================
+   AUTH BUTTON (gold)
+=================================================== */
+.auth_btn {
+  width: 100%;
+  padding: 14px;
+  background: $gold;
+  border: none;
+  @include radius(8px);
+  font-family: "SemiBold";
+  font-size: 13px;
+  color: $main-dark;
+  cursor: pointer;
+  @include trans;
+  letter-spacing: 0.06em;
+  @include flex(center, center);
+  gap: 8px;
+  margin-bottom: 0;
+
+  &:hover {
+    background: lighten($gold, 6%);
+  }
+
+  &.auth_btn_upper {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+  }
+}
+
+/* ===================================================
+   LINKS & HELPER TEXT
+=================================================== */
+.auth_link_row {
+  text-align: center;
+  margin-top: 16px;
+  font-family: "Regular";
+  font-size: 13px;
+  color: rgba($grey, 0.4);
+
+  a {
+    color: $teal;
+    text-decoration: none;
+    @include trans;
+    &:hover { color: lighten($teal, 8%); }
+  }
+
+  button.auth_link_btn {
+    color: rgba($grey, 0.4);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Regular";
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0;
+    @include trans;
+
+    &:hover {
+      color: rgba($grey, 0.65);
+    }
+  }
+}
+
+.auth_link_btn_center {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 14px;
+  font-family: "Regular";
+  font-size: 13px;
+  color: $teal;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  @include trans;
+
+  &:hover {
+    color: lighten($teal, 8%);
+  }
+}
+
+/* ===================================================
+   DIVIDER
+=================================================== */
+.auth_divider {
+  height: 1px;
+  background: rgba($grey, 0.06);
+  margin: 22px 0;
+}
+
+/* ===================================================
+   SECURITY INFO BLOCK (bottom of card)
+=================================================== */
+.auth_sec_info {
+  text-align: center;
+
+  .auth_sec_badge {
+    @include flex(center, center);
+    gap: 7px;
+    font-family: "Regular";
+    font-size: 10px;
+    color: rgba($teal, 0.7);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-family: monospace;
+    font-size: 11px;
+    color: rgba($grey, 0.28);
+    line-height: 1.72;
+    margin: 0;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* ===================================================
+   OTP INPUTS (MFA page)
+=================================================== */
+.auth_otp_wrap {
+  @include flex(center, center);
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.auth_otp_input {
+  width: 48px;
+  height: 52px;
+  background: $blue-bg;
+  border: 1px solid rgba($grey, 0.1);
+  @include radius(7px);
+  text-align: center;
+  font-family: "Bold";
+  font-size: 18px;
+  color: $white;
+  outline: none;
+  @include trans;
+  caret-color: $teal;
+
+  &:focus {
+    border-color: rgba($teal, 0.5);
+    background: $blue-bg;
+  }
+
+  @include mobile {
+    width: 38px;
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+.auth_otp_first {
+  border-color: rgba($teal, 0.5);
+  box-shadow: 0 0 0 1px rgba($teal, 0.15);
+}
+
+.auth_otp_dash {
+  font-family: "Regular";
+  font-size: 20px;
+  color: rgba($grey, 0.3);
+  line-height: 1;
+  padding: 0 2px;
+}
+
+/* MFA status box */
+.auth_status_box {
+  background: rgba($main-dark, 0.5);
+  border: 1px solid rgba($grey, 0.07);
+  @include radius(8px);
+  padding: 14px 16px;
+  margin-bottom: 22px;
+
+  .auth_status_header {
+    @include flex(center, flex-start);
+    gap: 6px;
+    margin-bottom: 10px;
+
+    .auth_status_dot {
+      width: 7px;
+      height: 7px;
+      @include radius(50%);
+      background: $teal;
+      flex-shrink: 0;
+    }
+
+    span {
+      font-family: "Regular";
+      font-size: 10px;
+      color: $teal;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+  }
+
+  .auth_status_rows {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .auth_status_row {
+    @include flex(center, flex-start);
+    gap: 7px;
+    font-family: monospace;
+    font-size: 11px;
+    color: rgba($grey, 0.45);
+    letter-spacing: 0.04em;
+  }
+
+  .auth_status_circle {
+    width: 12px;
+    height: 12px;
+    @include radius(50%);
+    border: 1px solid rgba($grey, 0.25);
+    flex-shrink: 0;
+    @include flex(center, center);
+
+    &.active {
+      border-color: $teal;
+      background: rgba($teal, 0.15);
+      svg {
+        display: block;
+      }
+    }
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+/* ===================================================
+   RESPONSIVE ADJUSTMENTS
+=================================================== */
+@include ipad_sm {
+  .auth_page {
+    padding: 40px 20px;
+  }
+  .auth_logo_wrap .auth_logo_img {
+    width: 100px;
+  }
+  .auth_logo_wrap .auth_logo_text {
+    font-size: 24px;
+  }
+}
+
+@include mobile_md {
+  .auth_page {
+    padding: 32px 16px;
+  }
+  .auth_card_body {
+    padding: 28px 18px 24px;
+  }
+  .auth_logo_wrap {
+    margin-bottom: 20px;
+  }
+  .auth_otp_wrap {
+    gap: 5px;
+  }
+}
+
+/* ===================================================
+   PASSWORD REQUIREMENTS (reset password)
+=================================================== */
+.auth_pw_reqs {
+  background: rgba($main-dark, 0.5);
+  border: 1px solid rgba($grey, 0.07);
+  @include radius(8px);
+  padding: 14px 16px;
+
+  .auth_pw_reqs_title {
+    font-family: "SemiBold";
+    font-size: 12px;
+    color: rgba($white, 0.6);
+    margin-bottom: 10px;
+  }
+
+  .auth_req_rows {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .auth_req_row {
+    @include flex(center, flex-start);
+    gap: 8px;
+    font-family: "Regular";
+    font-size: 12px;
+    color: rgba($grey, 0.4);
+
+    .auth_req_circle {
+      width: 14px;
+      height: 14px;
+      @include radius(50%);
+      border: 1px solid rgba($grey, 0.22);
+      flex-shrink: 0;
+      @include flex(center, center);
+    }
+
+    &.met {
+      color: rgba($grey, 0.65);
+      .auth_req_circle {
+        border-color: $teal;
+        background: rgba($teal, 0.15);
+      }
+    }
+  }
+}

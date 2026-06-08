@@ -2439,9 +2439,9 @@ input {
   }
 }
 
-// =======================
-// ===navbar=======
-// ==============================
+/* =======================
+   OLD HEADER CSS — commented out (conflicts with .site_header in home.scss)
+   ==============================
 header {
   @include pos($pos: fixed, $b: initial, $z: 30);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -2895,11 +2895,7 @@ header {
   }
 }
 
-/*
-|----------------------------------------------------------------------
-|       Navigation
-|----------------------------------------------------------------------
-*/
+// Navigation
 
 nav {
   @include flex(center, flex-end);
@@ -3136,6 +3132,8 @@ nav {
     }
   }
 }
+   END OLD HEADER CSS */
+
 .login_btns {
   @include pos($l: null, $r: 1.5rem);
   @include flex($align: center);
