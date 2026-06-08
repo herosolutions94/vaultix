@@ -483,6 +483,9 @@ function LoggedHeader() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [userDrop, setUserDrop] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const dropRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const toggleSidebar = ()=>{
+        window.dispatchEvent(new CustomEvent("toggleSidebar"));
+    };
     const ToggleUserDrop = ()=>{
         setUserDrop((prev)=>!prev);
     };
@@ -509,6 +512,32 @@ function LoggedHeader() {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "logged_side dashload_side",
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "hamburger-btn",
+                        onClick: toggleSidebar,
+                        "aria-label": "Toggle menu",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/header-logged.js",
+                        lineNumber: 35,
+                        columnNumber: 11
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "inner",
@@ -518,7 +547,7 @@ function LoggedHeader() {
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 33,
+                                    lineNumber: 43,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -527,18 +556,18 @@ function LoggedHeader() {
                                     className: "input"
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 34,
+                                    lineNumber: 44,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/header-logged.js",
-                            lineNumber: 32,
+                            lineNumber: 42,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/header-logged.js",
-                        lineNumber: 31,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -556,17 +585,17 @@ function LoggedHeader() {
                                             alt: ""
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 49,
+                                            lineNumber: 59,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/header-logged.js",
-                                        lineNumber: 48,
+                                        lineNumber: 58,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 44,
+                                    lineNumber: 54,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -579,12 +608,12 @@ function LoggedHeader() {
                                                 children: "Dashboard"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header-logged.js",
-                                                lineNumber: 55,
+                                                lineNumber: 65,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 54,
+                                            lineNumber: 64,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -594,45 +623,45 @@ function LoggedHeader() {
                                                 children: "Logout"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header-logged.js",
-                                                lineNumber: 61,
+                                                lineNumber: 71,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 60,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 53,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/header-logged.js",
-                            lineNumber: 43,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/header-logged.js",
-                        lineNumber: 42,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/header-logged.js",
-                lineNumber: 29,
+                lineNumber: 33,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/header-logged.js",
-            lineNumber: 28,
+            lineNumber: 32,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/header-logged.js",
-        lineNumber: 27,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
@@ -758,9 +787,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 // ─── Icons ─────────────────────────────
@@ -769,7 +800,7 @@ const VaultixLogo = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 _c = VaultixLogo;
@@ -778,7 +809,7 @@ const IconDashboard = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$p
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 29
     }, ("TURBOPACK compile-time value", void 0));
 _c1 = IconDashboard;
@@ -787,7 +818,7 @@ const IconVault = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 25
     }, ("TURBOPACK compile-time value", void 0));
 _c2 = IconVault;
@@ -796,7 +827,7 @@ const IconBeneficiaries = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 33
     }, ("TURBOPACK compile-time value", void 0));
 _c3 = IconBeneficiaries;
@@ -805,7 +836,7 @@ const IconTrigger = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 _c4 = IconTrigger;
@@ -814,7 +845,7 @@ const IconActivity = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pr
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 _c5 = IconActivity;
@@ -823,7 +854,7 @@ const IconSubscription = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 32
     }, ("TURBOPACK compile-time value", void 0));
 _c6 = IconSubscription;
@@ -832,7 +863,7 @@ const IconSettings = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pr
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 _c7 = IconSettings;
@@ -853,12 +884,12 @@ const IconChevron = ({ open })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module_
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 _c8 = IconChevron;
@@ -869,7 +900,7 @@ const NAV_ITEMS = [
         href: "/dashboard",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconDashboard, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 40,
+            lineNumber: 41,
             columnNumber: 51
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -878,7 +909,7 @@ const NAV_ITEMS = [
         href: "/dashboard/vault",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconVault, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: [
@@ -897,7 +928,7 @@ const NAV_ITEMS = [
         href: "/dashboard/beneficiaries",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconBeneficiaries, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 52,
+            lineNumber: 53,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -906,7 +937,7 @@ const NAV_ITEMS = [
         href: "/dashboard/triggers",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconTrigger, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 53,
+            lineNumber: 54,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -915,7 +946,7 @@ const NAV_ITEMS = [
         href: "/dashboard/activity",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconActivity, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 54,
+            lineNumber: 55,
             columnNumber: 64
         }, ("TURBOPACK compile-time value", void 0))
     }
@@ -926,7 +957,7 @@ const BOTTOM_NAV = [
         href: "/dashboard/subscription",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconSubscription, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 58,
+            lineNumber: 59,
             columnNumber: 67
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -935,7 +966,7 @@ const BOTTOM_NAV = [
         href: "/dashboard/settings",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconSettings, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 59
         }, ("TURBOPACK compile-time value", void 0))
     }
@@ -943,6 +974,21 @@ const BOTTOM_NAV = [
 function Sidebar() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["usePathname"])() || "";
+    const [mobileOpen, setMobileOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Sidebar.useEffect": ()=>{
+            const handleToggle = {
+                "Sidebar.useEffect.handleToggle": ()=>setMobileOpen({
+                        "Sidebar.useEffect.handleToggle": (prev)=>!prev
+                    }["Sidebar.useEffect.handleToggle"])
+            }["Sidebar.useEffect.handleToggle"];
+            window.addEventListener("toggleSidebar", handleToggle);
+            return ({
+                "Sidebar.useEffect": ()=>window.removeEventListener("toggleSidebar", handleToggle)
+            })["Sidebar.useEffect"];
+        }
+    }["Sidebar.useEffect"], []);
+    const closeSidebar = ()=>setMobileOpen(false);
     // ✅ Vault submenu auto open based on route
     const isVaultOpen = pathname.startsWith("/dashboard/vault");
     // ✅ Active helper
@@ -953,191 +999,236 @@ function Sidebar() {
     const isParentActive = (href)=>{
         return pathname.startsWith(href);
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-        className: "sidebar",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                href: "/dashboard",
-                className: "side_logo",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(VaultixLogo, {}, void 0, false, {
-                    fileName: "[project]/components/Sidebar.js",
-                    lineNumber: 83,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/Sidebar.js",
-                lineNumber: 82,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "side_nav",
-                children: NAV_ITEMS.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: item.children ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+                className: `sidebar${mobileOpen ? " mobile-open" : ""}`,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "sidebar-close-btn",
+                        onClick: closeSidebar,
+                        "aria-label": "Close menu",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                            width: "18",
+                            height: "18",
+                            viewBox: "0 0 14 14",
+                            fill: "none",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M1 1l12 12M13 1L1 13",
+                                stroke: "currentColor",
+                                strokeWidth: "1.5",
+                                strokeLinecap: "round"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 94,
+                                columnNumber: 11
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Sidebar.js",
+                            lineNumber: 93,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 92,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/dashboard",
+                        className: "side_logo",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(VaultixLogo, {}, void 0, false, {
+                            fileName: "[project]/components/Sidebar.js",
+                            lineNumber: 99,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 98,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "side_nav",
+                        children: NAV_ITEMS.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: item.children ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: item.href,
+                                            className: `nav-item ${isParentActive(item.href) ? "active" : ""}`,
+                                            onClick: closeSidebar,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "nav-icon",
+                                                    children: item.icon
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 114,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "nav-label",
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 115,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "chevron",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconChevron, {
+                                                        open: isVaultOpen
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Sidebar.js",
+                                                        lineNumber: 117,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 116,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 109,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "sub-menu",
+                                            style: {
+                                                maxHeight: isVaultOpen ? "200px" : "0px",
+                                                overflow: "hidden",
+                                                transition: "max-height 0.3s ease"
+                                            },
+                                            children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: child.href,
+                                                    className: `sub-item ${pathname === child.href ? "sub-active" : ""}`,
+                                                    onClick: closeSidebar,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "sub-dot"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Sidebar.js",
+                                                            lineNumber: 139,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        child.label
+                                                    ]
+                                                }, child.href, true, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 131,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 122,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: item.href,
-                                    className: `nav-item ${isParentActive(item.href) ? "active" : ""}`,
+                                    className: `nav-item ${isActive(item.href) ? "active" : ""}`,
+                                    onClick: closeSidebar,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "nav-icon",
                                             children: item.icon
                                         }, void 0, false, {
                                             fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 97,
-                                            columnNumber: 19
+                                            lineNumber: 151,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "nav-label",
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 98,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "chevron",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconChevron, {
-                                                open: isVaultOpen
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/Sidebar.js",
-                                                lineNumber: 100,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 99,
-                                            columnNumber: 19
+                                            lineNumber: 152,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 93,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "sub-menu",
-                                    style: {
-                                        maxHeight: isVaultOpen ? "200px" : "0px",
-                                        overflow: "hidden",
-                                        transition: "max-height 0.3s ease"
-                                    },
-                                    children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: child.href,
-                                            className: `sub-item ${pathname === child.href ? "sub-active" : ""}`,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "sub-dot"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/Sidebar.js",
-                                                    lineNumber: 121,
-                                                    columnNumber: 23
-                                                }, this),
-                                                child.label
-                                            ]
-                                        }, child.href, true, {
-                                            fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 114,
-                                            columnNumber: 21
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 105,
-                                    columnNumber: 17
+                                    lineNumber: 146,
+                                    columnNumber: 15
                                 }, this)
-                            ]
-                        }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: item.href,
-                            className: `nav-item ${isActive(item.href) ? "active" : ""}`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-icon",
-                                    children: item.icon
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 132,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-label",
-                                    children: item.label
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 133,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 128,
-                            columnNumber: 15
-                        }, this)
-                    }, item.href, false, {
-                        fileName: "[project]/components/Sidebar.js",
-                        lineNumber: 89,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/components/Sidebar.js",
-                lineNumber: 87,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bottom-nav",
-                children: [
-                    BOTTOM_NAV.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: item.href,
-                            className: `nav-item ${isActive(item.href) ? "active" : ""}`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-icon",
-                                    children: item.icon
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 148,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "nav-label",
-                                    children: item.label
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 149,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, item.href, true, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 143,
-                            columnNumber: 11
-                        }, this)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "lock-btn",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            children: "LOCK VAULT"
-                        }, void 0, false, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 154,
-                            columnNumber: 11
-                        }, this)
+                            }, item.href, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/Sidebar.js",
-                        lineNumber: 153,
-                        columnNumber: 9
+                        lineNumber: 103,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bottom-nav",
+                        children: [
+                            BOTTOM_NAV.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: item.href,
+                                    className: `nav-item ${isActive(item.href) ? "active" : ""}`,
+                                    onClick: closeSidebar,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "nav-icon",
+                                            children: item.icon
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 168,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "nav-label",
+                                            children: item.label
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 169,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, item.href, true, {
+                                    fileName: "[project]/components/Sidebar.js",
+                                    lineNumber: 162,
+                                    columnNumber: 11
+                                }, this)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "lock-btn",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    children: "LOCK VAULT"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Sidebar.js",
+                                    lineNumber: 174,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 173,
+                                columnNumber: 9
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 160,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Sidebar.js",
-                lineNumber: 141,
-                columnNumber: 7
+                lineNumber: 91,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: `sidebar-overlay${mobileOpen ? " active" : ""}`,
+                onClick: closeSidebar
+            }, void 0, false, {
+                fileName: "[project]/components/Sidebar.js",
+                lineNumber: 178,
+                columnNumber: 5
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/components/Sidebar.js",
-        lineNumber: 80,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 }
-_s(Sidebar, "wVXOWZKWdId76kQQO0KX6Oz3JDA=", false, function() {
+_s(Sidebar, "khesOwOBAvascYw/Af55eeGrjpc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];
@@ -1653,21 +1744,21 @@ function AssetTable({ toggleAccessPopup, setSelectedAsset }) {
                                             className: "tdBeneficiary",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "avatarGroup",
-                                                children: asset.beneficiaries.map((b, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "avatarChip",
-                                                        children: b.image ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: b.image,
-                                                            alt: b.initials
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/vault/AssetTable.js",
-                                                            lineNumber: 260,
-                                                            columnNumber: 27
-                                                        }, this) : b.initials
-                                                    }, i, false, {
+                                                children: asset.beneficiaries[0] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "avatarChip",
+                                                    children: asset.beneficiaries[0].image ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: asset.beneficiaries[0].image,
+                                                        alt: asset.beneficiaries[0].initials
+                                                    }, void 0, false, {
                                                         fileName: "[project]/components/vault/AssetTable.js",
-                                                        lineNumber: 258,
-                                                        columnNumber: 23
-                                                    }, this))
+                                                        lineNumber: 260,
+                                                        columnNumber: 27
+                                                    }, this) : asset.beneficiaries[0].initials
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/vault/AssetTable.js",
+                                                    lineNumber: 258,
+                                                    columnNumber: 23
+                                                }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vault/AssetTable.js",
                                                 lineNumber: 256,

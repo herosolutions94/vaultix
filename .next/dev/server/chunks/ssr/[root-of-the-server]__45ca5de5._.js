@@ -18,6 +18,9 @@ function LoggedHeader() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const [userDrop, setUserDrop] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
     const dropRef = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])(null);
+    const toggleSidebar = ()=>{
+        window.dispatchEvent(new CustomEvent("toggleSidebar"));
+    };
     const ToggleUserDrop = ()=>{
         setUserDrop((prev)=>!prev);
     };
@@ -38,6 +41,32 @@ function LoggedHeader() {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                 className: "logged_side dashload_side",
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                        className: "hamburger-btn",
+                        onClick: toggleSidebar,
+                        "aria-label": "Toggle menu",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                fileName: "[project]/components/header-logged.js",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/header-logged.js",
+                        lineNumber: 35,
+                        columnNumber: 11
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("form", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                             className: "inner",
@@ -47,7 +76,7 @@ function LoggedHeader() {
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 33,
+                                    lineNumber: 43,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
@@ -56,18 +85,18 @@ function LoggedHeader() {
                                     className: "input"
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 34,
+                                    lineNumber: 44,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/header-logged.js",
-                            lineNumber: 32,
+                            lineNumber: 42,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/header-logged.js",
-                        lineNumber: 31,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
@@ -85,17 +114,17 @@ function LoggedHeader() {
                                             alt: ""
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 49,
+                                            lineNumber: 59,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/header-logged.js",
-                                        lineNumber: 48,
+                                        lineNumber: 58,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 44,
+                                    lineNumber: 54,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
@@ -108,12 +137,12 @@ function LoggedHeader() {
                                                 children: "Dashboard"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header-logged.js",
-                                                lineNumber: 55,
+                                                lineNumber: 65,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 54,
+                                            lineNumber: 64,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
@@ -123,45 +152,45 @@ function LoggedHeader() {
                                                 children: "Logout"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header-logged.js",
-                                                lineNumber: 61,
+                                                lineNumber: 71,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/header-logged.js",
-                                            lineNumber: 60,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/header-logged.js",
-                                    lineNumber: 53,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/header-logged.js",
-                            lineNumber: 43,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/header-logged.js",
-                        lineNumber: 42,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/header-logged.js",
-                lineNumber: 29,
+                lineNumber: 33,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/header-logged.js",
-            lineNumber: 28,
+            lineNumber: 32,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/header-logged.js",
-        lineNumber: 27,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
@@ -227,7 +256,9 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/react/jsx-dev-runtime [external] (react/jsx-dev-runtime, cjs)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/react [external] (react, cjs)");
 "use client";
+;
 ;
 ;
 ;
@@ -237,7 +268,7 @@ const VaultixLogo = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$ext
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 const IconDashboard = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -245,7 +276,7 @@ const IconDashboard = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$e
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 29
     }, ("TURBOPACK compile-time value", void 0));
 const IconVault = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -253,7 +284,7 @@ const IconVault = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$exter
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 25
     }, ("TURBOPACK compile-time value", void 0));
 const IconBeneficiaries = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -261,7 +292,7 @@ const IconBeneficiaries = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 33
     }, ("TURBOPACK compile-time value", void 0));
 const IconTrigger = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -269,7 +300,7 @@ const IconTrigger = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$ext
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 27
     }, ("TURBOPACK compile-time value", void 0));
 const IconActivity = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -277,7 +308,7 @@ const IconActivity = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$ex
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const IconSubscription = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -285,7 +316,7 @@ const IconSubscription = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 32
     }, ("TURBOPACK compile-time value", void 0));
 const IconSettings = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
@@ -293,7 +324,7 @@ const IconSettings = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$ex
         alt: ""
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const IconChevron = ({ open })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
@@ -313,12 +344,12 @@ const IconChevron = ({ open })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module_
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/Sidebar.js",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 // ─── Nav Data ─────────────────────────
@@ -328,7 +359,7 @@ const NAV_ITEMS = [
         href: "/dashboard",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconDashboard, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 40,
+            lineNumber: 41,
             columnNumber: 51
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -337,7 +368,7 @@ const NAV_ITEMS = [
         href: "/dashboard/vault",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconVault, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         children: [
@@ -356,7 +387,7 @@ const NAV_ITEMS = [
         href: "/dashboard/beneficiaries",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconBeneficiaries, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 52,
+            lineNumber: 53,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -365,7 +396,7 @@ const NAV_ITEMS = [
         href: "/dashboard/triggers",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconTrigger, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 53,
+            lineNumber: 54,
             columnNumber: 69
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -374,7 +405,7 @@ const NAV_ITEMS = [
         href: "/dashboard/activity",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconActivity, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 54,
+            lineNumber: 55,
             columnNumber: 64
         }, ("TURBOPACK compile-time value", void 0))
     }
@@ -385,7 +416,7 @@ const BOTTOM_NAV = [
         href: "/dashboard/subscription",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconSubscription, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 58,
+            lineNumber: 59,
             columnNumber: 67
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -394,13 +425,20 @@ const BOTTOM_NAV = [
         href: "/dashboard/settings",
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconSettings, {}, void 0, false, {
             fileName: "[project]/components/Sidebar.js",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 59
         }, ("TURBOPACK compile-time value", void 0))
     }
 ];
 function Sidebar() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["usePathname"])() || "";
+    const [mobileOpen, setMobileOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
+        const handleToggle = ()=>setMobileOpen((prev)=>!prev);
+        window.addEventListener("toggleSidebar", handleToggle);
+        return ()=>window.removeEventListener("toggleSidebar", handleToggle);
+    }, []);
+    const closeSidebar = ()=>setMobileOpen(false);
     // ✅ Vault submenu auto open based on route
     const isVaultOpen = pathname.startsWith("/dashboard/vault");
     // ✅ Active helper
@@ -411,189 +449,234 @@ function Sidebar() {
     const isParentActive = (href)=>{
         return pathname.startsWith(href);
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("aside", {
-        className: "sidebar",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                href: "/dashboard",
-                className: "side_logo",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(VaultixLogo, {}, void 0, false, {
-                    fileName: "[project]/components/Sidebar.js",
-                    lineNumber: 83,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/Sidebar.js",
-                lineNumber: 82,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                className: "side_nav",
-                children: NAV_ITEMS.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                        children: item.children ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("aside", {
+                className: `sidebar${mobileOpen ? " mobile-open" : ""}`,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                        className: "sidebar-close-btn",
+                        onClick: closeSidebar,
+                        "aria-label": "Close menu",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
+                            width: "18",
+                            height: "18",
+                            viewBox: "0 0 14 14",
+                            fill: "none",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("path", {
+                                d: "M1 1l12 12M13 1L1 13",
+                                stroke: "currentColor",
+                                strokeWidth: "1.5",
+                                strokeLinecap: "round"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 94,
+                                columnNumber: 11
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Sidebar.js",
+                            lineNumber: 93,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 92,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/dashboard",
+                        className: "side_logo",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(VaultixLogo, {}, void 0, false, {
+                            fileName: "[project]/components/Sidebar.js",
+                            lineNumber: 99,
+                            columnNumber: 9
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 98,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                        className: "side_nav",
+                        children: NAV_ITEMS.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                children: item.children ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                            href: item.href,
+                                            className: `nav-item ${isParentActive(item.href) ? "active" : ""}`,
+                                            onClick: closeSidebar,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                    className: "nav-icon",
+                                                    children: item.icon
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 114,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                    className: "nav-label",
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 115,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                    className: "chevron",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconChevron, {
+                                                        open: isVaultOpen
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Sidebar.js",
+                                                        lineNumber: 117,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 116,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 109,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                            className: "sub-menu",
+                                            style: {
+                                                maxHeight: isVaultOpen ? "200px" : "0px",
+                                                overflow: "hidden",
+                                                transition: "max-height 0.3s ease"
+                                            },
+                                            children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: child.href,
+                                                    className: `sub-item ${pathname === child.href ? "sub-active" : ""}`,
+                                                    onClick: closeSidebar,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                            className: "sub-dot"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Sidebar.js",
+                                                            lineNumber: 139,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        child.label
+                                                    ]
+                                                }, child.href, true, {
+                                                    fileName: "[project]/components/Sidebar.js",
+                                                    lineNumber: 131,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 122,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: item.href,
-                                    className: `nav-item ${isParentActive(item.href) ? "active" : ""}`,
+                                    className: `nav-item ${isActive(item.href) ? "active" : ""}`,
+                                    onClick: closeSidebar,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                             className: "nav-icon",
                                             children: item.icon
                                         }, void 0, false, {
                                             fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 97,
-                                            columnNumber: 19
+                                            lineNumber: 151,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                             className: "nav-label",
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 98,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                            className: "chevron",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(IconChevron, {
-                                                open: isVaultOpen
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/Sidebar.js",
-                                                lineNumber: 100,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 99,
-                                            columnNumber: 19
+                                            lineNumber: 152,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 93,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                    className: "sub-menu",
-                                    style: {
-                                        maxHeight: isVaultOpen ? "200px" : "0px",
-                                        overflow: "hidden",
-                                        transition: "max-height 0.3s ease"
-                                    },
-                                    children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            href: child.href,
-                                            className: `sub-item ${pathname === child.href ? "sub-active" : ""}`,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                    className: "sub-dot"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/Sidebar.js",
-                                                    lineNumber: 121,
-                                                    columnNumber: 23
-                                                }, this),
-                                                child.label
-                                            ]
-                                        }, child.href, true, {
-                                            fileName: "[project]/components/Sidebar.js",
-                                            lineNumber: 114,
-                                            columnNumber: 21
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 105,
-                                    columnNumber: 17
+                                    lineNumber: 146,
+                                    columnNumber: 15
                                 }, this)
-                            ]
-                        }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            href: item.href,
-                            className: `nav-item ${isActive(item.href) ? "active" : ""}`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    className: "nav-icon",
-                                    children: item.icon
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 132,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    className: "nav-label",
-                                    children: item.label
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 133,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 128,
-                            columnNumber: 15
-                        }, this)
-                    }, item.href, false, {
-                        fileName: "[project]/components/Sidebar.js",
-                        lineNumber: 89,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/components/Sidebar.js",
-                lineNumber: 87,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                className: "bottom-nav",
-                children: [
-                    BOTTOM_NAV.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            href: item.href,
-                            className: `nav-item ${isActive(item.href) ? "active" : ""}`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    className: "nav-icon",
-                                    children: item.icon
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 148,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    className: "nav-label",
-                                    children: item.label
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Sidebar.js",
-                                    lineNumber: 149,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, item.href, true, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 143,
-                            columnNumber: 11
-                        }, this)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                        className: "lock-btn",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
-                            children: "LOCK VAULT"
-                        }, void 0, false, {
-                            fileName: "[project]/components/Sidebar.js",
-                            lineNumber: 154,
-                            columnNumber: 11
-                        }, this)
+                            }, item.href, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/Sidebar.js",
-                        lineNumber: 153,
-                        columnNumber: 9
+                        lineNumber: 103,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                        className: "bottom-nav",
+                        children: [
+                            BOTTOM_NAV.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: item.href,
+                                    className: `nav-item ${isActive(item.href) ? "active" : ""}`,
+                                    onClick: closeSidebar,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                            className: "nav-icon",
+                                            children: item.icon
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 168,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                            className: "nav-label",
+                                            children: item.label
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Sidebar.js",
+                                            lineNumber: 169,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, item.href, true, {
+                                    fileName: "[project]/components/Sidebar.js",
+                                    lineNumber: 162,
+                                    columnNumber: 11
+                                }, this)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                className: "lock-btn",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                                    children: "LOCK VAULT"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Sidebar.js",
+                                    lineNumber: 174,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Sidebar.js",
+                                lineNumber: 173,
+                                columnNumber: 9
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Sidebar.js",
+                        lineNumber: 160,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Sidebar.js",
-                lineNumber: 141,
-                columnNumber: 7
+                lineNumber: 91,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                className: `sidebar-overlay${mobileOpen ? " active" : ""}`,
+                onClick: closeSidebar
+            }, void 0, false, {
+                fileName: "[project]/components/Sidebar.js",
+                lineNumber: 178,
+                columnNumber: 5
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/components/Sidebar.js",
-        lineNumber: 80,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 }
 }),
 "[project]/pages/dashboard/inherited-assets/index.js [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -619,7 +702,9 @@ const TABS = [
     "PENDING (1)"
 ];
 const ASSETS = [
+    // ── Active
     {
+        tab: 0,
         name: "Bayerische Motoren Real Estate",
         type: "Commercial Property",
         from: "Alexander V.",
@@ -629,6 +714,7 @@ const ASSETS = [
         action: "VIEW ASSET"
     },
     {
+        tab: 0,
         name: "Lumina Venture Capital Fund III",
         type: "Private Equity",
         from: "Alexander V.",
@@ -638,6 +724,7 @@ const ASSETS = [
         action: "AUTHORIZE"
     },
     {
+        tab: 0,
         name: 'Digital Art - "The Ether Vault"',
         type: "Digital Asset",
         from: "Alexander V.",
@@ -646,7 +733,40 @@ const ASSETS = [
         progress: 100,
         action: "VIEW ASSET"
     },
+    // ── Transferred
     {
+        tab: 1,
+        name: "Geneva Bond Portfolio",
+        type: "Fixed Income",
+        from: "Estate of J. Müller",
+        status: "SECURED",
+        statusVariant: "secured",
+        progress: 100,
+        action: "VIEW ASSET"
+    },
+    {
+        tab: 1,
+        name: "Monaco Penthouse Suite",
+        type: "Real Estate",
+        from: "Alexander V.",
+        status: "SECURED",
+        statusVariant: "secured",
+        progress: 100,
+        action: "VIEW ASSET"
+    },
+    {
+        tab: 1,
+        name: "Alpine Equity Fund",
+        type: "Private Equity",
+        from: "Family Trust B",
+        status: "TITLE LOCK",
+        statusVariant: "titlelock",
+        progress: 90,
+        action: "AUTHORIZE"
+    },
+    // ── Pending
+    {
+        tab: 2,
         name: "Zurich Private Banking - Acct 09",
         type: "Liquid Capital",
         from: "Family Trust B",
@@ -664,12 +784,12 @@ function InheritedAssets() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Sidebar$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                    lineNumber: 53,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2d$logged$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                    lineNumber: 54,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -685,20 +805,20 @@ function InheritedAssets() {
                                             children: "Inherited Assets"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 59,
+                                            lineNumber: 96,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                             children: "Formalized transfer of fiduciary responsibilities and asset control from primary estates to designated successors."
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 60,
+                                            lineNumber: 97,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 58,
+                                    lineNumber: 95,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -712,20 +832,20 @@ function InheritedAssets() {
                                                     alt: ""
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                    lineNumber: 64,
+                                                    lineNumber: 101,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                                     children: "END-TO-END ENCRYPTED"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                    lineNumber: 65,
+                                                    lineNumber: 102,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 63,
+                                            lineNumber: 100,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -738,37 +858,37 @@ function InheritedAssets() {
                                                         alt: ""
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                        lineNumber: 69,
+                                                        lineNumber: 106,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                                         children: "EXPORT AUDIT LOG"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                        lineNumber: 70,
+                                                        lineNumber: 107,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                lineNumber: 68,
+                                                lineNumber: 105,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 67,
+                                            lineNumber: 104,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 62,
+                                    lineNumber: 99,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                            lineNumber: 57,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -782,7 +902,7 @@ function InheritedAssets() {
                                             children: "INHERITED FROM"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 79,
+                                            lineNumber: 116,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -790,13 +910,13 @@ function InheritedAssets() {
                                             children: "Estate of Alexander V."
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 80,
+                                            lineNumber: 117,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 78,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -807,7 +927,7 @@ function InheritedAssets() {
                                             children: "TRANSFER DATE"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 83,
+                                            lineNumber: 120,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -815,13 +935,13 @@ function InheritedAssets() {
                                             children: "October 14, 2024"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 84,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 82,
+                                    lineNumber: 119,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -832,7 +952,7 @@ function InheritedAssets() {
                                             children: "ASSET COUNT"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 87,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -840,13 +960,13 @@ function InheritedAssets() {
                                             children: "12 Active Holdings"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 88,
+                                            lineNumber: 125,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 86,
+                                    lineNumber: 123,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -857,7 +977,7 @@ function InheritedAssets() {
                                             children: "OWNERSHIP STATUS"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 91,
+                                            lineNumber: 128,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -869,25 +989,25 @@ function InheritedAssets() {
                                                     alt: "verified"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                    lineNumber: 94,
+                                                    lineNumber: 131,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 92,
+                                            lineNumber: 129,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 90,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                            lineNumber: 77,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -901,12 +1021,12 @@ function InheritedAssets() {
                                             children: tab
                                         }, tab, false, {
                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                            lineNumber: 103,
+                                            lineNumber: 140,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 101,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -922,35 +1042,35 @@ function InheritedAssets() {
                                                             children: "Asset Name"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                            lineNumber: 117,
+                                                            lineNumber: 154,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
                                                             children: "Type"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                            lineNumber: 118,
+                                                            lineNumber: 155,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
                                                             children: "Inherited From"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                            lineNumber: 119,
+                                                            lineNumber: 156,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
                                                             children: "Current Status"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                            lineNumber: 120,
+                                                            lineNumber: 157,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
                                                             children: "Transfer State"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                            lineNumber: 121,
+                                                            lineNumber: 158,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("th", {
@@ -958,22 +1078,22 @@ function InheritedAssets() {
                                                             children: "Action"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                            lineNumber: 122,
+                                                            lineNumber: 159,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                    lineNumber: 116,
+                                                    lineNumber: 153,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                lineNumber: 115,
+                                                lineNumber: 152,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("tbody", {
-                                                children: ASSETS.map((asset, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("tr", {
+                                                children: ASSETS.filter((a)=>a.tab === activeTab).map((asset, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("tr", {
                                                         className: "ia_row",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -981,7 +1101,7 @@ function InheritedAssets() {
                                                                 children: asset.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                lineNumber: 128,
+                                                                lineNumber: 165,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -989,7 +1109,7 @@ function InheritedAssets() {
                                                                 children: asset.type
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                lineNumber: 129,
+                                                                lineNumber: 166,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -997,7 +1117,7 @@ function InheritedAssets() {
                                                                 children: asset.from
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                lineNumber: 130,
+                                                                lineNumber: 167,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -1006,12 +1126,12 @@ function InheritedAssets() {
                                                                     children: asset.status
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                    lineNumber: 132,
+                                                                    lineNumber: 169,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                lineNumber: 131,
+                                                                lineNumber: 168,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -1027,12 +1147,12 @@ function InheritedAssets() {
                                                                                 }
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                                lineNumber: 139,
+                                                                                lineNumber: 176,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                            lineNumber: 138,
+                                                                            lineNumber: 175,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -1043,18 +1163,18 @@ function InheritedAssets() {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                            lineNumber: 144,
+                                                                            lineNumber: 181,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                    lineNumber: 137,
+                                                                    lineNumber: 174,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                lineNumber: 136,
+                                                                lineNumber: 173,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("td", {
@@ -1064,52 +1184,52 @@ function InheritedAssets() {
                                                                     children: asset.action
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                    lineNumber: 148,
+                                                                    lineNumber: 185,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                                lineNumber: 147,
+                                                                lineNumber: 184,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, i, true, {
                                                         fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                        lineNumber: 127,
+                                                        lineNumber: 164,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                                lineNumber: 125,
+                                                lineNumber: 162,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                        lineNumber: 114,
+                                        lineNumber: 151,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                                    lineNumber: 113,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                            lineNumber: 100,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-                    lineNumber: 55,
+                    lineNumber: 92,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-            lineNumber: 52,
+            lineNumber: 89,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -1119,7 +1239,7 @@ InheritedAssets.getLayout = function(page) {
         children: page
     }, void 0, false, {
         fileName: "[project]/pages/dashboard/inherited-assets/index.js",
-        lineNumber: 164,
+        lineNumber: 201,
         columnNumber: 10
     }, this);
 };

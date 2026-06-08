@@ -19,7 +19,7 @@ export default function Document() {
                 <span>END-TO-END ENCRYPTED SESSION</span>
             </div>
         </div>
-        <div className="dbl_field m_b_2">
+        <div className="dbl_field">
             <div className="field_text">
                 <label>DOCUMENT TYPE</label>
                 <select className="input">
