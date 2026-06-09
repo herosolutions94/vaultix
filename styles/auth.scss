@@ -8,9 +8,9 @@
 .auth_page {
   min-height: 100vh;
   background: $main-dark;
-  background-image:
-    radial-gradient(ellipse at 50% 0%, rgba($teal, 0.06) 0%, transparent 55%),
-    radial-gradient(ellipse at 50% 100%, rgba($gold, 0.03) 0%, transparent 50%);
+  // background-image:
+  //   radial-gradient(ellipse at 50% 0%, rgba($teal, 0.06) 0%, transparent 55%),
+  //   radial-gradient(ellipse at 50% 100%, rgba($gold, 0.03) 0%, transparent 50%);
   @include flex(center, center);
   flex-direction: column;
   padding: 48px 20px;
