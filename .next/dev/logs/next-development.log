@@ -1,7 +1,7 @@
-[00:00:10.256] Server  LOG     ✓ Ready in 8.3s
-[00:00:12.818] Server  WARN    ⚠ ./styles/about.scss
+[00:00:09.805] Server  LOG     ✓ Ready in 7.1s
+[00:00:28.118] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -13,9 +13,9 @@ styles/about.scss 1:9  root stylesheet
 
 
 
-[00:00:12.818] Server  WARN    ⚠ ./styles/about.scss
+[00:00:28.119] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -27,9 +27,9 @@ styles/about.scss 2:9  root stylesheet
 
 
 
-[00:00:12.819] Server  WARN    ⚠ ./styles/about.scss
+[00:00:28.129] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -41,9 +41,9 @@ styles/about.scss 3:9  root stylesheet
 
 
 
-[00:00:12.820] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.130] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -55,9 +55,9 @@ styles/auth.scss 1:9  root stylesheet
 
 
 
-[00:00:12.820] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.130] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -69,9 +69,9 @@ styles/auth.scss 2:9  root stylesheet
 
 
 
-[00:00:12.821] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.130] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -83,9 +83,9 @@ styles/auth.scss 3:9  root stylesheet
 
 
 
-[00:00:12.821] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.131] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
+SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:333:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -98,9 +98,9 @@ styles/auth.scss 334:17  root stylesheet
 
 
 
-[00:00:12.822] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.131] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
+SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:333:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -115,9 +115,9 @@ styles/auth.scss 334:17  root stylesheet
 
 
 
-[00:00:12.822] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.132] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
+SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:358:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -130,9 +130,9 @@ styles/auth.scss 359:14  root stylesheet
 
 
 
-[00:00:12.823] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.132] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
+SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:358:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 13.2038834951%)
@@ -147,9 +147,9 @@ styles/auth.scss 359:14  root stylesheet
 
 
 
-[00:00:12.824] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.134] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
+SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:394:11:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -162,9 +162,9 @@ styles/auth.scss 395:12  root stylesheet
 
 
 
-[00:00:12.825] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:28.134] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
+SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:394:11:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 13.2038834951%)
@@ -179,9 +179,9 @@ styles/auth.scss 395:12  root stylesheet
 
 
 
-[00:00:12.825] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:28.135] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -193,9 +193,9 @@ styles/checkout.scss 1:9  root stylesheet
 
 
 
-[00:00:12.827] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:28.136] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -207,9 +207,9 @@ styles/checkout.scss 2:9  root stylesheet
 
 
 
-[00:00:12.827] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:28.136] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -221,9 +221,9 @@ styles/checkout.scss 3:9  root stylesheet
 
 
 
-[00:00:12.829] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:28.136] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
+SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:549:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -236,9 +236,9 @@ styles/checkout.scss 550:17  root stylesheet
 
 
 
-[00:00:12.829] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:28.141] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
+SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:549:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -253,9 +253,9 @@ styles/checkout.scss 550:17  root stylesheet
 
 
 
-[00:00:12.831] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:28.141] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -267,9 +267,9 @@ styles/contact.scss 1:9  root stylesheet
 
 
 
-[00:00:12.831] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:28.141] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -281,9 +281,9 @@ styles/contact.scss 2:9  root stylesheet
 
 
 
-[00:00:12.832] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:28.141] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -295,9 +295,9 @@ styles/contact.scss 3:9  root stylesheet
 
 
 
-[00:00:12.832] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:28.252] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
+SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:513:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -310,9 +310,9 @@ styles/contact.scss 514:14  root stylesheet
 
 
 
-[00:00:12.834] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:28.252] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
+SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:513:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 16.5048543689%)
@@ -327,9 +327,9 @@ styles/contact.scss 514:14  root stylesheet
 
 
 
-[00:00:12.834] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:28.252] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -341,9 +341,9 @@ styles/custom.scss 1:9  root stylesheet
 
 
 
-[00:00:12.837] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:28.253] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -355,9 +355,9 @@ styles/custom.scss 2:9  root stylesheet
 
 
 
-[00:00:12.837] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:28.254] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -369,9 +369,9 @@ styles/custom.scss 3:9  root stylesheet
 
 
 
-[00:00:12.838] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:28.254] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 5822, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5822:8:
+SassWarning: Deprecation Warning on line 5822, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:5822:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -383,9 +383,9 @@ styles/custom.scss 5823:9  root stylesheet
 
 
 
-[00:00:12.839] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:28.254] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 5823, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5823:8:
+SassWarning: Deprecation Warning on line 5823, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:5823:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -397,9 +397,9 @@ styles/custom.scss 5824:9  root stylesheet
 
 
 
-[00:00:12.840] Server  WARN    ⚠ ./styles/error.scss
+[00:00:28.254] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -411,9 +411,9 @@ styles/error.scss 1:9  root stylesheet
 
 
 
-[00:00:12.840] Server  WARN    ⚠ ./styles/error.scss
+[00:00:28.254] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -425,9 +425,9 @@ styles/error.scss 2:9  root stylesheet
 
 
 
-[00:00:12.841] Server  WARN    ⚠ ./styles/error.scss
+[00:00:28.291] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
+SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:129:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -440,9 +440,9 @@ styles/error.scss 130:17  root stylesheet
 
 
 
-[00:00:12.841] Server  WARN    ⚠ ./styles/error.scss
+[00:00:28.291] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
+SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:129:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -457,9 +457,9 @@ styles/error.scss 130:17  root stylesheet
 
 
 
-[00:00:12.844] Server  WARN    ⚠ ./styles/error.scss
+[00:00:28.306] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
+SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:130:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -472,9 +472,9 @@ styles/error.scss 131:19  root stylesheet
 
 
 
-[00:00:12.854] Server  WARN    ⚠ ./styles/error.scss
+[00:00:28.307] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
+SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:130:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -489,9 +489,9 @@ styles/error.scss 131:19  root stylesheet
 
 
 
-[00:00:12.872] Server  WARN    ⚠ ./styles/error.scss
+[00:00:28.309] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -503,9 +503,9 @@ styles/error.scss 3:9  root stylesheet
 
 
 
-[00:00:12.874] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:28.309] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -517,9 +517,9 @@ styles/faq.scss 1:9  root stylesheet
 
 
 
-[00:00:12.875] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:28.310] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -531,9 +531,9 @@ styles/faq.scss 2:9  root stylesheet
 
 
 
-[00:00:12.875] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:28.311] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -545,9 +545,9 @@ styles/faq.scss 3:9  root stylesheet
 
 
 
-[00:00:12.875] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.311] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -559,9 +559,9 @@ styles/home.scss 1:9  root stylesheet
 
 
 
-[00:00:12.876] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.312] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -573,9 +573,9 @@ styles/home.scss 2:9  root stylesheet
 
 
 
-[00:00:12.879] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.313] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
+SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1047:44:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -588,9 +588,9 @@ styles/home.scss 1048:45  root stylesheet
 
 
 
-[00:00:12.879] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.318] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
+SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1047:44:
 darken() is deprecated. Suggestions:
 
 color.scale($color, $lightness: -11.6239316239%)
@@ -605,9 +605,9 @@ styles/home.scss 1048:45  root stylesheet
 
 
 
-[00:00:12.881] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.318] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
+SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:160:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -620,9 +620,9 @@ styles/home.scss 161:19  root stylesheet
 
 
 
-[00:00:12.882] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.318] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
+SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:160:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -637,9 +637,9 @@ styles/home.scss 161:19  root stylesheet
 
 
 
-[00:00:12.883] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.320] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -651,9 +651,9 @@ styles/home.scss 3:9  root stylesheet
 
 
 
-[00:00:12.884] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.320] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
+SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:276:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -666,9 +666,9 @@ styles/home.scss 277:14  root stylesheet
 
 
 
-[00:00:12.884] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.321] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
+SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:276:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 25.6603773585%)
@@ -683,9 +683,9 @@ styles/home.scss 277:14  root stylesheet
 
 
 
-[00:00:12.888] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.322] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
+SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:387:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -698,9 +698,9 @@ styles/home.scss 388:17  root stylesheet
 
 
 
-[00:00:12.889] Server  WARN    ⚠ ./styles/home.scss
+[00:00:28.322] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
+SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:387:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -715,9 +715,9 @@ styles/home.scss 388:17  root stylesheet
 
 
 
-[00:00:12.890] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:28.323] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -729,9 +729,9 @@ styles/how-it-works.scss 1:9  root stylesheet
 
 
 
-[00:00:12.891] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:28.323] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -743,9 +743,9 @@ styles/how-it-works.scss 2:9  root stylesheet
 
 
 
-[00:00:12.892] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:28.323] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -757,9 +757,9 @@ styles/how-it-works.scss 3:9  root stylesheet
 
 
 
-[00:00:12.909] Server  WARN    ⚠ ./styles/inherit.scss
+[00:00:28.323] Server  WARN    ⚠ ./styles/inherit.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/inherit.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -771,9 +771,9 @@ styles/inherit.scss 1:9  root stylesheet
 
 
 
-[00:00:12.916] Server  WARN    ⚠ ./styles/inherit.scss
+[00:00:28.324] Server  WARN    ⚠ ./styles/inherit.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/inherit.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -785,9 +785,9 @@ styles/inherit.scss 2:9  root stylesheet
 
 
 
-[00:00:12.926] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:28.324] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -799,9 +799,9 @@ styles/pricing.scss 1:9  root stylesheet
 
 
 
-[00:00:12.946] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:28.324] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -813,9 +813,9 @@ styles/pricing.scss 2:9  root stylesheet
 
 
 
-[00:00:12.946] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:28.326] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -827,9 +827,9 @@ styles/pricing.scss 3:9  root stylesheet
 
 
 
-[00:00:12.946] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.327] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -841,9 +841,9 @@ styles/security.scss 1:9  root stylesheet
 
 
 
-[00:00:12.947] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.327] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -855,9 +855,9 @@ styles/security.scss 2:9  root stylesheet
 
 
 
-[00:00:12.948] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.328] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
+SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:179:49:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -870,9 +870,9 @@ styles/security.scss 180:50  root stylesheet
 
 
 
-[00:00:12.950] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.329] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
+SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:179:49:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 32.0754716981%)
@@ -887,9 +887,9 @@ styles/security.scss 180:50  root stylesheet
 
 
 
-[00:00:12.953] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.329] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -901,9 +901,9 @@ styles/security.scss 3:9  root stylesheet
 
 
 
-[00:00:12.954] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.329] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
+SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:289:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -916,9 +916,9 @@ styles/security.scss 290:19  root stylesheet
 
 
 
-[00:00:12.954] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.329] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
+SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:289:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 4.4251626898%)
@@ -933,9 +933,9 @@ styles/security.scss 290:19  root stylesheet
 
 
 
-[00:00:12.954] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.330] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
+SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:312:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -948,9 +948,9 @@ styles/security.scss 313:19  root stylesheet
 
 
 
-[00:00:12.956] Server  WARN    ⚠ ./styles/security.scss
+[00:00:28.330] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
+SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:312:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 2.2125813449%)
@@ -965,9 +965,9 @@ styles/security.scss 313:19  root stylesheet
 
 
 
-[00:00:12.956] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:28.330] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -979,9 +979,9 @@ styles/terms.scss 1:9  root stylesheet
 
 
 
-[00:00:12.956] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:28.330] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -993,9 +993,9 @@ styles/terms.scss 2:9  root stylesheet
 
 
 
-[00:00:12.957] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:28.330] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1007,9 +1007,9 @@ styles/terms.scss 3:9  root stylesheet
 
 
 
-[00:00:16.749] Server  WARN    ⚠ ./styles/about.scss
+[00:00:30.789] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1021,9 +1021,9 @@ styles/about.scss 1:9  root stylesheet
 
 
 
-[00:00:16.749] Server  WARN    ⚠ ./styles/about.scss
+[00:00:30.790] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1035,9 +1035,9 @@ styles/about.scss 2:9  root stylesheet
 
 
 
-[00:00:16.749] Server  WARN    ⚠ ./styles/about.scss
+[00:00:30.791] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1049,9 +1049,9 @@ styles/about.scss 3:9  root stylesheet
 
 
 
-[00:00:16.749] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.791] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1063,9 +1063,9 @@ styles/auth.scss 1:9  root stylesheet
 
 
 
-[00:00:16.750] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.791] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1077,9 +1077,9 @@ styles/auth.scss 2:9  root stylesheet
 
 
 
-[00:00:16.750] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.791] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1091,9 +1091,9 @@ styles/auth.scss 3:9  root stylesheet
 
 
 
-[00:00:16.750] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.791] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
+SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:333:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1106,9 +1106,9 @@ styles/auth.scss 334:17  root stylesheet
 
 
 
-[00:00:16.750] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.792] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
+SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:333:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -1123,9 +1123,9 @@ styles/auth.scss 334:17  root stylesheet
 
 
 
-[00:00:16.751] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.804] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
+SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:358:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1138,9 +1138,9 @@ styles/auth.scss 359:14  root stylesheet
 
 
 
-[00:00:16.751] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.805] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
+SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:358:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 13.2038834951%)
@@ -1155,9 +1155,9 @@ styles/auth.scss 359:14  root stylesheet
 
 
 
-[00:00:16.751] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.805] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
+SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:394:11:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1170,9 +1170,9 @@ styles/auth.scss 395:12  root stylesheet
 
 
 
-[00:00:16.751] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:30.805] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
+SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:394:11:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 13.2038834951%)
@@ -1187,9 +1187,9 @@ styles/auth.scss 395:12  root stylesheet
 
 
 
-[00:00:16.752] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:30.805] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1201,9 +1201,9 @@ styles/checkout.scss 1:9  root stylesheet
 
 
 
-[00:00:16.752] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:30.805] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1215,9 +1215,9 @@ styles/checkout.scss 2:9  root stylesheet
 
 
 
-[00:00:16.753] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:30.806] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1229,9 +1229,9 @@ styles/checkout.scss 3:9  root stylesheet
 
 
 
-[00:00:16.757] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:30.806] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
+SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:549:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1244,9 +1244,9 @@ styles/checkout.scss 550:17  root stylesheet
 
 
 
-[00:00:16.759] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:30.807] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
+SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:549:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -1261,9 +1261,9 @@ styles/checkout.scss 550:17  root stylesheet
 
 
 
-[00:00:16.759] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:30.807] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1275,9 +1275,9 @@ styles/contact.scss 1:9  root stylesheet
 
 
 
-[00:00:16.760] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:30.807] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1289,9 +1289,9 @@ styles/contact.scss 2:9  root stylesheet
 
 
 
-[00:00:16.761] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:30.807] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1303,9 +1303,9 @@ styles/contact.scss 3:9  root stylesheet
 
 
 
-[00:00:16.764] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:30.807] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
+SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:513:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1318,9 +1318,9 @@ styles/contact.scss 514:14  root stylesheet
 
 
 
-[00:00:16.764] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:30.808] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
+SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:513:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 16.5048543689%)
@@ -1335,9 +1335,9 @@ styles/contact.scss 514:14  root stylesheet
 
 
 
-[00:00:16.764] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:30.808] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1349,9 +1349,9 @@ styles/custom.scss 1:9  root stylesheet
 
 
 
-[00:00:16.771] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:30.808] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1363,9 +1363,9 @@ styles/custom.scss 2:9  root stylesheet
 
 
 
-[00:00:16.774] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:30.808] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1377,9 +1377,9 @@ styles/custom.scss 3:9  root stylesheet
 
 
 
-[00:00:16.775] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:30.808] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 5822, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5822:8:
+SassWarning: Deprecation Warning on line 5822, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:5822:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1391,9 +1391,9 @@ styles/custom.scss 5823:9  root stylesheet
 
 
 
-[00:00:16.775] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:30.808] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 5823, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5823:8:
+SassWarning: Deprecation Warning on line 5823, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:5823:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1405,9 +1405,9 @@ styles/custom.scss 5824:9  root stylesheet
 
 
 
-[00:00:16.776] Server  WARN    ⚠ ./styles/error.scss
+[00:00:30.808] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1419,9 +1419,9 @@ styles/error.scss 1:9  root stylesheet
 
 
 
-[00:00:16.776] Server  WARN    ⚠ ./styles/error.scss
+[00:00:30.809] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1433,9 +1433,9 @@ styles/error.scss 2:9  root stylesheet
 
 
 
-[00:00:16.776] Server  WARN    ⚠ ./styles/error.scss
+[00:00:30.809] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
+SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:129:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1448,9 +1448,9 @@ styles/error.scss 130:17  root stylesheet
 
 
 
-[00:00:16.777] Server  WARN    ⚠ ./styles/error.scss
+[00:00:30.809] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
+SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:129:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -1465,9 +1465,9 @@ styles/error.scss 130:17  root stylesheet
 
 
 
-[00:00:16.777] Server  WARN    ⚠ ./styles/error.scss
+[00:00:30.809] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
+SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:130:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1480,9 +1480,9 @@ styles/error.scss 131:19  root stylesheet
 
 
 
-[00:00:16.777] Server  WARN    ⚠ ./styles/error.scss
+[00:00:30.809] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
+SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:130:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -1497,9 +1497,9 @@ styles/error.scss 131:19  root stylesheet
 
 
 
-[00:00:16.777] Server  WARN    ⚠ ./styles/error.scss
+[00:00:30.919] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1511,9 +1511,9 @@ styles/error.scss 3:9  root stylesheet
 
 
 
-[00:00:16.778] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:30.963] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1525,9 +1525,9 @@ styles/faq.scss 1:9  root stylesheet
 
 
 
-[00:00:16.778] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:30.967] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1539,9 +1539,9 @@ styles/faq.scss 2:9  root stylesheet
 
 
 
-[00:00:16.778] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:30.967] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1553,9 +1553,9 @@ styles/faq.scss 3:9  root stylesheet
 
 
 
-[00:00:16.778] Server  WARN    ⚠ ./styles/home.scss
+[00:00:30.968] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1567,9 +1567,9 @@ styles/home.scss 1:9  root stylesheet
 
 
 
-[00:00:16.778] Server  WARN    ⚠ ./styles/home.scss
+[00:00:30.992] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1581,9 +1581,9 @@ styles/home.scss 2:9  root stylesheet
 
 
 
-[00:00:16.778] Server  WARN    ⚠ ./styles/home.scss
+[00:00:30.992] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
+SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1047:44:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1596,9 +1596,9 @@ styles/home.scss 1048:45  root stylesheet
 
 
 
-[00:00:16.779] Server  WARN    ⚠ ./styles/home.scss
+[00:00:30.993] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
+SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1047:44:
 darken() is deprecated. Suggestions:
 
 color.scale($color, $lightness: -11.6239316239%)
@@ -1613,9 +1613,9 @@ styles/home.scss 1048:45  root stylesheet
 
 
 
-[00:00:16.779] Server  WARN    ⚠ ./styles/home.scss
+[00:00:30.997] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
+SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:160:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1628,9 +1628,9 @@ styles/home.scss 161:19  root stylesheet
 
 
 
-[00:00:16.779] Server  WARN    ⚠ ./styles/home.scss
+[00:00:31.000] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
+SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:160:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -1645,9 +1645,9 @@ styles/home.scss 161:19  root stylesheet
 
 
 
-[00:00:16.782] Server  WARN    ⚠ ./styles/home.scss
+[00:00:31.000] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1659,9 +1659,9 @@ styles/home.scss 3:9  root stylesheet
 
 
 
-[00:00:16.782] Server  WARN    ⚠ ./styles/home.scss
+[00:00:31.001] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
+SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:276:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1674,9 +1674,9 @@ styles/home.scss 277:14  root stylesheet
 
 
 
-[00:00:16.783] Server  WARN    ⚠ ./styles/home.scss
+[00:00:31.001] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
+SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:276:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 25.6603773585%)
@@ -1691,9 +1691,9 @@ styles/home.scss 277:14  root stylesheet
 
 
 
-[00:00:16.783] Server  WARN    ⚠ ./styles/home.scss
+[00:00:31.001] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
+SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:387:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1706,9 +1706,9 @@ styles/home.scss 388:17  root stylesheet
 
 
 
-[00:00:16.784] Server  WARN    ⚠ ./styles/home.scss
+[00:00:31.002] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
+SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:387:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -1723,9 +1723,9 @@ styles/home.scss 388:17  root stylesheet
 
 
 
-[00:00:16.784] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:31.011] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1737,9 +1737,9 @@ styles/how-it-works.scss 1:9  root stylesheet
 
 
 
-[00:00:16.785] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:31.017] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1751,9 +1751,9 @@ styles/how-it-works.scss 2:9  root stylesheet
 
 
 
-[00:00:16.785] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:31.018] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1765,9 +1765,9 @@ styles/how-it-works.scss 3:9  root stylesheet
 
 
 
-[00:00:16.786] Server  WARN    ⚠ ./styles/inherit.scss
+[00:00:31.026] Server  WARN    ⚠ ./styles/inherit.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/inherit.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1779,9 +1779,9 @@ styles/inherit.scss 1:9  root stylesheet
 
 
 
-[00:00:16.787] Server  WARN    ⚠ ./styles/inherit.scss
+[00:00:31.027] Server  WARN    ⚠ ./styles/inherit.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/inherit.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1793,9 +1793,9 @@ styles/inherit.scss 2:9  root stylesheet
 
 
 
-[00:00:16.787] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:31.030] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1807,9 +1807,9 @@ styles/pricing.scss 1:9  root stylesheet
 
 
 
-[00:00:16.787] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:31.041] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1821,9 +1821,9 @@ styles/pricing.scss 2:9  root stylesheet
 
 
 
-[00:00:16.791] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:31.041] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1835,9 +1835,9 @@ styles/pricing.scss 3:9  root stylesheet
 
 
 
-[00:00:16.792] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.041] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1849,9 +1849,9 @@ styles/security.scss 1:9  root stylesheet
 
 
 
-[00:00:16.793] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.043] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1863,9 +1863,9 @@ styles/security.scss 2:9  root stylesheet
 
 
 
-[00:00:16.793] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.043] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
+SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:179:49:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1878,9 +1878,9 @@ styles/security.scss 180:50  root stylesheet
 
 
 
-[00:00:16.793] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.044] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
+SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:179:49:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 32.0754716981%)
@@ -1895,9 +1895,9 @@ styles/security.scss 180:50  root stylesheet
 
 
 
-[00:00:16.794] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.045] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1909,9 +1909,9 @@ styles/security.scss 3:9  root stylesheet
 
 
 
-[00:00:16.794] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.045] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
+SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:289:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1924,9 +1924,9 @@ styles/security.scss 290:19  root stylesheet
 
 
 
-[00:00:16.795] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.046] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
+SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:289:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 4.4251626898%)
@@ -1941,9 +1941,9 @@ styles/security.scss 290:19  root stylesheet
 
 
 
-[00:00:16.796] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.050] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
+SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:312:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -1956,9 +1956,9 @@ styles/security.scss 313:19  root stylesheet
 
 
 
-[00:00:16.796] Server  WARN    ⚠ ./styles/security.scss
+[00:00:31.051] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
+SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:312:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 2.2125813449%)
@@ -1973,9 +1973,9 @@ styles/security.scss 313:19  root stylesheet
 
 
 
-[00:00:16.797] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:31.051] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -1987,9 +1987,9 @@ styles/terms.scss 1:9  root stylesheet
 
 
 
-[00:00:16.798] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:31.051] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2001,9 +2001,9 @@ styles/terms.scss 2:9  root stylesheet
 
 
 
-[00:00:16.799] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:31.052] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2015,9 +2015,55 @@ styles/terms.scss 3:9  root stylesheet
 
 
 
-[00:00:26.246] Server  WARN    ⚠ ./styles/about.scss
+[00:00:31.544] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <PathnameContextProviderAdapter router={{sdc:{},sbc:{}, ...}} isAutoExport={false}>
+      <App siteSettings={{id:1, ...}} __N_SSP={true} pageProps={{result:{...}}} Component={function Home} err={undefined} ...>
+        <Fe>
+        <NextNProgress>
+        <Layout siteSettings={{id:1, ...}}>
+          <div className="content">
+            <SiteMaster>
+            <Header>
+            <Home result={{...}}>
+              <MetaGenerator>
+              <div className="home_page">
+                <section className="hero_section">
+                  <img>
+                  <img>
+                  <div className="pg_contain">
+                    <div className="hero_main">
+                      <div>
+                      <h1>
+                      <p className="hero_sub">
+                        <Text string={"<p>Vault..."}>
+                          <span
+                            dangerouslySetInnerHTML={{
++                             __html: "<p>Vaultix is an end-to-end encrypted digital vault for your assets, documents,..."
+-                             __html: ""
+                            }}
+                          >
++                     <div className="hero_btns">
+-                     <p>
+                  ...
+                ...
+            ...
+      ...
+
+[00:00:42.240] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2029,9 +2075,9 @@ styles/about.scss 1:9  root stylesheet
 
 
 
-[00:00:26.250] Server  WARN    ⚠ ./styles/about.scss
+[00:00:42.240] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2043,9 +2089,9 @@ styles/about.scss 2:9  root stylesheet
 
 
 
-[00:00:26.251] Server  WARN    ⚠ ./styles/about.scss
+[00:00:42.241] Server  WARN    ⚠ ./styles/about.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/about.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2057,9 +2103,9 @@ styles/about.scss 3:9  root stylesheet
 
 
 
-[00:00:26.253] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.241] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2071,9 +2117,9 @@ styles/auth.scss 1:9  root stylesheet
 
 
 
-[00:00:26.253] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.241] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2085,9 +2131,9 @@ styles/auth.scss 2:9  root stylesheet
 
 
 
-[00:00:26.254] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.242] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2099,9 +2145,9 @@ styles/auth.scss 3:9  root stylesheet
 
 
 
-[00:00:26.254] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.242] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
+SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:333:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2114,9 +2160,9 @@ styles/auth.scss 334:17  root stylesheet
 
 
 
-[00:00:26.254] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.243] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
+SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:333:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -2131,9 +2177,9 @@ styles/auth.scss 334:17  root stylesheet
 
 
 
-[00:00:26.257] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.244] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
+SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:358:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2146,9 +2192,9 @@ styles/auth.scss 359:14  root stylesheet
 
 
 
-[00:00:26.257] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.244] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
+SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:358:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 13.2038834951%)
@@ -2163,9 +2209,9 @@ styles/auth.scss 359:14  root stylesheet
 
 
 
-[00:00:26.258] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.244] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
+SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:394:11:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2178,9 +2224,9 @@ styles/auth.scss 395:12  root stylesheet
 
 
 
-[00:00:26.258] Server  WARN    ⚠ ./styles/auth.scss
+[00:00:42.245] Server  WARN    ⚠ ./styles/auth.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
+SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/auth.scss:394:11:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 13.2038834951%)
@@ -2195,9 +2241,9 @@ styles/auth.scss 395:12  root stylesheet
 
 
 
-[00:00:26.259] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:42.246] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2209,9 +2255,9 @@ styles/checkout.scss 1:9  root stylesheet
 
 
 
-[00:00:26.259] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:42.515] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2223,9 +2269,9 @@ styles/checkout.scss 2:9  root stylesheet
 
 
 
-[00:00:26.260] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:42.517] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2237,9 +2283,9 @@ styles/checkout.scss 3:9  root stylesheet
 
 
 
-[00:00:26.260] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:42.518] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
+SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:549:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2252,9 +2298,9 @@ styles/checkout.scss 550:17  root stylesheet
 
 
 
-[00:00:26.260] Server  WARN    ⚠ ./styles/checkout.scss
+[00:00:42.518] Server  WARN    ⚠ ./styles/checkout.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
+SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/checkout.scss:549:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -2269,9 +2315,9 @@ styles/checkout.scss 550:17  root stylesheet
 
 
 
-[00:00:26.261] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:42.518] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2283,9 +2329,9 @@ styles/contact.scss 1:9  root stylesheet
 
 
 
-[00:00:26.261] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:42.519] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2297,9 +2343,9 @@ styles/contact.scss 2:9  root stylesheet
 
 
 
-[00:00:26.262] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:42.519] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2311,9 +2357,9 @@ styles/contact.scss 3:9  root stylesheet
 
 
 
-[00:00:26.262] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:42.530] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
+SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:513:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2326,9 +2372,9 @@ styles/contact.scss 514:14  root stylesheet
 
 
 
-[00:00:26.272] Server  WARN    ⚠ ./styles/contact.scss
+[00:00:42.530] Server  WARN    ⚠ ./styles/contact.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
+SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/contact.scss:513:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 16.5048543689%)
@@ -2343,9 +2389,9 @@ styles/contact.scss 514:14  root stylesheet
 
 
 
-[00:00:26.273] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:42.530] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2357,9 +2403,9 @@ styles/custom.scss 1:9  root stylesheet
 
 
 
-[00:00:26.273] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:42.531] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2371,9 +2417,9 @@ styles/custom.scss 2:9  root stylesheet
 
 
 
-[00:00:26.275] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:42.531] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2385,9 +2431,9 @@ styles/custom.scss 3:9  root stylesheet
 
 
 
-[00:00:26.275] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:42.531] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 5822, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5822:8:
+SassWarning: Deprecation Warning on line 5822, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:5822:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2399,9 +2445,9 @@ styles/custom.scss 5823:9  root stylesheet
 
 
 
-[00:00:26.276] Server  WARN    ⚠ ./styles/custom.scss
+[00:00:42.531] Server  WARN    ⚠ ./styles/custom.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 5823, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5823:8:
+SassWarning: Deprecation Warning on line 5823, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/custom.scss:5823:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2413,9 +2459,9 @@ styles/custom.scss 5824:9  root stylesheet
 
 
 
-[00:00:26.277] Server  WARN    ⚠ ./styles/error.scss
+[00:00:42.531] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2427,9 +2473,9 @@ styles/error.scss 1:9  root stylesheet
 
 
 
-[00:00:26.277] Server  WARN    ⚠ ./styles/error.scss
+[00:00:42.531] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2441,9 +2487,9 @@ styles/error.scss 2:9  root stylesheet
 
 
 
-[00:00:26.277] Server  WARN    ⚠ ./styles/error.scss
+[00:00:42.534] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
+SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:129:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2456,9 +2502,9 @@ styles/error.scss 130:17  root stylesheet
 
 
 
-[00:00:26.277] Server  WARN    ⚠ ./styles/error.scss
+[00:00:42.537] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
+SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:129:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -2473,9 +2519,9 @@ styles/error.scss 130:17  root stylesheet
 
 
 
-[00:00:26.278] Server  WARN    ⚠ ./styles/error.scss
+[00:00:42.538] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
+SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:130:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2488,9 +2534,9 @@ styles/error.scss 131:19  root stylesheet
 
 
 
-[00:00:26.278] Server  WARN    ⚠ ./styles/error.scss
+[00:00:42.538] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
+SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:130:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -2505,9 +2551,9 @@ styles/error.scss 131:19  root stylesheet
 
 
 
-[00:00:26.281] Server  WARN    ⚠ ./styles/error.scss
+[00:00:42.539] Server  WARN    ⚠ ./styles/error.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/error.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2519,9 +2565,9 @@ styles/error.scss 3:9  root stylesheet
 
 
 
-[00:00:26.281] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:42.539] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2533,9 +2579,9 @@ styles/faq.scss 1:9  root stylesheet
 
 
 
-[00:00:26.283] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:42.539] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2547,9 +2593,9 @@ styles/faq.scss 2:9  root stylesheet
 
 
 
-[00:00:26.284] Server  WARN    ⚠ ./styles/faq.scss
+[00:00:42.539] Server  WARN    ⚠ ./styles/faq.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/faq.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2561,9 +2607,9 @@ styles/faq.scss 3:9  root stylesheet
 
 
 
-[00:00:26.284] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.540] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2575,9 +2621,9 @@ styles/home.scss 1:9  root stylesheet
 
 
 
-[00:00:26.284] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.540] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2589,9 +2635,9 @@ styles/home.scss 2:9  root stylesheet
 
 
 
-[00:00:26.285] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.540] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
+SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1047:44:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2604,9 +2650,9 @@ styles/home.scss 1048:45  root stylesheet
 
 
 
-[00:00:26.287] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.542] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
+SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:1047:44:
 darken() is deprecated. Suggestions:
 
 color.scale($color, $lightness: -11.6239316239%)
@@ -2621,9 +2667,9 @@ styles/home.scss 1048:45  root stylesheet
 
 
 
-[00:00:26.287] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.543] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
+SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:160:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2636,9 +2682,9 @@ styles/home.scss 161:19  root stylesheet
 
 
 
-[00:00:26.290] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.551] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
+SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:160:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -2653,9 +2699,9 @@ styles/home.scss 161:19  root stylesheet
 
 
 
-[00:00:26.290] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.552] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2667,9 +2713,9 @@ styles/home.scss 3:9  root stylesheet
 
 
 
-[00:00:26.290] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.553] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
+SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:276:13:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2682,9 +2728,9 @@ styles/home.scss 277:14  root stylesheet
 
 
 
-[00:00:26.291] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.553] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
+SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:276:13:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 25.6603773585%)
@@ -2699,9 +2745,9 @@ styles/home.scss 277:14  root stylesheet
 
 
 
-[00:00:26.291] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.553] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
+SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:387:16:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2714,9 +2760,9 @@ styles/home.scss 388:17  root stylesheet
 
 
 
-[00:00:26.292] Server  WARN    ⚠ ./styles/home.scss
+[00:00:42.556] Server  WARN    ⚠ ./styles/home.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
+SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/home.scss:387:16:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 19.2452830189%)
@@ -2731,9 +2777,9 @@ styles/home.scss 388:17  root stylesheet
 
 
 
-[00:00:26.292] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:42.556] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2745,9 +2791,9 @@ styles/how-it-works.scss 1:9  root stylesheet
 
 
 
-[00:00:26.292] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:42.556] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2759,9 +2805,9 @@ styles/how-it-works.scss 2:9  root stylesheet
 
 
 
-[00:00:26.293] Server  WARN    ⚠ ./styles/how-it-works.scss
+[00:00:42.556] Server  WARN    ⚠ ./styles/how-it-works.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/how-it-works.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2773,9 +2819,9 @@ styles/how-it-works.scss 3:9  root stylesheet
 
 
 
-[00:00:26.293] Server  WARN    ⚠ ./styles/inherit.scss
+[00:00:42.562] Server  WARN    ⚠ ./styles/inherit.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/inherit.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2787,9 +2833,9 @@ styles/inherit.scss 1:9  root stylesheet
 
 
 
-[00:00:26.293] Server  WARN    ⚠ ./styles/inherit.scss
+[00:00:42.563] Server  WARN    ⚠ ./styles/inherit.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/inherit.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2801,9 +2847,9 @@ styles/inherit.scss 2:9  root stylesheet
 
 
 
-[00:00:26.294] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:42.563] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2815,9 +2861,9 @@ styles/pricing.scss 1:9  root stylesheet
 
 
 
-[00:00:26.294] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:42.563] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2829,9 +2875,9 @@ styles/pricing.scss 2:9  root stylesheet
 
 
 
-[00:00:26.295] Server  WARN    ⚠ ./styles/pricing.scss
+[00:00:42.564] Server  WARN    ⚠ ./styles/pricing.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/pricing.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2843,9 +2889,9 @@ styles/pricing.scss 3:9  root stylesheet
 
 
 
-[00:00:26.295] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.576] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2857,9 +2903,9 @@ styles/security.scss 1:9  root stylesheet
 
 
 
-[00:00:26.297] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.579] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2871,9 +2917,9 @@ styles/security.scss 2:9  root stylesheet
 
 
 
-[00:00:26.298] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.587] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
+SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:179:49:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2886,9 +2932,9 @@ styles/security.scss 180:50  root stylesheet
 
 
 
-[00:00:26.303] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.587] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
+SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:179:49:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 32.0754716981%)
@@ -2903,9 +2949,9 @@ styles/security.scss 180:50  root stylesheet
 
 
 
-[00:00:26.303] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.587] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2917,9 +2963,9 @@ styles/security.scss 3:9  root stylesheet
 
 
 
-[00:00:26.303] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.587] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
+SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:289:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2932,9 +2978,9 @@ styles/security.scss 290:19  root stylesheet
 
 
 
-[00:00:26.306] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.588] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
+SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:289:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 4.4251626898%)
@@ -2949,9 +2995,9 @@ styles/security.scss 290:19  root stylesheet
 
 
 
-[00:00:26.306] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.588] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
+SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:312:18:
 Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
 Use color.adjust instead.
 
@@ -2964,9 +3010,9 @@ styles/security.scss 313:19  root stylesheet
 
 
 
-[00:00:26.306] Server  WARN    ⚠ ./styles/security.scss
+[00:00:42.588] Server  WARN    ⚠ ./styles/security.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
+SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/security.scss:312:18:
 lighten() is deprecated. Suggestions:
 
 color.scale($color, $lightness: 2.2125813449%)
@@ -2981,9 +3027,9 @@ styles/security.scss 313:19  root stylesheet
 
 
 
-[00:00:26.307] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:42.588] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:0:8:
+SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:0:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -2995,9 +3041,9 @@ styles/terms.scss 1:9  root stylesheet
 
 
 
-[00:00:26.307] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:42.588] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:1:8:
+SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:1:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -3009,9 +3055,9 @@ styles/terms.scss 2:9  root stylesheet
 
 
 
-[00:00:26.308] Server  WARN    ⚠ ./styles/terms.scss
+[00:00:42.588] Server  WARN    ⚠ ./styles/terms.scss
 Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:2:8:
+SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/imac/Desktop/herosol_next/vaultix/styles/terms.scss:2:8:
 Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
 
 More info and automated migrator: https://sass-lang.com/d/import
@@ -3023,1011 +3069,4 @@ styles/terms.scss 3:9  root stylesheet
 
 
 
-[00:00:27.723] Server  WARN    ⚠ ./styles/about.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/about.scss 1:9  root stylesheet
-
-
-
-[00:00:27.724] Server  WARN    ⚠ ./styles/about.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/about.scss 2:9  root stylesheet
-
-
-
-[00:00:27.727] Server  WARN    ⚠ ./styles/about.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/about.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/about.scss 3:9  root stylesheet
-
-
-
-[00:00:27.727] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/auth.scss 1:9  root stylesheet
-
-
-
-[00:00:27.728] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/auth.scss 2:9  root stylesheet
-
-
-
-[00:00:27.728] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/auth.scss 3:9  root stylesheet
-
-
-
-[00:00:27.729] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-333 |     background: lighten($gold, 6%);
-
-
-styles/auth.scss 334:17  root stylesheet
-
-
-
-[00:00:27.729] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 333, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:333:16:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 19.2452830189%)
-color.adjust($color, $lightness: 6%)
-
-More info: https://sass-lang.com/d/color-functions
-
-333 |     background: lighten($gold, 6%);
-
-
-styles/auth.scss 334:17  root stylesheet
-
-
-
-[00:00:27.729] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-358 |       color: lighten($teal, 8%);
-
-
-styles/auth.scss 359:14  root stylesheet
-
-
-
-[00:00:27.729] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 358, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:358:13:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 13.2038834951%)
-color.adjust($color, $lightness: 8%)
-
-More info: https://sass-lang.com/d/color-functions
-
-358 |       color: lighten($teal, 8%);
-
-
-styles/auth.scss 359:14  root stylesheet
-
-
-
-[00:00:27.736] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-394 |     color: lighten($teal, 8%);
-
-
-styles/auth.scss 395:12  root stylesheet
-
-
-
-[00:00:27.736] Server  WARN    ⚠ ./styles/auth.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 394, column 11 of file:///Users/muqadsariaz/Documents/vaultix/styles/auth.scss:394:11:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 13.2038834951%)
-color.adjust($color, $lightness: 8%)
-
-More info: https://sass-lang.com/d/color-functions
-
-394 |     color: lighten($teal, 8%);
-
-
-styles/auth.scss 395:12  root stylesheet
-
-
-
-[00:00:27.742] Server  WARN    ⚠ ./styles/checkout.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/checkout.scss 1:9  root stylesheet
-
-
-
-[00:00:27.742] Server  WARN    ⚠ ./styles/checkout.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/checkout.scss 2:9  root stylesheet
-
-
-
-[00:00:27.742] Server  WARN    ⚠ ./styles/checkout.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/checkout.scss 3:9  root stylesheet
-
-
-
-[00:00:27.743] Server  WARN    ⚠ ./styles/checkout.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-549 |     background: lighten($gold, 6%);
-
-
-styles/checkout.scss 550:17  root stylesheet
-
-
-
-[00:00:27.743] Server  WARN    ⚠ ./styles/checkout.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 549, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/checkout.scss:549:16:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 19.2452830189%)
-color.adjust($color, $lightness: 6%)
-
-More info: https://sass-lang.com/d/color-functions
-
-549 |     background: lighten($gold, 6%);
-
-
-styles/checkout.scss 550:17  root stylesheet
-
-
-
-[00:00:27.744] Server  WARN    ⚠ ./styles/contact.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/contact.scss 1:9  root stylesheet
-
-
-
-[00:00:27.744] Server  WARN    ⚠ ./styles/contact.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/contact.scss 2:9  root stylesheet
-
-
-
-[00:00:27.744] Server  WARN    ⚠ ./styles/contact.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/contact.scss 3:9  root stylesheet
-
-
-
-[00:00:27.744] Server  WARN    ⚠ ./styles/contact.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-513 |       color: lighten($teal, 10%);
-
-
-styles/contact.scss 514:14  root stylesheet
-
-
-
-[00:00:27.744] Server  WARN    ⚠ ./styles/contact.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 513, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/contact.scss:513:13:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 16.5048543689%)
-color.adjust($color, $lightness: 10%)
-
-More info: https://sass-lang.com/d/color-functions
-
-513 |       color: lighten($teal, 10%);
-
-
-styles/contact.scss 514:14  root stylesheet
-
-
-
-[00:00:27.745] Server  WARN    ⚠ ./styles/custom.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "fonts";
-
-
-styles/custom.scss 1:9  root stylesheet
-
-
-
-[00:00:27.745] Server  WARN    ⚠ ./styles/custom.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "colors";
-
-
-styles/custom.scss 2:9  root stylesheet
-
-
-
-[00:00:27.753] Server  WARN    ⚠ ./styles/custom.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "mixins";
-
-
-styles/custom.scss 3:9  root stylesheet
-
-
-
-[00:00:27.753] Server  WARN    ⚠ ./styles/custom.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5822, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5822:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5822 | @import "style";
-
-
-styles/custom.scss 5823:9  root stylesheet
-
-
-
-[00:00:27.759] Server  WARN    ⚠ ./styles/custom.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 5823, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/custom.scss:5823:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-5823 | @import "dashboard";
-
-
-styles/custom.scss 5824:9  root stylesheet
-
-
-
-[00:00:27.759] Server  WARN    ⚠ ./styles/error.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/error.scss 1:9  root stylesheet
-
-
-
-[00:00:27.760] Server  WARN    ⚠ ./styles/error.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/error.scss 2:9  root stylesheet
-
-
-
-[00:00:27.761] Server  WARN    ⚠ ./styles/error.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-129 |     background: lighten($gold, 6%);
-
-
-styles/error.scss 130:17  root stylesheet
-
-
-
-[00:00:27.761] Server  WARN    ⚠ ./styles/error.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 129, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:129:16:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 19.2452830189%)
-color.adjust($color, $lightness: 6%)
-
-More info: https://sass-lang.com/d/color-functions
-
-129 |     background: lighten($gold, 6%);
-
-
-styles/error.scss 130:17  root stylesheet
-
-
-
-[00:00:27.778] Server  WARN    ⚠ ./styles/error.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-130 |     border-color: lighten($gold, 6%);
-
-
-styles/error.scss 131:19  root stylesheet
-
-
-
-[00:00:27.779] Server  WARN    ⚠ ./styles/error.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 130, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:130:18:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 19.2452830189%)
-color.adjust($color, $lightness: 6%)
-
-More info: https://sass-lang.com/d/color-functions
-
-130 |     border-color: lighten($gold, 6%);
-
-
-styles/error.scss 131:19  root stylesheet
-
-
-
-[00:00:27.786] Server  WARN    ⚠ ./styles/error.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/error.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/error.scss 3:9  root stylesheet
-
-
-
-[00:00:27.786] Server  WARN    ⚠ ./styles/faq.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/faq.scss 1:9  root stylesheet
-
-
-
-[00:00:27.786] Server  WARN    ⚠ ./styles/faq.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/faq.scss 2:9  root stylesheet
-
-
-
-[00:00:27.787] Server  WARN    ⚠ ./styles/faq.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/faq.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/faq.scss 3:9  root stylesheet
-
-
-
-[00:00:27.787] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/home.scss 1:9  root stylesheet
-
-
-
-[00:00:27.790] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/home.scss 2:9  root stylesheet
-
-
-
-[00:00:27.791] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1047 |       background: linear-gradient(to right, darken($gold, 8%), $gold);
-
-
-styles/home.scss 1048:45  root stylesheet
-
-
-
-[00:00:27.792] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1047, column 44 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:1047:44:
-darken() is deprecated. Suggestions:
-
-color.scale($color, $lightness: -11.6239316239%)
-color.adjust($color, $lightness: -8%)
-
-More info: https://sass-lang.com/d/color-functions
-
-1047 |       background: linear-gradient(to right, darken($gold, 8%), $gold);
-
-
-styles/home.scss 1048:45  root stylesheet
-
-
-
-[00:00:27.792] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-160 |       background: lighten($gold, 6%);
-
-
-styles/home.scss 161:19  root stylesheet
-
-
-
-[00:00:27.793] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 160, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:160:18:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 19.2452830189%)
-color.adjust($color, $lightness: 6%)
-
-More info: https://sass-lang.com/d/color-functions
-
-160 |       background: lighten($gold, 6%);
-
-
-styles/home.scss 161:19  root stylesheet
-
-
-
-[00:00:27.793] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/home.scss 3:9  root stylesheet
-
-
-
-[00:00:27.793] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-276 |       color: lighten($gold, 8%);
-
-
-styles/home.scss 277:14  root stylesheet
-
-
-
-[00:00:27.794] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 276, column 13 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:276:13:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 25.6603773585%)
-color.adjust($color, $lightness: 8%)
-
-More info: https://sass-lang.com/d/color-functions
-
-276 |       color: lighten($gold, 8%);
-
-
-styles/home.scss 277:14  root stylesheet
-
-
-
-[00:00:27.794] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-387 |     background: lighten($gold, 6%);
-
-
-styles/home.scss 388:17  root stylesheet
-
-
-
-[00:00:27.794] Server  WARN    ⚠ ./styles/home.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 387, column 16 of file:///Users/muqadsariaz/Documents/vaultix/styles/home.scss:387:16:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 19.2452830189%)
-color.adjust($color, $lightness: 6%)
-
-More info: https://sass-lang.com/d/color-functions
-
-387 |     background: lighten($gold, 6%);
-
-
-styles/home.scss 388:17  root stylesheet
-
-
-
-[00:00:27.794] Server  WARN    ⚠ ./styles/how-it-works.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/how-it-works.scss 1:9  root stylesheet
-
-
-
-[00:00:27.794] Server  WARN    ⚠ ./styles/how-it-works.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/how-it-works.scss 2:9  root stylesheet
-
-
-
-[00:00:27.795] Server  WARN    ⚠ ./styles/how-it-works.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/how-it-works.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/how-it-works.scss 3:9  root stylesheet
-
-
-
-[00:00:27.795] Server  WARN    ⚠ ./styles/inherit.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/inherit.scss 1:9  root stylesheet
-
-
-
-[00:00:27.795] Server  WARN    ⚠ ./styles/inherit.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/inherit.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/inherit.scss 2:9  root stylesheet
-
-
-
-[00:00:27.795] Server  WARN    ⚠ ./styles/pricing.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/pricing.scss 1:9  root stylesheet
-
-
-
-[00:00:27.795] Server  WARN    ⚠ ./styles/pricing.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/pricing.scss 2:9  root stylesheet
-
-
-
-[00:00:27.795] Server  WARN    ⚠ ./styles/pricing.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/pricing.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/pricing.scss 3:9  root stylesheet
-
-
-
-[00:00:27.796] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/security.scss 1:9  root stylesheet
-
-
-
-[00:00:27.796] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/security.scss 2:9  root stylesheet
-
-
-
-[00:00:27.796] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-179 |     background: linear-gradient(to right, $gold, lighten($gold, 10%));
-
-
-styles/security.scss 180:50  root stylesheet
-
-
-
-[00:00:27.796] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 179, column 49 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:179:49:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 32.0754716981%)
-color.adjust($color, $lightness: 10%)
-
-More info: https://sass-lang.com/d/color-functions
-
-179 |     background: linear-gradient(to right, $gold, lighten($gold, 10%));
-
-
-styles/security.scss 180:50  root stylesheet
-
-
-
-[00:00:27.796] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/security.scss 3:9  root stylesheet
-
-
-
-[00:00:27.796] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-289 |       background: lighten($primary-color, 4%);
-
-
-styles/security.scss 290:19  root stylesheet
-
-
-
-[00:00:27.796] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 289, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:289:18:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 4.4251626898%)
-color.adjust($color, $lightness: 4%)
-
-More info: https://sass-lang.com/d/color-functions
-
-289 |       background: lighten($primary-color, 4%);
-
-
-styles/security.scss 290:19  root stylesheet
-
-
-
-[00:00:27.797] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
-Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-Use color.adjust instead.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-312 |       background: lighten($primary-color, 2%);
-
-
-styles/security.scss 313:19  root stylesheet
-
-
-
-[00:00:27.799] Server  WARN    ⚠ ./styles/security.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 312, column 18 of file:///Users/muqadsariaz/Documents/vaultix/styles/security.scss:312:18:
-lighten() is deprecated. Suggestions:
-
-color.scale($color, $lightness: 2.2125813449%)
-color.adjust($color, $lightness: 2%)
-
-More info: https://sass-lang.com/d/color-functions
-
-312 |       background: lighten($primary-color, 2%);
-
-
-styles/security.scss 313:19  root stylesheet
-
-
-
-[00:00:27.800] Server  WARN    ⚠ ./styles/terms.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 0, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:0:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-0 | @import "colors";
-
-
-styles/terms.scss 1:9  root stylesheet
-
-
-
-[00:00:27.801] Server  WARN    ⚠ ./styles/terms.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 1, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:1:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-1 | @import "mixins";
-
-
-styles/terms.scss 2:9  root stylesheet
-
-
-
-[00:00:27.803] Server  WARN    ⚠ ./styles/terms.scss
-Issue while running loader
-SassWarning: Deprecation Warning on line 2, column 8 of file:///Users/muqadsariaz/Documents/vaultix/styles/terms.scss:2:8:
-Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
-
-More info and automated migrator: https://sass-lang.com/d/import
-
-2 | @import "fonts";
-
-
-styles/terms.scss 3:9  root stylesheet
-
-
-
+[00:00:43.164] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
 
-export default function SiteMaster() {
+export default function SiteMaster({ siteSettings }) {
   return (
     <Head>
       <title>Vaultix</title>
-      <meta name="title" content="Uniqli" />
-      <meta name="description" content="Uniqli" />
+      <meta name="title" content="Vaultix" />
+      <meta name="description" content="Vaultix" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   );

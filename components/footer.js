@@ -1,19 +1,22 @@
 import Link from "next/link";
 import React from "react";
+import Text from "./text";
 
-export default function Footer() {
+export default function Footer({ siteSettings }) {
+  const date = new Date();
+  let year = date.getFullYear();
+
   return (
     <footer className="site_footer">
       <div className="pg_contain">
         <div className="footer_inner">
           <Link href="/" className="footer_brand">
-            Vaultix
+            {siteSettings?.site_name}
           </Link>
 
           <div className="footer_copy">
             <p>
-              © 2026 Vaultix Digital Custody. All data is end-to-end encrypted
-              and inaccessible to Vaultix or any third party.
+              © {year}, {siteSettings?.site_name} {siteSettings?.site_copyright}
             </p>
           </div>
 
