@@ -41,6 +41,32 @@
       "static/chunks/pages__error_2da965e7._.js",
       "static/chunks/turbopack-pages__error_af01c4e3._.js"
     ],
+    "/dashboard": [
+      "static/chunks/[root-of-the-server]__26d1c175._.js",
+      "static/chunks/node_modules_next_dist_compiled_caaa605a._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_f82a09f7._.js",
+      "static/chunks/node_modules_next_dist_client_271ad2fb._.js",
+      "static/chunks/node_modules_next_dist_4a3defe6._.js",
+      "static/chunks/node_modules_next_0ef7ff88._.js",
+      "static/chunks/node_modules_react-dom_4411d9bd._.js",
+      "static/chunks/node_modules_axios_lib_e0bf4723._.js",
+      "static/chunks/node_modules_8aa5f86f._.js",
+      "static/chunks/pages_dashboard_index_2da965e7.js",
+      "static/chunks/turbopack-pages_dashboard_index_9b65743d.js"
+    ],
+    "/dashboard/vault": [
+      "static/chunks/[root-of-the-server]__e97b98fb._.js",
+      "static/chunks/node_modules_next_dist_compiled_caaa605a._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_f82a09f7._.js",
+      "static/chunks/node_modules_next_dist_client_271ad2fb._.js",
+      "static/chunks/node_modules_next_dist_4a3defe6._.js",
+      "static/chunks/node_modules_next_0ef7ff88._.js",
+      "static/chunks/node_modules_react-dom_4411d9bd._.js",
+      "static/chunks/node_modules_axios_lib_e0bf4723._.js",
+      "static/chunks/node_modules_8aa5f86f._.js",
+      "static/chunks/pages_dashboard_vault_index_2da965e7.js",
+      "static/chunks/turbopack-pages_dashboard_vault_index_e3179475.js"
+    ],
     "/mfa": [
       "static/chunks/[root-of-the-server]__39159c31._.js",
       "static/chunks/node_modules_next_dist_compiled_caaa605a._.js",
@@ -53,6 +79,20 @@
       "static/chunks/node_modules_39974e48._.js",
       "static/chunks/pages_mfa_2da965e7._.js",
       "static/chunks/turbopack-pages_mfa_71c78175._.js"
+    ],
+    "/register": [
+      "static/chunks/node_modules_next_dist_compiled_caaa605a._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_1e3a4f5d._.js",
+      "static/chunks/node_modules_next_dist_client_881bc7f7._.js",
+      "static/chunks/node_modules_next_dist_75b597d7._.js",
+      "static/chunks/node_modules_next_54714aca._.js",
+      "static/chunks/node_modules_react-dom_4411d9bd._.js",
+      "static/chunks/node_modules_axios_lib_e0bf4723._.js",
+      "static/chunks/node_modules_react-hook-form_dist_index_esm_mjs_a3e5da56._.js",
+      "static/chunks/node_modules_dab9ae46._.js",
+      "static/chunks/[root-of-the-server]__4d8a43b2._.js",
+      "static/chunks/pages_register_2da965e7._.js",
+      "static/chunks/turbopack-pages_register_a78ef025._.js"
     ]
   },
   "devFiles": [],

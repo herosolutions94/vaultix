@@ -107,6 +107,8 @@ export default function MFA() {
     } else {
       let newData = { otp: OTP };
 
+      console.log("newData", newData);
+
       dispatch(verifyOtp(newData));
     }
   };
@@ -118,11 +120,11 @@ export default function MFA() {
     dispatch(resendOtpCode(newData));
   }
 
-  const handleKeyDown = (i, e) => {
-    if (e.key === "Backspace" && !otp[i] && i > 0) {
-      refs[i === 4 ? 3 : i - 1]?.current?.focus();
-    }
-  };
+  // const handleKeyDown = (i, e) => {
+  //   if (e.key === "Backspace" && !otp[i] && i > 0) {
+  //     refs[i === 4 ? 3 : i - 1]?.current?.focus();
+  //   }
+  // };
 
   return (
     <div className="auth_page">
@@ -152,7 +154,7 @@ export default function MFA() {
               <OTPInput
                 value={OTP}
                 onChange={handleOTPChange}
-                numInputs={7}
+                numInputs={6}
                 isInputNum
                 inputStyle={{
                   backgroundColor: "#0a0e13",
@@ -169,25 +171,7 @@ export default function MFA() {
                   boxSizing: "border-box",
                 }}
                 autoFocus={true}
-                // renderSeparator={<span> &nbsp;&nbsp; </span>}
-                renderSeparator={(index) =>
-                  index === 3 ? (
-                    <span
-                      style={{
-                        color: "#efefef1a",
-                        fontSize: "28px",
-                        fontWeight: "bold",
-                        margin: "0 10px",
-                        display: "inline-flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      -
-                    </span>
-                  ) : (
-                    <span style={{ width: "8px", display: "inline-block" }} />
-                  )
-                }
+                renderSeparator={<span> &nbsp;&nbsp; </span>}
                 renderInput={(props) => (
                   <input {...props} className="auth_otp_input" />
                 )}
@@ -227,69 +211,70 @@ export default function MFA() {
             ) : (
               ""
             )}
-          </form>
 
-          {/* Status box */}
-          <div className="auth_status_box">
-            <div className="auth_status_header">
-              <span className="auth_status_dot" />
-              <span>Secure Channel Active</span>
-            </div>
-            <div className="auth_status_rows">
-              {STATUS_ROWS.map((row) => (
-                <div key={row.label} className="auth_status_row">
-                  <div
-                    className={`auth_status_circle${row.active ? " active" : ""}`}
-                  >
-                    {row.active && (
-                      <svg
-                        width="7"
-                        height="7"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#10B981"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                    )}
+            {/* Status box */}
+            <div className="auth_status_box">
+              <div className="auth_status_header">
+                <span className="auth_status_dot" />
+                <span>Secure Channel Active</span>
+              </div>
+              <div className="auth_status_rows">
+                {STATUS_ROWS.map((row) => (
+                  <div key={row.label} className="auth_status_row">
+                    <div
+                      className={`auth_status_circle${row.active ? " active" : ""}`}
+                    >
+                      {row.active && (
+                        <svg
+                          width="7"
+                          height="7"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#10B981"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                        >
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      )}
+                    </div>
+                    <span>{row.label}</span>
                   </div>
-                  <span>{row.label}</span>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
 
-          <button
-            type="submit"
-            className="auth_btn auth_btn_upper"
-            disabled={isFormProcessing}
-          >
-            Verify Identity {isFormProcessing && <i className="spinner"></i>}
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            >
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </button>
-
-          <div className="auth_link_row" style={{ marginTop: "14px" }}>
             <button
-              className="auth_link_btn"
-              type="button"
-              onClick={handleResendOtpCode}
+              type="submit"
+              className="auth_btn auth_btn_upper"
+              disabled={isFormProcessing}
             >
-              Resend Code{isResendFormProcessing && <i className="spinner"></i>}
+              Verify Identity {isFormProcessing && <i className="spinner"></i>}
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </button>
-          </div>
+
+            <div className="auth_link_row" style={{ marginTop: "14px" }}>
+              <button
+                className="auth_link_btn"
+                type="button"
+                onClick={handleResendOtpCode}
+              >
+                Resend Code
+                {isResendFormProcessing && <i className="spinner"></i>}
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

@@ -9,11 +9,15 @@ import { authToken } from "@/helpers/authToken";
 export const saveSignupQuery = createAsyncThunk(
   "saveSignupQuery",
   async ({ formData, router }, { rejectWithValue, dispatch }) => {
+    console.log("formDatasddsd", formData);
+
     try {
       const response = await http.post(
         "create-account",
         doObjToFormData(formData),
       );
+      console.log("response", response);
+
       const { data } = response;
       if (data.validationErrors) {
         toast.error(<Text string={data?.validationErrors} />);

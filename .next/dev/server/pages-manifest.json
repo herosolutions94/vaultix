@@ -3,5 +3,9 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/mfa": "pages/mfa.js"
+  "/api/set-cookie": "pages/api/set-cookie.js",
+  "/dashboard": "pages/dashboard.js",
+  "/dashboard/vault": "pages/dashboard/vault.js",
+  "/mfa": "pages/mfa.js",
+  "/register": "pages/register.js"
 }
