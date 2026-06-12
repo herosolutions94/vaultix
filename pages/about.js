@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "@/components/layout";
+import Cta_section from "@/components/cta_section";
 
 import http from "@/helpers/http";
 import { parse } from "cookie";
@@ -7,81 +8,6 @@ import { doObjToFormData } from "@/helpers/helpers";
 import MetaGenerator from "@/components/meta-generator";
 import Text from "@/components/text";
 import { cmsFileUrl } from "@/helpers/helpers";
-
-const WHY_CARDS = [
-  {
-    icon: "/images/front-images/vault-exist-icon1.png",
-    title: "Privacy by Architecture",
-    desc: "Systems designed from the ground up where privacy isn't a policy, but a mathematical certainty.",
-  },
-  {
-    icon: "/images/front-images/vault-exist-icon2.png",
-    title: "End-to-End Encryption",
-    desc: "Encryption keys never leave your device. We store encrypted fragments that only you can assemble.",
-  },
-  {
-    icon: "/images/front-images/vault-exist-icon3.png",
-    title: "User-Controlled Access",
-    desc: "Granular control over who accesses what, and under which specific verified conditions.",
-  },
-  {
-    icon: "/images/front-images/vault-exist-icon4.png",
-    title: "Long-Term Legacy",
-    desc: "Automated protocols that ensure your digital wishes are honored even when you are unable to act.",
-  },
-];
-
-const PROTOCOL_STEPS = [
-  {
-    icon: "/images/front-images/l1.png",
-    title: "Inactivity Detection",
-    desc: "Customizable 'Dead Man's Switch' monitoring your presence across configured heartbeat signals.",
-    side: "left",
-    color: "gold",
-  },
-  {
-    icon: "/images/front-images/l2.png",
-    title: "Verification Stages",
-    desc: "Multi-channel attempts to verify status before protocol advancement, including trusted contacts notification.",
-    side: "right",
-    color: "teal",
-  },
-  {
-    icon: "/images/front-images/l3.png",
-    title: "Beneficiary Activation",
-    desc: "Pre-designated beneficiaries are securely notified and guided through identity verification.",
-    side: "left",
-    color: "gold",
-  },
-  {
-    icon: "/images/front-images/l4.png",
-    title: "Secure Release",
-    desc: "Encryption fragments are released to beneficiaries, allowing them to decrypt only the data you intended for them.",
-    side: "right",
-    color: "teal",
-  },
-];
-
-const PRINCIPLES = [
-  {
-    num: "01",
-    color: "gold",
-    title: "Zero-Knowledge Architecture",
-    desc: "We store nothing in plain text. Your password is never seen by our servers. Your data is invisible to us.",
-  },
-  {
-    num: "02",
-    color: "teal",
-    title: "Immutable Audit Logs",
-    desc: "Every access attempt is recorded on a tamper-proof ledger, providing a permanent record of vault security.",
-  },
-  {
-    num: "03",
-    color: "gold",
-    title: "Global Custody Nodes",
-    desc: "Data fragments are geographically distributed across sovereign jurisdictions to ensure physical resilience.",
-  },
-];
 
 export const getServerSideProps = async (context) => {
   const { req } = context;
@@ -103,35 +29,57 @@ export const getServerSideProps = async (context) => {
 };
 
 export default function About({ result }) {
-  const { page_title, meta_desc, content, home_features, testimonials } =
+  const { page_title, meta_desc, content, why_us, site_settings, cta_section } =
     result;
+
+  ///// protocol steps //////
+
+  const PROTOCOL_STEPS = [3, 4, 5, 6]
+    .map((i) => ({
+      icon: content?.[`image${i}`],
+      title: content?.[`sec3_card_heading${i}`],
+      desc: content?.[`sec3_card_text${i}`],
+      side: i % 2 !== 0 ? "left" : "right",
+      color: i % 2 !== 0 ? "gold" : "teal",
+    }))
+    .filter((item) => item.title || item.desc || item.icon);
+
+  ////// principle /////
+
+  const PRINCIPLES = [1, 2, 3]
+    .map((i) => ({
+      num: String(i).padStart(2, "0"),
+      color: i % 2 !== 0 ? "gold" : "teal",
+      title: content?.[`sec4_card_heading${i}`],
+      desc: content?.[`sec4_card_text${i}`],
+    }))
+    .filter((item) => item?.title || item?.desc);
 
   return (
     <>
-      <MetaGenerator page_title={page_title} meta_desc={meta_desc} />
+      <MetaGenerator
+        page_title={page_title + " - " + site_settings?.site_name}
+        meta_desc={meta_desc}
+      />
       <div className="about_page">
         {/* ── HERO ── */}
         <section className="ab_hero">
           <div className="pg_contain">
             <div className="ab_hero_wrap">
               <div className="ab_hero_left">
-                <div className="ab_badge">About Vaultix</div>
+                <div className="ab_badge">{content?.banner_title}</div>
                 <h1>
-                  Built to Protect Digital Legacy with Institutional-Grade
-                  Security
+                  <Text string={content?.banner_heading} />
                 </h1>
                 <p>
-                  Vaultix combines end-to-end encryption, inheritance
-                  automation, and zero-knowledge architecture to preserve
-                  digital assets, confidential documents, and legacy
-                  instructions securely for future generations.
+                  <Text string={content?.banner_text} />
                 </p>
                 <div className="ab_hero_btns">
-                  <Link href="/security" className="btn_gold">
-                    Explore Security Architecture
+                  <Link href={content?.banner_lnk_url1} className="btn_gold">
+                    {content?.banner_lnk_txt1}
                   </Link>
-                  <Link href="/dashboard" className="btn_ghost">
-                    Open Secure Vault
+                  <Link href={content?.banner_lnk_url2} className="btn_ghost">
+                    {content?.banner_lnk_txt2}
                   </Link>
                 </div>
               </div>
@@ -139,13 +87,13 @@ export default function About({ result }) {
               <div className="ab_hero_right">
                 <img
                   src="/images/front-images/about-hero-gradient.png"
-                  alt=""
+                  alt={content?.banner_heading}
                   className="ab_hero_grad"
                 />
                 <div className="ab_hero_img_box">
                   <img
-                    src="/images/front-images/about-hero.png"
-                    alt="Vaultix Platform"
+                    src={cmsFileUrl(content?.image1, "images")}
+                    alt={content?.banner_heading}
                   />
                 </div>
               </div>
@@ -158,38 +106,26 @@ export default function About({ result }) {
           <div className="pg_contain">
             <div className="ab_why_top">
               <div className="ab_why_left">
-                <h2>Why Vaultix Exists</h2>
+                <h2> {content?.section1_heading}</h2>
                 <p className="ab_why_sub">
-                  Digital legacy preservation vs traditional cloud storage.
+                  <Text string={content?.section1_left_text} />
                 </p>
               </div>
               <div className="ab_why_right">
-                <p>
-                  Traditional cloud providers focus on availability and
-                  accessibility, but they lack the sovereign safeguards required
-                  for multi-generational wealth and legacy instructions. If you
-                  lose access, or in the event of an unforeseen passing,
-                  traditional systems often lock your data forever or subject
-                  beneficiaries to months of legal friction.
-                </p>
-                <p>
-                  Vaultix was founded on the principle that digital assets
-                  deserve the same level of legal and technical protection as
-                  physical safety deposit boxes, combined with the power of
-                  cryptographic automation. We don't just store files; we secure
-                  the continuity of your digital existence.
-                </p>
+                <Text string={content?.section1_right_text} />
               </div>
             </div>
 
             <div className="ab_why_cards">
-              {WHY_CARDS.map((c) => (
-                <div className="ab_why_card" key={c.title}>
+              {why_us.map((c) => (
+                <div className="ab_why_card" key={c?.title}>
                   <div className="ab_why_icon">
-                    <img src={c.icon} alt={c.title} />
+                    <img src={cmsFileUrl(c?.image, "images")} alt={c?.title} />
                   </div>
-                  <h3>{c.title}</h3>
-                  <p>{c.desc}</p>
+                  <h3>{c?.title}</h3>
+                  <p>
+                    <Text string={c?.txt1} />
+                  </p>
                 </div>
               ))}
             </div>
@@ -201,31 +137,16 @@ export default function About({ result }) {
           <div className="pg_contain">
             <div className="ab_mission_wrap">
               <div className="ab_mission_left">
-                <h2>
-                  Eradicating the risk of lost digital assets through autonomous
-                  inheritance.
-                </h2>
-                <p>
-                  The modern financial landscape has created a critical
-                  vulnerability: the permanent loss of digital wealth due to
-                  lost keys, unforeseen circumstances, or inadequate succession
-                  planning.
-                </p>
-                <p>
-                  Vaultix was founded to solve this single, monumental
-                  challenge. We provide a zero-trust, automated inheritance
-                  protocol that guarantees your assets reach their intended
-                  beneficiaries, exactly when intended, without relying on human
-                  intermediaries.
-                </p>
+                <h2>{content?.section2_heading}</h2>
+                <Text string={content?.section2_text} />
               </div>
 
               <div className="ab_mission_right">
                 <div className="ab_mission_img_box">
                   <div className="ab_mission_img_inner">
                     <img
-                      src="/images/front-images/about1.png"
-                      alt="Vaultix Mission"
+                      src={cmsFileUrl(content?.image2, "images")}
+                      alt={content?.section2_heading}
                     />
                   </div>
                 </div>
@@ -238,35 +159,38 @@ export default function About({ result }) {
         <section className="ab_protocol">
           <div className="pg_contain">
             <div className="sec_head">
-              <h2>The Legacy Activation Protocol</h2>
+              <h2>{content?.section3_heading}</h2>
             </div>
             <div className="ab_proto_timeline">
-              {PROTOCOL_STEPS.map((step) => (
-                <div className="ab_proto_row" key={step.title}>
+              {PROTOCOL_STEPS.map((step, index) => (
+                <div className="ab_proto_row" key={index}>
                   <div className="ab_proto_left">
                     {step.side === "left" && (
                       <>
-                        <h3 className={`proto_title ${step.color}`}>
-                          {step.title}
+                        <h3 className={`proto_title ${step?.color}`}>
+                          {step?.title}
                         </h3>
-                        <p>{step.desc}</p>
+                        <p>{step?.desc}</p>
                       </>
                     )}
                   </div>
 
                   <div className="ab_proto_mid">
-                    <div className={`ab_proto_icon ${step.color}`}>
-                      <img src={step.icon} alt={step.title} />
+                    <div className={`ab_proto_icon ${step?.color}`}>
+                      <img
+                        src={cmsFileUrl(step?.icon, "images")}
+                        alt={step?.title}
+                      />
                     </div>
                   </div>
 
                   <div className="ab_proto_right">
                     {step.side === "right" && (
                       <>
-                        <h3 className={`proto_title ${step.color}`}>
-                          {step.title}
+                        <h3 className={`proto_title ${step?.color}`}>
+                          {step?.title}
                         </h3>
-                        <p>{step.desc}</p>
+                        <p>{step?.desc}</p>
                       </>
                     )}
                   </div>
@@ -280,11 +204,15 @@ export default function About({ result }) {
         <section className="ab_principles">
           <div className="pg_contain">
             <div className="ab_prin_grid">
-              {PRINCIPLES.map((p) => (
-                <div className={`ab_prin_card ${p.color}`} key={p.num}>
-                  <span className="prin_num">PRINCIPLE {p.num}</span>
-                  <h3>{p.title}</h3>
-                  <p>{p.desc}</p>
+              {PRINCIPLES?.map((p) => (
+                <div className={`ab_prin_card ${p?.color}`} key={p?.num}>
+                  <span className="prin_num">PRINCIPLE {p?.num}</span>
+
+                  <h3>{p?.title}</h3>
+
+                  <p>
+                    <Text string={p?.desc} />
+                  </p>
                 </div>
               ))}
             </div>
@@ -294,71 +222,33 @@ export default function About({ result }) {
         {/* ── ZERO ACCESS STATEMENT ── */}
         <section className="ab_statement">
           <div className="pg_contain">
-            <h2>&ldquo;Vaultix Cannot Access Your Data.&rdquo;</h2>
-            <p>
-              This isn&apos;t a promise of integrity—it is a mathematical
-              impossibility. By utilizing client-side encryption, your
-              decryption keys never touch our infrastructure. Even under legal
-              compulsion, Vaultix holds nothing but encrypted cipher-text that
-              we cannot read.
-            </p>
+            <Text string={content?.section5_text} />
             <div className="ab_stats">
               <div className="ab_stat_item">
-                <span className="stat_val">256-bit</span>
-                <span className="stat_label">Encryption Standard</span>
+                <span className="stat_val">{content?.sec5_card_value1} </span>
+                <span className="stat_label">
+                  {content?.sec5_card_heading1}
+                </span>
               </div>
               <div className="ab_stat_item">
-                <span className="stat_val">100%</span>
-                <span className="stat_label">Client-Side Logic</span>
+                <span className="stat_val">{content?.sec5_card_value2} </span>
+                <span className="stat_label">
+                  {content?.sec5_card_heading2}
+                </span>
               </div>
               <div className="ab_stat_item">
-                <span className="stat_val">0</span>
-                <span className="stat_label">Data Breaches</span>
+                <span className="stat_val">{content?.sec5_card_value3} </span>
+                <span className="stat_label">
+                  {content?.sec5_card_heading3}
+                </span>
               </div>
             </div>
           </div>
         </section>
 
         {/* ── CTA ── */}
-        <section className="cta_section">
-          <img
-            src="/images/front-images/cta-bg.png"
-            alt=""
-            className="cta_bg_img"
-          />
-          <img
-            src="/images/front-images/cta-gradient.png"
-            alt=""
-            className="cta_grad_img"
-          />
-          <div className="pg_contain">
-            <div className="cta_ico">
-              <img src="/images/front-images/cta-icon.png" alt="" />
-            </div>
-            <h2>
-              Secure Your Digital Legacy
-              <br />
-              Today
-            </h2>
-            <p>
-              Begin protecting your assets with institutional-grade security.
-              Setup takes minutes, protection lasts generations.
-            </p>
-            <div className="cta_btns">
-              <Link href="/dashboard" className="btn_gold">
-                Create Vault
-              </Link>
-              <Link href="/security" className="btn_ghost">
-                View Security Architecture
-              </Link>
-            </div>
-          </div>
-        </section>
+        <Cta_section cta_section={cta_section} />
       </div>
     </>
   );
 }
-
-About.getLayout = function (page) {
-  return <Layout>{page}</Layout>;
-};

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
+import Text from "@/components/text";
+import { cmsFileUrl } from "@/helpers/helpers";
 
-export default function Header() {
+export default function Header({ siteSettings }) {
   const router = useRouter();
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -50,7 +52,10 @@ export default function Header() {
         {/* Logo */}
         <div className="hdr_logo">
           <Link href="/" onClick={closeMenu}>
-            <img src="/images/front-images/logo.png" alt="Vaultix" />
+            <img
+              src={cmsFileUrl(siteSettings?.site_logo, "images")}
+              alt={siteSettings?.site_name}
+            />
           </Link>
         </div>
 
@@ -75,7 +80,11 @@ export default function Header() {
           <Link href="/contact" className="hdr_contact" onClick={closeMenu}>
             Contact Us
           </Link>
-          <Link href="/dashboard" className="hdr_access_btn" onClick={closeMenu}>
+          <Link
+            href="/dashboard"
+            className="hdr_access_btn"
+            onClick={closeMenu}
+          >
             Access Vault
           </Link>
         </div>
@@ -111,7 +120,11 @@ export default function Header() {
             <Link href="/contact" className="hdr_contact" onClick={closeMenu}>
               Contact Us
             </Link>
-            <Link href="/dashboard" className="hdr_access_btn" onClick={closeMenu}>
+            <Link
+              href="/dashboard"
+              className="hdr_access_btn"
+              onClick={closeMenu}
+            >
               Access Vault
             </Link>
           </div>
