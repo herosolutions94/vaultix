@@ -45,7 +45,7 @@ export default function App({ Component, pageProps, siteSettings }) {
             },
           }}
         />
-        <NextNProgress color="#ee2524ff" />
+        <NextNProgress color="#e9c176" />
         <Layout siteSettings={siteSettings}>{page}</Layout>
         {/* </Provider> */}
       </>

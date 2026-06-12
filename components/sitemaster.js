@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { cmsFileUrl } from "@/helpers/helpers";
 
 export default function SiteMaster({ siteSettings }) {
   return (
@@ -7,7 +8,7 @@ export default function SiteMaster({ siteSettings }) {
       <title>Vaultix</title>
       <meta name="title" content="Vaultix" />
       <meta name="description" content="Vaultix" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href={cmsFileUrl(siteSettings?.site_icon)} />
     </Head>
   );
 }

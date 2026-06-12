@@ -7,6 +7,7 @@ import { doObjToFormData } from "@/helpers/helpers";
 import MetaGenerator from "@/components/meta-generator";
 import Text from "@/components/text";
 import { cmsFileUrl } from "@/helpers/helpers";
+import Cta_section from "@/components/cta_section";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
@@ -104,8 +105,15 @@ export const getServerSideProps = async (context) => {
 };
 
 export default function Home({ result }) {
-  const { page_title, meta_desc, content, home_features, testimonials } =
-    result;
+  const {
+    page_title,
+    meta_desc,
+    content,
+    home_features,
+    testimonials,
+    site_settings,
+    cta_section,
+  } = result;
 
   ////// trust badges //////
   const TRUST_BADGES = [
@@ -143,19 +151,22 @@ export default function Home({ result }) {
 
   return (
     <>
-      <MetaGenerator page_title={page_title} meta_desc={meta_desc} />
+      <MetaGenerator
+        page_title={page_title + " - " + site_settings?.site_name}
+        meta_desc={meta_desc}
+      />
 
       <div className="home_page">
         {/* ── HERO ── */}
         <section className="hero_section">
           <img
             src="/images/front-images/gradient1.png"
-            alt=""
+            alt={content?.banner_title}
             className="hero_grad hero_grad1"
           />
           <img
             src="/images/front-images/gradient2.png"
-            alt=""
+            alt={content?.banner_title}
             className="hero_grad hero_grad2"
           />
 
@@ -164,7 +175,7 @@ export default function Home({ result }) {
               <div className="hero_badge">
                 <img
                   src="/images/front-images/hero-icon1.svg"
-                  alt=""
+                  alt={content?.banner_title}
                   width="15"
                   height="15"
                 />
@@ -503,40 +514,8 @@ export default function Home({ result }) {
         </section>
 
         {/* ── CTA ── */}
-        <section className="cta_section">
-          <img
-            src="/images/front-images/cta-bg.png"
-            alt=""
-            className="cta_bg_img"
-          />
-          <img
-            src="/images/front-images/cta-gradient.png"
-            alt=""
-            className="cta_grad_img"
-          />
-          <div className="pg_contain">
-            <div className="cta_ico">
-              <img src="/images/front-images/cta-icon.png" alt="" />
-            </div>
-            <h2>
-              Secure Your Digital Legacy
-              <br />
-              Today
-            </h2>
-            <p>
-              Begin protecting your assets with institutional-grade security.
-              Setup takes minutes, protection lasts generations.
-            </p>
-            <div className="cta_btns">
-              <Link href="/dashboard" className="btn_gold">
-                Create Vault
-              </Link>
-              <Link href="/security" className="btn_ghost">
-                View Security Architecture
-              </Link>
-            </div>
-          </div>
-        </section>
+
+        <Cta_section cta_section={cta_section} />
       </div>
     </>
   );
