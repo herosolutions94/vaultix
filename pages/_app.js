@@ -26,6 +26,10 @@ import http from "../helpers/http";
 import { doObjToFormData } from "@/helpers/helpers";
 import { Toaster } from "react-hot-toast";
 import NextNProgress from "nextjs-progressbar";
+import { Provider } from 'react-redux';
+import store from '@/redux/store';
+
+
 
 export default function App({ Component, pageProps, siteSettings }) {
   const renderWithLayout =
@@ -36,18 +40,18 @@ export default function App({ Component, pageProps, siteSettings }) {
 
     ((page) => (
       <>
-        {/* <Provider store={store}> */}
-        <Toaster
-          position="bottom-right"
-          toastOptions={{
-            style: {
-              fontSize: "14px",
-            },
-          }}
-        />
-        <NextNProgress color="#e9c176" />
-        <Layout siteSettings={siteSettings}>{page}</Layout>
-        {/* </Provider> */}
+        <Provider store={store}>
+          <Toaster
+            position="bottom-right"
+            toastOptions={{
+              style: {
+                fontSize: "14px",
+              },
+            }}
+          />
+          <NextNProgress color="#e9c176" />
+          <Layout siteSettings={siteSettings}>{page}</Layout>
+        </Provider>
       </>
     ));
 
